@@ -2,4 +2,6 @@ __pycache__/
 *.pyc
 .venv/
 .pytest_cache/
+.playwright-cli/
+output/
 catalog.generated.yaml
