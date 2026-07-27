@@ -1,0 +1,162 @@
+evaluation_version: 1
+description: Public forward-test prompts without expected answers.
+cases:
+  - id: evidence-map-01
+    skill: evidence-map
+    risk: mixed evidence and executive opinion
+    prompt: >
+      A sales director says churn is rising because support quality has fallen. The support lead says
+      churn is stable, but the latest cohort data is not available. Two account managers each recall
+      losing one customer after slow responses. Build an evidence base for deciding what to investigate.
+  - id: evidence-map-02
+    skill: evidence-map
+    risk: repeated claims treated as independent evidence
+    prompt: >
+      Five interview notes repeat that a transformation lacks sponsorship, but four notes quote the
+      same original executive comment. Project delivery is on time, adoption data is incomplete, and
+      the steering committee has cancelled twice. Assess what is known and unknown.
+  - id: issue-tree-01
+    skill: issue-tree
+    risk: symptoms causes decisions and actions mixed together
+    prompt: >
+      A digital program is over budget, adoption is low, teams want more training, the sponsor wants a
+      new vendor, and finance wants benefits evidence. Structure the problem for a decision meeting.
+  - id: issue-tree-02
+    skill: issue-tree
+    risk: overlapping branches and missing scope
+    prompt: >
+      A retailer wants to improve profitability. The initial list includes pricing, store labor,
+      supplier cost, customer experience, marketing spend, online conversion, and expansion. Build a
+      decision-useful problem structure without assuming the answer.
+  - id: abductive-reasoning-01
+    skill: abductive-reasoning
+    risk: one plausible explanation accepted too early
+    prompt: >
+      A senior manager who previously supported a proposal suddenly refuses to sponsor it. Known facts:
+      the budget remains available, an incumbent supplier has strong operating relationships, and a new
+      procurement lead joined last month. Develop competing explanations and discriminating tests.
+  - id: abductive-reasoning-02
+    skill: abductive-reasoning
+    risk: ambiguous operational signals
+    prompt: >
+      A service's weekly active users fell 20% after a release. Reliability, seasonality, measurement
+      changes, customer workflow changes, and competitor action are all possible. Determine the best
+      current explanations and what evidence would separate them.
+  - id: five-whys-root-cause-01
+    skill: five-whys-root-cause
+    risk: stopping at individual blame
+    prompt: >
+      A monthly regulatory report was submitted late because an analyst missed a deadline. This is the
+      third late submission in six months. Conduct a bounded root-cause analysis and define validation.
+  - id: five-whys-root-cause-02
+    skill: five-whys-root-cause
+    risk: causal chain unsupported by evidence
+    prompt: >
+      Customer refunds take twelve days against a five-day target. Operations says approvals are slow,
+      finance says requests are incomplete, and no process timestamps have been reviewed. Diagnose
+      without inventing a root cause.
+  - id: systems-thinking-01
+    skill: systems-thinking
+    risk: repeated fixes and delayed feedback
+    prompt: >
+      More status meetings temporarily improve project reporting, but within two months reports become
+      late again and delivery teams spend less time resolving risks. Diagnose the recurring behavior.
+  - id: systems-thinking-02
+    skill: systems-thinking
+    risk: intervention creates unintended consequences
+    prompt: >
+      A call center rewards shorter handling time. Handling time improves, repeat calls rise six weeks
+      later, and managers add scripts that make calls longer. Map the dynamics and identify a safer
+      intervention.
+  - id: constraint-analysis-01
+    skill: constraint-analysis
+    risk: optimizing non-binding steps
+    prompt: >
+      A product release process takes 30 days. Development takes 8, testing takes 4, security approval
+      waits 14, and deployment takes 4. Teams propose automating testing. Identify the binding
+      constraint and an evidence-backed response.
+  - id: constraint-analysis-02
+    skill: constraint-analysis
+    risk: policy constraint mistaken for capacity shortage
+    prompt: >
+      Sales proposals queue for legal review. Legal has capacity for 20 reviews per week and receives
+      18, but half are returned because required clauses were changed. Diagnose the constraint.
+  - id: decision-matrix-01
+    skill: decision-matrix
+    risk: scores hide weak evidence
+    prompt: >
+      Compare three CRM options using cost, implementation time, integration risk, user fit, and vendor
+      stability. Evidence quality differs by option and leadership has not agreed criterion weights.
+  - id: decision-matrix-02
+    skill: decision-matrix
+    risk: non-negotiable threshold averaged away
+    prompt: >
+      Choose between three data platforms. One has the highest overall benefit but has not passed a
+      mandatory residency requirement. Build a defensible conditional decision.
+  - id: stakeholder-power-map-01
+    skill: stakeholder-power-map
+    risk: formal authority confused with influence
+    prompt: >
+      A business sponsor funds a project, procurement runs selection, operations owns implementation,
+      and a long-term incumbent advises operations. Map support, power, influence, evidence, and next
+      engagement moves.
+  - id: stakeholder-power-map-02
+    skill: stakeholder-power-map
+    risk: inferred motives presented as facts
+    prompt: >
+      A country lead publicly supports a global standard but repeatedly delays local adoption. The
+      finance lead wants savings and frontline managers fear service disruption. Develop a grounded
+      stakeholder strategy.
+  - id: jobs-to-be-done-01
+    skill: jobs-to-be-done
+    risk: feature requests substituted for user progress
+    prompt: >
+      Employees rarely use a new knowledge tool. Interviews request better search, more training, and
+      mobile access, but users continue asking colleagues for answers. Diagnose the job and adoption
+      forces.
+  - id: jobs-to-be-done-02
+    skill: jobs-to-be-done
+    risk: segment context ignored
+    prompt: >
+      Small-business customers abandon an invoicing product after setup while larger customers retain
+      it. Identify the progress, context, alternatives, anxieties, and evidence needed before changing
+      the roadmap.
+  - id: service-blueprint-01
+    skill: service-blueprint
+    risk: frontstage symptom detached from backstage process
+    prompt: >
+      Insurance customers receive inconsistent claim updates. Map the customer actions, visible
+      interactions, backstage work, systems, handoffs, failure points, and improvement measures.
+  - id: service-blueprint-02
+    skill: service-blueprint
+    risk: process map without customer evidence
+    prompt: >
+      New suppliers take six weeks to onboard and receive duplicate document requests. Build a service
+      blueprint while marking where customer evidence and process data are missing.
+  - id: pre-mortem-01
+    skill: pre-mortem
+    risk: generic risk list
+    prompt: >
+      A company will launch a new pricing model in eight weeks. Assume the launch failed badly after
+      three months. Generate plausible failure paths, early signals, prevention, contingency, owners,
+      and decision gates.
+  - id: pre-mortem-02
+    skill: pre-mortem
+    risk: team optimism suppresses dissent
+    prompt: >
+      A cross-border data migration has executive support but unresolved local requirements. Run a
+      pre-mortem that separates failure causes from controls and exposes assumptions.
+  - id: validation-plan-01
+    skill: validation-plan
+    risk: recommendation without falsification
+    prompt: >
+      The team recommends mandatory training to improve adoption. Current evidence is interview-based
+      and no cohort analysis exists. Design a validation plan with thresholds and continue-adjust-stop
+      rules.
+  - id: validation-plan-02
+    skill: validation-plan
+    risk: vanity metric used as success proof
+    prompt: >
+      A pilot claims success because 80% of invited users logged in once. The intended value is faster
+      case resolution with no quality loss. Define the hypothesis, measures, evidence standard,
+      timeline, owner, and decision gate.
