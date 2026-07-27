@@ -55,9 +55,9 @@ Do not use when the issue is primarily role ownership, numerical prioritization,
 |  | stakeholder / market / customer / capability / resource / timing / economics / risk / compliance |  | high / medium / low | high / medium / low | yes / no / partly | high / medium / low |
 
 ### 3. Critical Assumptions To Test First
-1. [Critical assumption]
-2. [Critical assumption]
-3. [Critical assumption]
+1.
+2.
+3.
 
 ### 4. Test Plan
 | Critical assumption | Evidence needed | Fastest test | Confirm signal | Disconfirm signal |

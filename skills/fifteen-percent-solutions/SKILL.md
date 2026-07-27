@@ -59,9 +59,9 @@ Do not use when a high-risk action requires formal approval, legal review, compl
 |  |  |  | low / medium / high |  |
 
 ### 4. Recommended First Moves
-1. [First move]
-2. [First move]
-3. [First move]
+1.
+2.
+3.
 
 ### 5. Decision Gate
 - Continue if:

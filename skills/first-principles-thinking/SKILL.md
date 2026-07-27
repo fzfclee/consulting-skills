@@ -29,7 +29,7 @@ If an input is missing, do not block automatically. Mark it as `missing`, state 
 
 ## When Not To Use
 
-Do not use when the problem is already well-defined and only needs routine execution, compliance with fixed rules, or a known best-practice checklist. Use `decision-matrix`, `issue-tree`, or `five-whys-root-cause` first if the situation lacks a clear problem statement.
+Do not use for a routine root-cause investigation, evidence classification, or option scoring. Use `five-whys-root-cause` for one cause chain, `fishbone-diagram` for multi-factor operational causes, and `evidence-map` when the fact base is not yet reliable. Use first principles when inherited assumptions or analogy constrain the option set.
 
 ## Step-by-Step Execution
 

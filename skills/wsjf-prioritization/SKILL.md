@@ -58,9 +58,9 @@ Do not use WSJF when options are too vague to size, when the work is purely expl
 |  |  |  |  |  |  |  |  |  |
 
 ### 3. Recommended Sequence
-1. [First job]
-2. [Second job]
-3. [Third job]
+1.
+2.
+3.
 
 ### 4. Caveats
 - Dependency constraints:

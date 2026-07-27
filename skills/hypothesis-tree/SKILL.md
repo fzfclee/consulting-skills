@@ -28,6 +28,11 @@ If an input is missing, do not block automatically. Mark it as `missing`, state 
 
 Do not use to decorate an answer. Use it when the problem is too messy to analyze directly.
 
+## Adjacent Methods
+
+- `issue-tree`: decompose the question into analysis branches before proposing explanations.
+- `abductive-reasoning`: rank the best current explanation from incomplete evidence.
+
 ## Step-by-Step Execution
 
 | Step | Required input | How to execute | Output |
@@ -41,33 +46,40 @@ Do not use to decorate an answer. Use it when the problem is too messy to analyz
 ## Output Template
 
 ```markdown
-### 1. Method Frame
-- Decision / question:
-- Scope:
-- Evidence used:
-- Key assumptions:
+### 1. Decision Question
+Question:
+Scope:
+Current evidence:
+Decision deadline:
 
-### 2. Working Output
-- hypothesis tree:
-- testable branches:
-- evidence plan:
-- disconfirmation criteria:
+### 2. Competing Hypotheses
+| Hypothesis | Sub-hypotheses | Evidence for | Evidence against | Confidence |
+|---|---|---|---|---|
+|  |  |  |  |  |
 
-### 3. Implications
-- What this changes:
-- What to do first:
-- What to watch:
+### 3. Disconfirming Tests
+| Hypothesis | Cheapest decisive test | Owner | Timing | Threshold |
+|---|---|---|---|---|
+|  |  |  |  |  |
 
-### 4. Open Questions
+### 4. Priority
+First hypothesis to test:
+Why:
+Decision unlocked:
+
+### Evidence And Next Decision
+- Confirmed facts:
+- Assumptions:
 - Missing evidence:
-- Validation step:
-- Owner / timing:
+- Next action, owner, and timing:
+- Expected signal and decision threshold:
 ```
 
 ## Quality Gate
 
-- The output must change a decision, action, prioritization, risk view, or validation plan.
-- Every major claim must be tied to evidence or labeled as an assumption.
-- Each recommendation must name the action, owner or stakeholder, timing, and expected signal.
-- Remove framework filler. Do not explain the method unless the explanation helps the user act.
-- Keep wording professional and plain enough that a smart non-specialist can use it without translation.
+- Produce the method-specific outputs for Decision Question, Competing Hypotheses, Disconfirming Tests; do not substitute a generic framework summary.
+- Tie every material score, causal claim, or stakeholder judgment to evidence or label it as an assumption.
+- Include at least one disconfirming check, sensitivity, alternative explanation, or failure condition appropriate to the method.
+- Convert the result into a named action or decision with an owner or stakeholder, timing, and observable signal.
+- State missing inputs and the smallest validation action instead of inventing precision.
+- Keep wording professional and plain enough that a smart non-specialist can use the output directly.

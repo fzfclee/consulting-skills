@@ -29,6 +29,11 @@ If an input is missing, do not block automatically. Mark it as `missing`, state 
 
 Do not use as a personality-reading exercise. Use it only to clarify decision rights, influence, needs, and next engagement moves.
 
+## Adjacent Methods
+
+- `change-impact-analysis`: identify who is affected and what adoption support is needed.
+- `raci-matrix`: clarify who owns each communication decision and action.
+
 ## Step-by-Step Execution
 
 | Step | Required input | How to execute | Output |
@@ -42,33 +47,40 @@ Do not use as a personality-reading exercise. Use it only to clarify decision ri
 ## Output Template
 
 ```markdown
-### 1. Method Frame
-- Decision / question:
-- Scope:
-- Evidence used:
-- Key assumptions:
+### 1. Communication Objective
+Decision / behavior needed:
+Audience scope:
+Constraints:
+Known concerns:
 
-### 2. Working Output
-- communications plan:
-- audience-message matrix:
-- cadence:
-- feedback and escalation path:
+### 2. Audience Message Matrix
+| Audience | Needed action | Message | Evidence / proof | Channel | Sender |
+|---|---|---|---|---|---|
+|  |  |  |  |  |  |
 
-### 3. Implications
-- What this changes:
-- What to do first:
-- What to watch:
+### 3. Cadence And Feedback
+| Touchpoint | Timing | Owner | Feedback signal | Response rule |
+|---|---|---|---|---|
+|  |  |  |  |  |
 
-### 4. Open Questions
+### 4. Readiness Check
+| Risk | Prevention | Trigger | Escalation |
+|---|---|---|---|
+|  |  |  |  |
+
+### Evidence And Next Decision
+- Confirmed facts:
+- Assumptions:
 - Missing evidence:
-- Validation step:
-- Owner / timing:
+- Next action, owner, and timing:
+- Expected signal and decision threshold:
 ```
 
 ## Quality Gate
 
-- The output must change a decision, action, prioritization, risk view, or validation plan.
-- Every major claim must be tied to evidence or labeled as an assumption.
-- Each recommendation must name the action, owner or stakeholder, timing, and expected signal.
-- Remove framework filler. Do not explain the method unless the explanation helps the user act.
-- Keep wording professional and plain enough that a smart non-specialist can use it without translation.
+- Produce the method-specific outputs for Communication Objective, Audience Message Matrix, Cadence And Feedback; do not substitute a generic framework summary.
+- Tie every material score, causal claim, or stakeholder judgment to evidence or label it as an assumption.
+- Include at least one disconfirming check, sensitivity, alternative explanation, or failure condition appropriate to the method.
+- Convert the result into a named action or decision with an owner or stakeholder, timing, and observable signal.
+- State missing inputs and the smallest validation action instead of inventing precision.
+- Keep wording professional and plain enough that a smart non-specialist can use the output directly.

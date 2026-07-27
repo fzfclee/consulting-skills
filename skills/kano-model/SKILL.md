@@ -28,6 +28,11 @@ If an input is missing, do not block automatically. Mark it as `missing`, state 
 
 Do not use for all users at once. Choose one segment, scenario, journey, job, or service context.
 
+## Adjacent Methods
+
+- `jobs-to-be-done`: understand the progress the customer is trying to make.
+- `user-journey-mapping`: locate attributes and pain points across a chronological experience.
+
 ## Step-by-Step Execution
 
 | Step | Required input | How to execute | Output |
@@ -41,33 +46,40 @@ Do not use for all users at once. Choose one segment, scenario, journey, job, or
 ## Output Template
 
 ```markdown
-### 1. Method Frame
-- Decision / question:
-- Scope:
-- Evidence used:
-- Key assumptions:
+### 1. Scope And Evidence
+Customer segment:
+Decision:
+Attributes tested:
+Research basis:
 
-### 2. Working Output
-- Kano classification:
-- priority implications:
-- research gaps:
-- feature/service plan:
+### 2. Classification
+| Attribute | Functional response | Dysfunctional response | Kano class | Confidence |
+|---|---|---|---|---|
+|  |  |  |  |  |
 
-### 3. Implications
-- What this changes:
-- What to do first:
-- What to watch:
+### 3. Investment Logic
+| Attribute | Current performance | Priority | Reason |
+|---|---|---|---|
+|  |  |  |  |
 
-### 4. Open Questions
+### 4. Refresh Plan
+| Assumption | Validation | Owner | Timing | Reclassification trigger |
+|---|---|---|---|---|
+|  |  |  |  |  |
+
+### Evidence And Next Decision
+- Confirmed facts:
+- Assumptions:
 - Missing evidence:
-- Validation step:
-- Owner / timing:
+- Next action, owner, and timing:
+- Expected signal and decision threshold:
 ```
 
 ## Quality Gate
 
-- The output must change a decision, action, prioritization, risk view, or validation plan.
-- Every major claim must be tied to evidence or labeled as an assumption.
-- Each recommendation must name the action, owner or stakeholder, timing, and expected signal.
-- Remove framework filler. Do not explain the method unless the explanation helps the user act.
-- Keep wording professional and plain enough that a smart non-specialist can use it without translation.
+- Produce the method-specific outputs for Scope And Evidence, Classification, Investment Logic; do not substitute a generic framework summary.
+- Tie every material score, causal claim, or stakeholder judgment to evidence or label it as an assumption.
+- Include at least one disconfirming check, sensitivity, alternative explanation, or failure condition appropriate to the method.
+- Convert the result into a named action or decision with an owner or stakeholder, timing, and observable signal.
+- State missing inputs and the smallest validation action instead of inventing precision.
+- Keep wording professional and plain enough that a smart non-specialist can use the output directly.

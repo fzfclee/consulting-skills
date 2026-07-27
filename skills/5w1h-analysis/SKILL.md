@@ -29,7 +29,7 @@ If an input is missing, mark it as `unknown` and add a targeted question.
 
 ## When Not To Use
 
-Do not use when the basic facts are already clear and the issue needs prioritization, root cause, or system diagnosis. Use a more specific method instead.
+Do not use as evidence grading, root-cause proof, or strategic diagnosis. Use `evidence-map` when source quality and confidence matter; use `five-whys-root-cause` only after the observed problem is clear. Stop after the basic situation frame is complete.
 
 ## Step-by-Step Execution
 

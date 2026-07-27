@@ -28,6 +28,12 @@ If an input is missing, do not block automatically. Mark it as `missing`, state 
 
 Do not use before options are explicit enough to compare. First convert vague themes into executable options.
 
+## Adjacent Methods
+
+- `rice-scoring`: prioritize a backlog using Reach, Impact, Confidence, and Effort.
+- `wsjf-prioritization`: sequence work using Cost of Delay divided by Job Size.
+- `decision-matrix`: make a one-time option choice using explicit weighted criteria.
+
 ## Step-by-Step Execution
 
 | Step | Required input | How to execute | Output |
@@ -41,32 +47,40 @@ Do not use before options are explicit enough to compare. First convert vague th
 ## Output Template
 
 ```markdown
-### 1. Method Frame
-- Decision / question:
-- Scope:
-- Evidence used:
-- Key assumptions:
+### 1. Scope And Anchors
+Decision horizon:
+Impact definition:
+Effort definition:
+Constraints:
 
-### 2. Working Output
-- 2x2 action map:
-- recommended sequence:
-- quick wins and no-go items:
+### 2. Action Scores
+| Action | Impact | Effort | Evidence / assumption | Confidence |
+|---|---|---|---|---|
+|  |  |  |  |  |
 
-### 3. Implications
-- What this changes:
-- What to do first:
-- What to watch:
+### 3. Quadrant Map
+| Quadrant | Actions | Why |
+|---|---|---|
+|  |  |  |
 
-### 4. Open Questions
+### 4. Sequence
+| Order | Action | Owner | Timing | Expected signal | Stop condition |
+|---|---|---|---|---|---|
+|  |  |  |  |  |  |
+
+### Evidence And Next Decision
+- Confirmed facts:
+- Assumptions:
 - Missing evidence:
-- Validation step:
-- Owner / timing:
+- Next action, owner, and timing:
+- Expected signal and decision threshold:
 ```
 
 ## Quality Gate
 
-- The output must change a decision, action, prioritization, risk view, or validation plan.
-- Every major claim must be tied to evidence or labeled as an assumption.
-- Each recommendation must name the action, owner or stakeholder, timing, and expected signal.
-- Remove framework filler. Do not explain the method unless the explanation helps the user act.
-- Keep wording professional and plain enough that a smart non-specialist can use it without translation.
+- Produce the method-specific outputs for Scope And Anchors, Action Scores, Quadrant Map; do not substitute a generic framework summary.
+- Tie every material score, causal claim, or stakeholder judgment to evidence or label it as an assumption.
+- Include at least one disconfirming check, sensitivity, alternative explanation, or failure condition appropriate to the method.
+- Convert the result into a named action or decision with an owner or stakeholder, timing, and observable signal.
+- State missing inputs and the smallest validation action instead of inventing precision.
+- Keep wording professional and plain enough that a smart non-specialist can use the output directly.

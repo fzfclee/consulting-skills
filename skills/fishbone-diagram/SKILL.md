@@ -28,6 +28,12 @@ If an input is missing, do not block automatically. Mark it as `missing`, state 
 
 Do not use to assign blame. Use it to find controllable causes and recurrence prevention.
 
+## Adjacent Methods
+
+- `five-whys-root-cause`: follow one selected branch deeper.
+- `systems-thinking`: use for feedback and behavior over time.
+- `constraint-analysis`: use for a proven binding bottleneck.
+
 ## Step-by-Step Execution
 
 | Step | Required input | How to execute | Output |
@@ -41,33 +47,40 @@ Do not use to assign blame. Use it to find controllable causes and recurrence pr
 ## Output Template
 
 ```markdown
-### 1. Method Frame
-- Decision / question:
-- Scope:
-- Evidence used:
-- Key assumptions:
+### 1. Effect And Boundary
+Observed effect:
+Location / period:
+Baseline:
+In scope / out of scope:
 
-### 2. Working Output
-- fishbone cause map:
-- most likely cause branches:
-- evidence gaps:
-- test plan:
+### 2. Cause Map
+| Category | Possible cause | Evidence status | Mechanism |
+|---|---|---|---|
+|  |  |  |  |
 
-### 3. Implications
-- What this changes:
-- What to do first:
-- What to watch:
+### 3. Priority Causes
+| Cause | Impact if true | Testability | Confidence |
+|---|---|---|---|
+|  |  |  |  |
 
-### 4. Open Questions
+### 4. Test Plan
+| Test | Owner | Timing | Confirming / disconfirming signal |
+|---|---|---|---|
+|  |  |  |  |
+
+### Evidence And Next Decision
+- Confirmed facts:
+- Assumptions:
 - Missing evidence:
-- Validation step:
-- Owner / timing:
+- Next action, owner, and timing:
+- Expected signal and decision threshold:
 ```
 
 ## Quality Gate
 
-- The output must change a decision, action, prioritization, risk view, or validation plan.
-- Every major claim must be tied to evidence or labeled as an assumption.
-- Each recommendation must name the action, owner or stakeholder, timing, and expected signal.
-- Remove framework filler. Do not explain the method unless the explanation helps the user act.
-- Keep wording professional and plain enough that a smart non-specialist can use it without translation.
+- Produce the method-specific outputs for Effect And Boundary, Cause Map, Priority Causes; do not substitute a generic framework summary.
+- Tie every material score, causal claim, or stakeholder judgment to evidence or label it as an assumption.
+- Include at least one disconfirming check, sensitivity, alternative explanation, or failure condition appropriate to the method.
+- Convert the result into a named action or decision with an owner or stakeholder, timing, and observable signal.
+- State missing inputs and the smallest validation action instead of inventing precision.
+- Keep wording professional and plain enough that a smart non-specialist can use the output directly.

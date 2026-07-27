@@ -29,6 +29,12 @@ If an input is missing, do not block automatically. Mark it as `missing`, state 
 
 Do not use before options are explicit enough to compare. First convert vague themes into executable options.
 
+## Adjacent Methods
+
+- `decision-matrix`: choose among strategic alternatives.
+- `weighted-scorecard`: repeatable vendor or governance scoring.
+- `wsjf-prioritization`: use when Cost of Delay is the central economic logic.
+
 ## Step-by-Step Execution
 
 | Step | Required input | How to execute | Output |
@@ -42,33 +48,42 @@ Do not use before options are explicit enough to compare. First convert vague th
 ## Output Template
 
 ```markdown
-### 1. Method Frame
-- Decision / question:
-- Scope:
-- Evidence used:
-- Key assumptions:
+### 1. Scope And Scale
+Backlog:
+Time horizon:
+Reach unit:
+Impact scale:
+Effort unit:
 
-### 2. Working Output
-- RICE scores:
-- ranked list:
-- confidence caveats:
-- recommended backlog:
+### 2. Scores
+| Initiative | Reach | Impact | Confidence | Effort | RICE | Evidence |
+|---|---|---|---|---|---|---|
+|  |  |  |  |  |  |  |
 
-### 3. Implications
-- What this changes:
-- What to do first:
-- What to watch:
+### 3. Ranking And Caveats
+| Rank | Initiative | Main uncertainty | Dependency |
+|---|---|---|---|
+|  |  |  |  |
 
-### 4. Open Questions
+### 4. Decision
+Fund now:
+Validate first:
+Do not prioritize:
+Review trigger:
+
+### Evidence And Next Decision
+- Confirmed facts:
+- Assumptions:
 - Missing evidence:
-- Validation step:
-- Owner / timing:
+- Next action, owner, and timing:
+- Expected signal and decision threshold:
 ```
 
 ## Quality Gate
 
-- The output must change a decision, action, prioritization, risk view, or validation plan.
-- Every major claim must be tied to evidence or labeled as an assumption.
-- Each recommendation must name the action, owner or stakeholder, timing, and expected signal.
-- Remove framework filler. Do not explain the method unless the explanation helps the user act.
-- Keep wording professional and plain enough that a smart non-specialist can use it without translation.
+- Produce the method-specific outputs for Scope And Scale, Scores, Ranking And Caveats; do not substitute a generic framework summary.
+- Tie every material score, causal claim, or stakeholder judgment to evidence or label it as an assumption.
+- Include at least one disconfirming check, sensitivity, alternative explanation, or failure condition appropriate to the method.
+- Convert the result into a named action or decision with an owner or stakeholder, timing, and observable signal.
+- State missing inputs and the smallest validation action instead of inventing precision.
+- Keep wording professional and plain enough that a smart non-specialist can use the output directly.

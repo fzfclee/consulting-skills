@@ -55,9 +55,9 @@ Do not use when timing is irrelevant or the decision is purely comparative. Use 
 |  |  |  | strong / medium / weak / missing |  |  |
 
 ### 3. Likely Turning Points
-1. [Turning point]
-2. [Turning point]
-3. [Turning point]
+1.
+2.
+3.
 
 ### 4. Timeline-Based Hypotheses
 | Hypothesis | Supporting timeline evidence | What would weaken it | Next check |

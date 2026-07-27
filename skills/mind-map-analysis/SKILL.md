@@ -28,6 +28,11 @@ If an input is missing, do not block automatically. Mark it as `missing`, state 
 
 Do not use to decorate an answer. Use it when the problem is too messy to analyze directly.
 
+## Adjacent Methods
+
+- `affinity-diagram`: cluster raw qualitative notes into evidence-based themes.
+- `issue-tree`: turn an explored topic into a decision-oriented analysis structure.
+
 ## Step-by-Step Execution
 
 | Step | Required input | How to execute | Output |
@@ -41,33 +46,40 @@ Do not use to decorate an answer. Use it when the problem is too messy to analyz
 ## Output Template
 
 ```markdown
-### 1. Method Frame
-- Decision / question:
-- Scope:
-- Evidence used:
-- Key assumptions:
+### 1. Central Question
+Topic:
+Decision use:
+Scope:
+Source material:
 
-### 2. Working Output
-- mind map outline:
-- theme clusters:
-- priority branches:
-- next analysis questions:
+### 2. Theme Map
+| Branch | Sub-branch | Evidence / example | Open question |
+|---|---|---|---|
+|  |  |  |  |
 
-### 3. Implications
-- What this changes:
-- What to do first:
-- What to watch:
+### 3. Connections And Gaps
+| Connection / gap | Why it matters |
+|---|---|
+|  |  |
 
-### 4. Open Questions
+### 4. Next Analysis
+Priority branch:
+Needed evidence:
+Appropriate next method, if any:
+
+### Evidence And Next Decision
+- Confirmed facts:
+- Assumptions:
 - Missing evidence:
-- Validation step:
-- Owner / timing:
+- Next action, owner, and timing:
+- Expected signal and decision threshold:
 ```
 
 ## Quality Gate
 
-- The output must change a decision, action, prioritization, risk view, or validation plan.
-- Every major claim must be tied to evidence or labeled as an assumption.
-- Each recommendation must name the action, owner or stakeholder, timing, and expected signal.
-- Remove framework filler. Do not explain the method unless the explanation helps the user act.
-- Keep wording professional and plain enough that a smart non-specialist can use it without translation.
+- Produce the method-specific outputs for Central Question, Theme Map, Connections And Gaps; do not substitute a generic framework summary.
+- Tie every material score, causal claim, or stakeholder judgment to evidence or label it as an assumption.
+- Include at least one disconfirming check, sensitivity, alternative explanation, or failure condition appropriate to the method.
+- Convert the result into a named action or decision with an owner or stakeholder, timing, and observable signal.
+- State missing inputs and the smallest validation action instead of inventing precision.
+- Keep wording professional and plain enough that a smart non-specialist can use the output directly.

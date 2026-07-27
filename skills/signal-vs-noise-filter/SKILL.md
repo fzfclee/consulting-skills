@@ -28,7 +28,7 @@ If an input is missing, mark it as `missing`, state the assumption used, and add
 
 ## When Not To Use
 
-Do not use when the problem has too few facts to compare. Use `evidence-map`, `5w1h-analysis`, or direct clarification first.
+Do not use to repair unreliable evidence or fill basic situation gaps. Use `evidence-map` when facts, claims, sources, and confidence are mixed; use `5w1h-analysis` when who, what, when, where, why, or how is missing. Use this method only after the input is good enough to judge decision relevance.
 
 ## Step-by-Step Execution
 
@@ -55,9 +55,9 @@ Do not use when the problem has too few facts to compare. Use `evidence-map`, `5
 |  | strong / medium / weak / missing | high / medium / low | explanation / priority / risk / timing / stakeholder / validation |  |
 
 ### 3. Core Signals
-1. [Core signal]
-2. [Core signal]
-3. [Core signal]
+1.
+2.
+3.
 
 ### 4. Noise and Watchlist
 - Noise to avoid overreacting to:

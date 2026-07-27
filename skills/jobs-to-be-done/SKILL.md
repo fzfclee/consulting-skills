@@ -29,6 +29,12 @@ If an input is missing, do not block automatically. Mark it as `missing`, state 
 
 Do not use for all users at once. Choose one segment, scenario, journey, job, or service context.
 
+## Adjacent Methods
+
+- `empathy-map`: one actor's perceptions and behavior.
+- `user-journey-mapping`: chronological user experience.
+- `service-blueprint`: frontstage/backstage operating process.
+
 ## Step-by-Step Execution
 
 | Step | Required input | How to execute | Output |
@@ -42,33 +48,41 @@ Do not use for all users at once. Choose one segment, scenario, journey, job, or
 ## Output Template
 
 ```markdown
-### 1. Method Frame
-- Decision / question:
-- Scope:
-- Evidence used:
-- Key assumptions:
+### 1. Circumstance And Progress
+Target customer:
+Triggering situation:
+Current workaround:
+Progress sought:
 
-### 2. Working Output
-- job statement:
-- forces of progress:
-- outcome criteria:
-- messaging or offer implications:
+### 2. Job Statement
+When:
+I want to:
+So I can:
+Evidence:
 
-### 3. Implications
-- What this changes:
-- What to do first:
-- What to watch:
+### 3. Forces And Outcomes
+| Push / pull / anxiety / habit | Evidence | Strength | Implication |
+|---|---|---|---|
+|  |  |  |  |
 
-### 4. Open Questions
+### 4. Offer And Adoption Tests
+| Outcome / barrier | Offer response | Test | Signal |
+|---|---|---|---|
+|  |  |  |  |
+
+### Evidence And Next Decision
+- Confirmed facts:
+- Assumptions:
 - Missing evidence:
-- Validation step:
-- Owner / timing:
+- Next action, owner, and timing:
+- Expected signal and decision threshold:
 ```
 
 ## Quality Gate
 
-- The output must change a decision, action, prioritization, risk view, or validation plan.
-- Every major claim must be tied to evidence or labeled as an assumption.
-- Each recommendation must name the action, owner or stakeholder, timing, and expected signal.
-- Remove framework filler. Do not explain the method unless the explanation helps the user act.
-- Keep wording professional and plain enough that a smart non-specialist can use it without translation.
+- Produce the method-specific outputs for Circumstance And Progress, Job Statement, Forces And Outcomes; do not substitute a generic framework summary.
+- Tie every material score, causal claim, or stakeholder judgment to evidence or label it as an assumption.
+- Include at least one disconfirming check, sensitivity, alternative explanation, or failure condition appropriate to the method.
+- Convert the result into a named action or decision with an owner or stakeholder, timing, and observable signal.
+- State missing inputs and the smallest validation action instead of inventing precision.
+- Keep wording professional and plain enough that a smart non-specialist can use the output directly.

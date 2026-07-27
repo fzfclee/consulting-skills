@@ -28,6 +28,12 @@ If an input is missing, do not block automatically. Mark it as `missing`, state 
 
 Do not use as a personality-reading exercise. Use it only to clarify decision rights, influence, needs, and next engagement moves.
 
+## Adjacent Methods
+
+- `power-interest-grid`: use for a quick power-and-interest engagement classification.
+- `account-plan`: use for the broader commercial relationship and growth plan.
+- `raci-matrix`: use for responsibility after the decision and work are defined.
+
 ## Step-by-Step Execution
 
 | Step | Required input | How to execute | Output |
@@ -41,33 +47,40 @@ Do not use as a personality-reading exercise. Use it only to clarify decision ri
 ## Output Template
 
 ```markdown
-### 1. Method Frame
-- Decision / question:
-- Scope:
-- Evidence used:
-- Key assumptions:
+### 1. Decision Arena
+Decision:
+Observable support needed:
+Deadline:
+Decision owner:
 
-### 2. Working Output
-- stakeholder map:
-- stance diagnosis:
-- engagement priorities:
-- relationship actions:
+### 2. Power And Stance
+| Stakeholder | Formal power | Informal influence | Stance | Evidence / confidence |
+|---|---|---|---|---|
+|  |  |  |  |  |
 
-### 3. Implications
-- What this changes:
-- What to do first:
-- What to watch:
+### 3. Incentives And Concerns
+| Stakeholder | Gain sought | Loss feared | Likely objection |
+|---|---|---|---|
+|  |  |  |  |
 
-### 4. Open Questions
+### 4. Engagement Plan
+| Priority | Stakeholder | Next ask | Channel / sponsor | Timing | Signal / fallback |
+|---|---|---|---|---|---|
+|  |  |  |  |  |  |
+
+### Evidence And Next Decision
+- Confirmed facts:
+- Assumptions:
 - Missing evidence:
-- Validation step:
-- Owner / timing:
+- Next action, owner, and timing:
+- Expected signal and decision threshold:
 ```
 
 ## Quality Gate
 
-- The output must change a decision, action, prioritization, risk view, or validation plan.
-- Every major claim must be tied to evidence or labeled as an assumption.
-- Each recommendation must name the action, owner or stakeholder, timing, and expected signal.
-- Remove framework filler. Do not explain the method unless the explanation helps the user act.
-- Keep wording professional and plain enough that a smart non-specialist can use it without translation.
+- Produce the method-specific outputs for Decision Arena, Power And Stance, Incentives And Concerns; do not substitute a generic framework summary.
+- Tie every material score, causal claim, or stakeholder judgment to evidence or label it as an assumption.
+- Include at least one disconfirming check, sensitivity, alternative explanation, or failure condition appropriate to the method.
+- Convert the result into a named action or decision with an owner or stakeholder, timing, and observable signal.
+- State missing inputs and the smallest validation action instead of inventing precision.
+- Keep wording professional and plain enough that a smart non-specialist can use the output directly.

@@ -6,6 +6,11 @@ This repository summarizes and operationalizes established methods for use by AI
 
 Method names are used descriptively. The skill implementations are original summaries written around required inputs, execution steps, output contracts, evidence discipline, and quality gates.
 
+Consulting Skills is an open-source method library initiated by Li Zhi and may
+be used as a public dependency by the O2V Framework. The O2V Framework, CLEAR,
+Signal-to-Action, and their private orchestration or delivery assets are not part
+of this repository and are not licensed under Apache-2.0.
+
 ## Named And Traceable Methods
 
 | Skill | Creator or established source | Reference note |
@@ -45,3 +50,7 @@ The reasoning skills `deductive-reasoning`, `inductive-reasoning`, and `abductiv
 ## Corrections
 
 Attribution histories can be disputed or refined. Open an issue or pull request with an authoritative source if an entry should be corrected. Attribution corrections do not transfer ownership of the underlying method to this repository.
+
+For attribution, licensing, or O2V Framework questions, contact
+[contact@o2vframework.com](mailto:contact@o2vframework.com) or visit
+[www.o2vframework.com](https://www.o2vframework.com).

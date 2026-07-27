@@ -1,5 +1,5 @@
 Consulting Skills
-Copyright 2026 Zhi Li
+Copyright 2026 Li Zhi
 
 This repository contains original instructional text, executable skill structures,
 templates, examples, catalog metadata, and validation code licensed under the
@@ -13,5 +13,14 @@ researchers, institutions, and rights holders.
 Use of a method name in this repository is descriptive and educational. It does
 not imply endorsement by, affiliation with, or certification from the method's
 creator or any consulting firm.
+
+Consulting Skills is maintained as an open-source method library in the broader
+O2V Framework knowledge ecosystem. O2V Framework, CLEAR, Signal-to-Action, and
+their original framework text, architecture, diagrams, branded assets, private
+routing rules, and client-delivery logic are separate works by Li Zhi. They are
+not included in, and are not licensed by, this repository's Apache-2.0 license.
+
+Official website: https://www.o2vframework.com
+Contact: contact@o2vframework.com
 
 See ATTRIBUTIONS.md for method-specific source and attribution notes.

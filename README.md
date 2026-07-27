@@ -8,6 +8,11 @@
 
 [中文说明](README.zh-CN.md)
 
+Consulting Skills is an open-source method library initiated by Li Zhi as part of
+the broader [O2V Framework](https://www.o2vframework.com) knowledge ecosystem.
+The library remains usable on its own and does not include the proprietary O2V
+Framework, CLEAR / Signal-to-Action orchestration, or private client-delivery logic.
+
 ## Why This Repository
 
 Most framework collections explain what a method is. These skills are written to help an AI agent execute the method:
@@ -99,6 +104,16 @@ The public evaluation set intentionally contains prompts and a scoring rubric, n
 This project does not claim ownership of established consulting tools or analytical methods. Names such as SWOT, RACI, the Kano Model, and Porter's Five Forces refer to methods developed or popularized by their respective creators.
 
 The Apache-2.0 license applies to this repository's original skill text, executable structure, templates, catalog, examples, and code. See [`NOTICE`](NOTICE) and [`ATTRIBUTIONS.md`](ATTRIBUTIONS.md) for the boundary and source notes.
+
+O2V Framework, CLEAR, Signal-to-Action, their original written expressions,
+framework architecture, diagrams, and branded delivery assets are separate works
+created by Li Zhi and are not licensed under this repository's Apache-2.0 license.
+This repository may be referenced by O2V products as a public method dependency,
+but it does not publish the private O2V decision-routing system.
+
+Official website: [www.o2vframework.com](https://www.o2vframework.com)
+
+Contact: [contact@o2vframework.com](mailto:contact@o2vframework.com)
 
 ## Contributing
 

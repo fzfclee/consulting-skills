@@ -28,6 +28,11 @@ If an input is missing, do not block automatically. Mark it as `missing`, state 
 
 Do not use for all users at once. Choose one segment, scenario, journey, job, or service context.
 
+## Adjacent Methods
+
+- `metrics-tree`: design causal drivers and guardrails before building a score.
+- `user-journey-mapping`: diagnose where experience friction creates the risk signal.
+
 ## Step-by-Step Execution
 
 | Step | Required input | How to execute | Output |
@@ -41,33 +46,40 @@ Do not use for all users at once. Choose one segment, scenario, journey, job, or
 ## Output Template
 
 ```markdown
-### 1. Method Frame
-- Decision / question:
-- Scope:
-- Evidence used:
-- Key assumptions:
+### 1. Health Definition
+Desired customer outcome:
+Risk event:
+Prediction window:
+Population:
 
-### 2. Working Output
-- health score model:
-- risk tiers:
-- intervention priorities:
-- signal gaps:
+### 2. Signals And Weights
+| Signal | Definition | Source | Weight | Threshold | Lag / leading |
+|---|---|---|---|---|---|
+|  |  |  |  |  |  |
 
-### 3. Implications
-- What this changes:
-- What to do first:
-- What to watch:
+### 3. Customer Scores
+| Customer | Score | Tier | Evidence gap | Primary risk |
+|---|---|---|---|---|
+|  |  |  |  |  |
 
-### 4. Open Questions
+### 4. Intervention Rules
+| Tier / trigger | Action | Owner | Timing | Recovery signal |
+|---|---|---|---|---|
+|  |  |  |  |  |
+
+### Evidence And Next Decision
+- Confirmed facts:
+- Assumptions:
 - Missing evidence:
-- Validation step:
-- Owner / timing:
+- Next action, owner, and timing:
+- Expected signal and decision threshold:
 ```
 
 ## Quality Gate
 
-- The output must change a decision, action, prioritization, risk view, or validation plan.
-- Every major claim must be tied to evidence or labeled as an assumption.
-- Each recommendation must name the action, owner or stakeholder, timing, and expected signal.
-- Remove framework filler. Do not explain the method unless the explanation helps the user act.
-- Keep wording professional and plain enough that a smart non-specialist can use it without translation.
+- Produce the method-specific outputs for Health Definition, Signals And Weights, Customer Scores; do not substitute a generic framework summary.
+- Tie every material score, causal claim, or stakeholder judgment to evidence or label it as an assumption.
+- Include at least one disconfirming check, sensitivity, alternative explanation, or failure condition appropriate to the method.
+- Convert the result into a named action or decision with an owner or stakeholder, timing, and observable signal.
+- State missing inputs and the smallest validation action instead of inventing precision.
+- Keep wording professional and plain enough that a smart non-specialist can use the output directly.

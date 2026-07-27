@@ -28,6 +28,12 @@ If an input is missing, do not block automatically. Mark it as `missing`, state 
 
 Do not use for generic essay writing. Use it only when external/internal factors must change a strategy, choice, or risk posture.
 
+## Adjacent Methods
+
+- `pestel-analysis`: examine macro external forces in depth.
+- `porter-five-forces`: examine industry structure and profit pressure.
+- `competitive-positioning`: define the buyer-facing choice and proof versus alternatives.
+
 ## Step-by-Step Execution
 
 | Step | Required input | How to execute | Output |
@@ -41,32 +47,40 @@ Do not use for generic essay writing. Use it only when external/internal factors
 ## Output Template
 
 ```markdown
-### 1. Method Frame
-- Decision / question:
-- Scope:
-- Evidence used:
-- Key assumptions:
+### 1. Objective And Evidence Boundary
+Objective:
+Scope:
+Time horizon:
+Evidence cut-off:
 
-### 2. Working Output
-- SWOT table:
-- strategic implications:
-- defensive and offensive moves:
+### 2. SWOT
+| Quadrant | Factor | Evidence | Materiality | Controllability |
+|---|---|---|---|---|
+|  |  |  |  |  |
 
-### 3. Implications
-- What this changes:
-- What to do first:
-- What to watch:
+### 3. Strategic Combinations
+| Move | SO / WO / ST / WT | Rationale | Risk |
+|---|---|---|---|
+|  |  |  |  |
 
-### 4. Open Questions
+### 4. Priority Action
+| Action | Owner | Timing | Signal | Stop condition |
+|---|---|---|---|---|
+|  |  |  |  |  |
+
+### Evidence And Next Decision
+- Confirmed facts:
+- Assumptions:
 - Missing evidence:
-- Validation step:
-- Owner / timing:
+- Next action, owner, and timing:
+- Expected signal and decision threshold:
 ```
 
 ## Quality Gate
 
-- The output must change a decision, action, prioritization, risk view, or validation plan.
-- Every major claim must be tied to evidence or labeled as an assumption.
-- Each recommendation must name the action, owner or stakeholder, timing, and expected signal.
-- Remove framework filler. Do not explain the method unless the explanation helps the user act.
-- Keep wording professional and plain enough that a smart non-specialist can use it without translation.
+- Produce the method-specific outputs for Objective And Evidence Boundary, SWOT, Strategic Combinations; do not substitute a generic framework summary.
+- Tie every material score, causal claim, or stakeholder judgment to evidence or label it as an assumption.
+- Include at least one disconfirming check, sensitivity, alternative explanation, or failure condition appropriate to the method.
+- Convert the result into a named action or decision with an owner or stakeholder, timing, and observable signal.
+- State missing inputs and the smallest validation action instead of inventing precision.
+- Keep wording professional and plain enough that a smart non-specialist can use the output directly.
