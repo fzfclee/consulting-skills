@@ -3,8 +3,8 @@
 这是一套面向业务决策、问题诊断、战略分析和行动设计的 58 个可执行咨询方法 Skill。
 
 Consulting Skills 由李智发起，是 [O2V Framework](https://www.o2vframework.com)
-知识生态中的开放方法库，也可以脱离 O2V 独立使用。本仓库不包含 O2V Framework
-本身，也不公开 CLEAR / Signal-to-Action 的私有路由、客户交付逻辑或内部评分规则。
+知识生态中的开放方法库，也可以脱离 O2V 独立使用。本仓库专注于 58 个可独立使用的
+通用方法 Skill；O2V Framework 与 CLEAR / Signal-to-Action 作为完整方法论资产分别维护。
 
 它不是只有方法定义的“框架百科”。每个 Skill 都会告诉 AI：
 
@@ -54,8 +54,8 @@ npx skills add fzfclee/consulting-skills
 
 ## 公开边界
 
-本仓库只发布可以独立使用的通用方法 Skill，不包含任何私有 CLEAR/S2A
-路由、客户底稿、私有评分规则、PPT 交付逻辑或知识库路径。
+本仓库聚焦于可以独立使用的通用方法 Skill。O2V Framework 与 CLEAR /
+Signal-to-Action 等完整方法论资产在各自的体系中维护。
 
 这些方法只有在能够明显改善决策、行动、风险判断或验证计划时才应该使用。
 简单回答已经足够时，不应为了使用框架而使用框架。
@@ -72,7 +72,7 @@ Apache-2.0 许可证只适用于本仓库原创的 Skill 文字表达、可执�
 
 O2V Framework、CLEAR、Signal-to-Action 及其原创文字表达、框架结构、图示和品牌化
 交付资产，是李智创作的独立作品，不属于本仓库 Apache-2.0 许可范围。本仓库可以作为
-O2V 产品引用的公共方法依赖，但不会公开 O2V 的私有决策路由系统。
+O2V 产品引用的开放方法库。
 
 O2V Framework 官网：[www.o2vframework.com](https://www.o2vframework.com)
 

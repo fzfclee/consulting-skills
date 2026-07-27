@@ -14,7 +14,7 @@ import yaml
 ROOT = Path(__file__).resolve().parents[1]
 SKILLS_DIR = ROOT / "skills"
 CATALOG_PATH = ROOT / "catalog.yaml"
-VERSION = "0.2.0"
+VERSION = "0.2.1"
 
 CATEGORIES = {
     "problem-framing-and-evidence": {

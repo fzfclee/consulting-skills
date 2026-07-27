@@ -8,7 +8,7 @@ Method names are used descriptively. The skill implementations are original summ
 
 Consulting Skills is an open-source method library initiated by Li Zhi and may
 be used as a public dependency by the O2V Framework. The O2V Framework, CLEAR,
-Signal-to-Action, and their private orchestration or delivery assets are not part
+Signal-to-Action, and their related methodology or delivery assets are not part
 of this repository and are not licensed under Apache-2.0.
 
 ## Named And Traceable Methods
