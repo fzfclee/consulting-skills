@@ -1,27 +1,8 @@
-<div align="center">
-
-# 咨询方法 Skills
-
-**为 AI Agent 准备的 58 个可执行咨询方法**
-
-把模糊的业务问题，转化为有证据支撑的判断、行动和验证计划。
-
-<p>
-  <a href="https://github.com/fzfclee/consulting-skills/actions/workflows/validate.yml"><img src="https://img.shields.io/github/actions/workflow/status/fzfclee/consulting-skills/validate.yml?branch=main&amp;style=for-the-badge&amp;label=validation" alt="Validation"></a>
-  <a href="catalog.yaml"><img src="https://img.shields.io/badge/skills-58-0f766e?style=for-the-badge" alt="58 skills"></a>
-  <a href="https://github.com/fzfclee/consulting-skills/stargazers"><img src="https://img.shields.io/github/stars/fzfclee/consulting-skills?style=for-the-badge" alt="GitHub stars"></a>
-  <a href="LICENSE"><img src="https://img.shields.io/badge/license-Apache--2.0-2563eb?style=for-the-badge" alt="Apache 2.0 license"></a>
-</p>
-
-[30 秒开始](#30-秒开始) ·
-[按场景选方法](#按场景选方法) ·
-[浏览全部 58 个](#58-个方法-skill) ·
-[固定案例](examples/README.md) ·
-[质量保证](#为可靠执行而设计) ·
-[English](README.md) ·
-[O2V Framework](https://www.o2vframework.com)
-
-</div>
+<h1 align="center">咨询方法 Skills</h1>
+<p align="center"><strong>为 AI Agent 准备的 58 个可执行咨询方法</strong></p>
+<p align="center">把模糊的业务问题，转化为有证据支撑的判断、行动和验证计划。</p>
+<p align="center"><a href="https://github.com/fzfclee/consulting-skills/actions/workflows/validate.yml"><img src="https://img.shields.io/github/actions/workflow/status/fzfclee/consulting-skills/validate.yml?branch=main&amp;style=for-the-badge&amp;label=validation" alt="Validation"></a> <a href="catalog.yaml"><img src="https://img.shields.io/badge/skills-58-0f766e?style=for-the-badge" alt="58 skills"></a> <a href="https://github.com/fzfclee/consulting-skills/stargazers"><img src="https://img.shields.io/github/stars/fzfclee/consulting-skills?style=for-the-badge" alt="GitHub stars"></a> <a href="LICENSE"><img src="https://img.shields.io/badge/license-Apache--2.0-2563eb?style=for-the-badge" alt="Apache 2.0 license"></a></p>
+<p align="center"><a href="#30-秒开始">30 秒开始</a> · <a href="#按场景选方法">按场景选方法</a> · <a href="#58-个方法-skill">浏览全部 58 个</a> · <a href="examples/README.md">固定案例</a> · <a href="#为可靠执行而设计">质量保证</a> · <a href="README.md">English</a> · <a href="https://www.o2vframework.com">O2V Framework</a></p>
 
 ---
 

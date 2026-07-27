@@ -1,27 +1,8 @@
-<div align="center">
-
-# Consulting Skills
-
-**58 execution-ready consulting methods for AI agents**
-
-Turn ambiguous business questions into evidence-aware decisions, actions, and validation plans.
-
-<p>
-  <a href="https://github.com/fzfclee/consulting-skills/actions/workflows/validate.yml"><img src="https://img.shields.io/github/actions/workflow/status/fzfclee/consulting-skills/validate.yml?branch=main&amp;style=for-the-badge&amp;label=validation" alt="Validation"></a>
-  <a href="catalog.yaml"><img src="https://img.shields.io/badge/skills-58-0f766e?style=for-the-badge" alt="58 skills"></a>
-  <a href="https://github.com/fzfclee/consulting-skills/stargazers"><img src="https://img.shields.io/github/stars/fzfclee/consulting-skills?style=for-the-badge" alt="GitHub stars"></a>
-  <a href="LICENSE"><img src="https://img.shields.io/badge/license-Apache--2.0-2563eb?style=for-the-badge" alt="Apache 2.0 license"></a>
-</p>
-
-[30-second start](#30-second-start) ·
-[Choose a skill](#choose-by-situation) ·
-[Browse all 58](#the-58-skill-library) ·
-[Examples](examples/README.md) ·
-[Quality](#built-for-reliable-execution) ·
-[中文](README.zh-CN.md) ·
-[O2V Framework](https://www.o2vframework.com)
-
-</div>
+<h1 align="center">Consulting Skills</h1>
+<p align="center"><strong>58 execution-ready consulting methods for AI agents</strong></p>
+<p align="center">Turn ambiguous business questions into evidence-aware decisions, actions, and validation plans.</p>
+<p align="center"><a href="https://github.com/fzfclee/consulting-skills/actions/workflows/validate.yml"><img src="https://img.shields.io/github/actions/workflow/status/fzfclee/consulting-skills/validate.yml?branch=main&amp;style=for-the-badge&amp;label=validation" alt="Validation"></a> <a href="catalog.yaml"><img src="https://img.shields.io/badge/skills-58-0f766e?style=for-the-badge" alt="58 skills"></a> <a href="https://github.com/fzfclee/consulting-skills/stargazers"><img src="https://img.shields.io/github/stars/fzfclee/consulting-skills?style=for-the-badge" alt="GitHub stars"></a> <a href="LICENSE"><img src="https://img.shields.io/badge/license-Apache--2.0-2563eb?style=for-the-badge" alt="Apache 2.0 license"></a></p>
+<p align="center"><a href="#30-second-start">30-second start</a> · <a href="#choose-by-situation">Choose a skill</a> · <a href="#the-58-skill-library">Browse all 58</a> · <a href="examples/README.md">Examples</a> · <a href="#built-for-reliable-execution">Quality</a> · <a href="README.zh-CN.md">中文</a> · <a href="https://www.o2vframework.com">O2V Framework</a></p>
 
 ---
 
