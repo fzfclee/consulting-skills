@@ -8,7 +8,6 @@ Turn ambiguous business questions into evidence-aware decisions, actions, and va
 
 <p>
   <a href="https://github.com/fzfclee/consulting-skills/actions/workflows/validate.yml"><img src="https://img.shields.io/github/actions/workflow/status/fzfclee/consulting-skills/validate.yml?branch=main&amp;style=for-the-badge&amp;label=validation" alt="Validation"></a>
-  <a href="https://github.com/fzfclee/consulting-skills/releases"><img src="https://img.shields.io/github/v/release/fzfclee/consulting-skills?style=for-the-badge&amp;sort=semver" alt="Release"></a>
   <a href="catalog.yaml"><img src="https://img.shields.io/badge/skills-58-0f766e?style=for-the-badge" alt="58 skills"></a>
   <a href="https://github.com/fzfclee/consulting-skills/stargazers"><img src="https://img.shields.io/github/stars/fzfclee/consulting-skills?style=for-the-badge" alt="GitHub stars"></a>
   <a href="LICENSE"><img src="https://img.shields.io/badge/license-Apache--2.0-2563eb?style=for-the-badge" alt="Apache 2.0 license"></a>
@@ -219,7 +218,7 @@ The repository adds public checks around those contracts:
 | Representative evaluation prompts | 24 |
 | Fixed end-to-end examples | 6 |
 | Neutral catalog entries | 58 |
-| Private product or local-path leakage allowed | 0 |
+| Repository-specific routing or local-path leakage allowed | 0 |
 
 The validator checks unique names, frontmatter, required sections, portable links, UTF-8 text, catalog consistency, and public-boundary rules. The evaluation set contains prompts and a rubric rather than hidden expected answers.
 
