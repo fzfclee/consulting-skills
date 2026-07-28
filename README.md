@@ -94,7 +94,7 @@ Start with the problem you have, not the framework you remember.
 | The future depends on critical unknowns | [`scenario-planning`](skills/scenario-planning/SKILL.md) | Robust moves, contingent moves, signposts |
 | Work is blocked by one limiting factor | [`constraint-analysis`](skills/constraint-analysis/SKILL.md) | Constraint proof and exploitation plan |
 
-Not sure where to start? Browse the neutral discovery metadata in [`catalog.yaml`](catalog.yaml), or open one of the [six fixed examples](examples/README.md).
+Not sure where to start? Browse the neutral discovery metadata in [`catalog.yaml`](catalog.yaml), or open one of the [seven fixed examples](examples/README.md).
 
 ## The 58-Skill Library
 
@@ -216,13 +216,13 @@ The repository adds public checks around those contracts:
 |---|---:|
 | Standalone skills validated | 58 |
 | Representative evaluation prompts | 24 |
-| Fixed end-to-end examples | 6 |
+| Fixed end-to-end examples | 7 |
 | Neutral catalog entries | 58 |
 | Repository-specific routing or local-path leakage allowed | 0 |
 
 The validator checks unique names, frontmatter, required sections, portable links, UTF-8 text, catalog consistency, and public-boundary rules. The evaluation set contains prompts and a rubric rather than hidden expected answers.
 
-## Six Fixed Examples
+## Seven Fixed Examples
 
 | Decision problem | Example route |
 |---|---|
@@ -232,8 +232,15 @@ The validator checks unique names, frontmatter, required sections, portable link
 | Build a stakeholder strategy | [Stakeholder Power Map → Account Plan](examples/04-build-a-stakeholder-strategy.md) |
 | Improve product adoption and ROI | [Evidence Map → JTBD → Metrics Tree](examples/05-improve-product-adoption-and-roi.md) |
 | Assess market entry | [PESTEL → Five Forces → Positioning](examples/06-assess-a-market-entry.md) |
+| Compare direct advice with a method chain | [No method vs Evidence Map → Stakeholder Power Map → Scenario Planning → Weighted Scorecard](examples/07-career-change-baseline-vs-method-chain.md) |
 
 These are fixed illustrations, not a universal router. Each one records the input boundary, why the selected method matters, intermediate output, effect on the next step, methods deliberately not used, and the final decision artifact.
+
+### Does A Method Skill Actually Improve The Answer?
+
+The [career-change comparison](examples/07-career-change-baseline-vs-method-chain.md) uses the same input twice. The direct answer is sensible and concise. The four-skill run reaches the same current recommendation, but makes the evidence boundary, stakeholder power, plausible scenarios, option scores, sensitivity, and reversal gates visible.
+
+That is the standard for using a method here: it should improve the decision, validation, or risk control, not merely add framework terminology.
 
 ## What This Is, And What It Is Not
 
@@ -251,7 +258,7 @@ Consulting Skills is initiated by Li Zhi and maintained as an open method librar
 ```text
 skills/<skill-name>/SKILL.md   58 standalone method skills
 catalog.yaml                   neutral discovery metadata
-examples/                      six fixed decision examples
+examples/                      seven fixed decision examples
 evaluations/                   public prompts and scoring rubric
 scripts/                       catalog generation and validation
 ```

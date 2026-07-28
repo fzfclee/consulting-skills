@@ -93,7 +93,7 @@ gh skill install fzfclee/consulting-skills systems-thinking --agent codex --scop
 | 未来取决于关键未知变量 | [`scenario-planning`](skills/scenario-planning/SKILL.md) | 稳健动作、条件动作和信号 |
 | 工作被一个关键瓶颈卡住 | [`constraint-analysis`](skills/constraint-analysis/SKILL.md) | 瓶颈证据和突破方案 |
 
-还不确定时，可以查看中立目录 [`catalog.yaml`](catalog.yaml)，或者从[六个固定案例](examples/README.md)开始。
+还不确定时，可以查看中立目录 [`catalog.yaml`](catalog.yaml)，或者从[七个固定案例](examples/README.md)开始。
 
 ## 58 个方法 Skill
 
@@ -221,7 +221,7 @@ gh skill install fzfclee/consulting-skills systems-thinking --agent codex --scop
 
 校验器会检查名称唯一性、frontmatter、固定章节、相对链接、UTF-8、目录一致性和公开边界。评价集公开题目与评分标准，不用隐藏答案冒充真实测试。
 
-## 六个固定案例
+## 七个固定案例
 
 | 决策问题 | 示例路径 |
 |---|---|
@@ -231,8 +231,15 @@ gh skill install fzfclee/consulting-skills systems-thinking --agent codex --scop
 | 制定利益相关者策略 | [Stakeholder Power Map → Account Plan](examples/04-build-a-stakeholder-strategy.md) |
 | 提升产品采用率和 ROI | [Evidence Map → JTBD → Metrics Tree](examples/05-improve-product-adoption-and-roi.md) |
 | 评估市场进入 | [PESTEL → Five Forces → Positioning](examples/06-assess-a-market-entry.md) |
+| 对比直接建议和方法链 | [不使用方法 vs Evidence Map → Stakeholder Power Map → Scenario Planning → Weighted Scorecard](examples/career-change-comparison.zh-CN.md) |
 
 这些案例只是固定示范，不是万能路由。每个案例都会记录输入边界、为什么选择这些方法、中间产出、对下一步的影响、刻意没有使用的方法，以及最终决策成果。
+
+### Method Skill 真的能让答案更好吗？
+
+[换工作对照案例](examples/career-change-comparison.zh-CN.md)对同一份输入运行两次。直接回答本身合理、简洁；四个 Skill 的版本没有故意制造不同结论，而是把证据边界、利益相关者权力、可能情景、选项评分、敏感性和推翻门槛变得可见。
+
+这里判断是否需要方法的标准很简单：它应当提高决策、验证或风险控制的质量，而不是只增加方法名。
 
 ## 它是什么，不是什么
 
@@ -251,7 +258,7 @@ Consulting Skills 由李智发起，是 [O2V Framework](https://www.o2vframework
 ```text
 skills/<skill-name>/SKILL.md   58 个独立方法 Skill
 catalog.yaml                   中立发现目录
-examples/                      6 个固定决策案例
+examples/                      7 个固定决策案例
 evaluations/                   公开评价题与评分标准
 scripts/                       目录生成与质量校验
 ```

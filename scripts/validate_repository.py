@@ -130,8 +130,8 @@ def validate_supporting_assets(errors: list[str]) -> None:
         if not (ROOT / relative).is_file():
             fail(errors, f"Missing required repository asset: {relative}")
     examples = list((ROOT / "examples").glob("[0-9][0-9]-*.md"))
-    if len(examples) != 6:
-        fail(errors, f"Expected 6 numbered examples, found {len(examples)}")
+    if len(examples) != 7:
+        fail(errors, f"Expected 7 numbered examples, found {len(examples)}")
     cases_path = ROOT / "evaluations" / "representative-cases.yaml"
     if cases_path.exists():
         cases = yaml.safe_load(cases_path.read_text(encoding="utf-8"))
