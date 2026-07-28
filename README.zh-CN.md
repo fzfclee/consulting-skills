@@ -202,7 +202,7 @@ gh skill install fzfclee/consulting-skills systems-thinking --agent codex --scop
 
 校验器会检查名称唯一性、frontmatter、固定章节、相对链接、UTF-8、目录一致性和公开边界。评价集公开题目与评分标准，不用隐藏答案冒充真实测试。
 
-## 七个固定案例
+## 七个对照案例
 
 | 决策问题 | 示例路径 |
 |---|---|
@@ -212,13 +212,13 @@ gh skill install fzfclee/consulting-skills systems-thinking --agent codex --scop
 | 制定利益相关者策略 | [Stakeholder Power Map → Account Plan](examples/04-build-a-stakeholder-strategy.md) |
 | 提升产品采用率和 ROI | [Evidence Map → JTBD → Metrics Tree](examples/05-improve-product-adoption-and-roi.md) |
 | 评估市场进入 | [PESTEL → Five Forces → Positioning](examples/06-assess-a-market-entry.md) |
-| 对比直接建议和方法链 | [不使用方法 vs Evidence Map → Stakeholder Power Map → Scenario Planning → Weighted Scorecard](examples/career-change-comparison.zh-CN.md) |
+| 评估一个虚构换工作决策 | [不使用方法 vs Evidence Map → Stakeholder Power Map → Scenario Planning → Weighted Scorecard](examples/career-change-comparison.zh-CN.md) |
 
-这些案例只是固定示范，不是万能路由。每个案例都会记录输入边界、为什么选择这些方法、中间产出、对下一步的影响、刻意没有使用的方法，以及最终决策成果。
+这些案例是控制变量式的说明，不是万能路由，也不是统计意义上的模型基准测试。每个案例都会对同一份虚构输入运行两次：第一次由普通 AI 直接回答，不调用具名方法；第二次使用表中列出的方法链。对照会保留证据边界、方法底稿、对下一步的影响、最终决策成果、行动计划、成功指标和推翻条件。
 
 ### 除了最终结论，方法链还能多交付什么？
 
-[换工作对照案例](examples/career-change-comparison.zh-CN.md)对同一份输入运行两次，两个版本得到相同的当前建议。直接回答主要交付建议；四个 Skill 的版本还会保留中间底稿、方法之间的推导交接、带 Owner 和时间的行动计划、成功指标、决策门槛和调整触发条件。
+[七个对照案例](examples/README.md)显示，普通 AI 往往也能快速给出合理方向；方法版不一定改变最终结论，但会额外保留中间底稿、方法之间的推导交接、带 Owner 和时间的行动计划、成功指标、决策门槛和调整触发条件。
 
 这才是方法链的实际价值：让推理可以复核、计划可以执行、结果可以衡量。它并不保证结论自动正确。
 

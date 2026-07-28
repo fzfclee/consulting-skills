@@ -203,7 +203,7 @@ The repository adds public checks around those contracts:
 
 The validator checks unique names, frontmatter, required sections, portable links, UTF-8 text, catalog consistency, and public-boundary rules. The evaluation set contains prompts and a rubric rather than hidden expected answers.
 
-## Seven Fixed Examples
+## Seven Controlled Comparisons
 
 | Decision problem | Example route |
 |---|---|
@@ -213,13 +213,13 @@ The validator checks unique names, frontmatter, required sections, portable link
 | Build a stakeholder strategy | [Stakeholder Power Map → Account Plan](examples/04-build-a-stakeholder-strategy.md) |
 | Improve product adoption and ROI | [Evidence Map → JTBD → Metrics Tree](examples/05-improve-product-adoption-and-roi.md) |
 | Assess market entry | [PESTEL → Five Forces → Positioning](examples/06-assess-a-market-entry.md) |
-| Compare direct advice with a method chain | [No method vs Evidence Map → Stakeholder Power Map → Scenario Planning → Weighted Scorecard](examples/07-career-change-baseline-vs-method-chain.md) |
+| Evaluate a fictional career decision | [No method vs Evidence Map → Stakeholder Power Map → Scenario Planning → Weighted Scorecard](examples/07-career-change-baseline-vs-method-chain.md) |
 
-These are fixed illustrations, not a universal router. Each one records the input boundary, why the selected method matters, intermediate output, effect on the next step, methods deliberately not used, and the final decision artifact.
+These are controlled illustrations, not a universal router or scientific model benchmark. Each example runs the same fictional input twice: first as a direct AI answer with no named method, then with the listed method chain. The comparison records the evidence boundary, method-specific workpapers, effect on the next step, final decision artifact, action plan, success measures, and reversal conditions.
 
 ### What Does A Method Chain Add Beyond The Final Answer?
 
-The [career-change comparison](examples/07-career-change-baseline-vs-method-chain.md) uses the same input twice. Both runs reach the same current recommendation. The direct answer mainly delivers advice; the four-skill run also preserves intermediate workpapers, the reasoning handoff between methods, an owner-and-timing action plan, success metrics, decision gates, and adjustment triggers.
+Across the [seven comparisons](examples/README.md), the direct answer often reaches a sensible recommendation quickly. The method-based run may reach the same conclusion, but it also preserves intermediate workpapers, the reasoning handoff between methods, an owner-and-timing action plan, success metrics, decision gates, and adjustment triggers.
 
 That is the practical value of a method chain: it makes the reasoning reviewable, the plan executable, and the result measurable. It does not guarantee that a conclusion is correct.
 

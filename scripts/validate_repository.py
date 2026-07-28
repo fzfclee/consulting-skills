@@ -19,6 +19,22 @@ REQUIRED_SECTIONS = {
     "## Output Template",
     "## Quality Gate",
 }
+EXAMPLE_REQUIRED_PATTERNS = {
+    "privacy note": re.compile(r"\*\*Privacy note:\*\*"),
+    "shared fictional input": re.compile(r"^## Shared Fictional Input$", re.MULTILINE),
+    "direct answer run": re.compile(
+        r"^## Run A: Direct (?:AI )?Answer, No Method Skill$", re.MULTILINE
+    ),
+    "method-skill run": re.compile(
+        r"^## Run B: .+Skill Reasoning Chain$", re.MULTILINE
+    ),
+    "method selection": re.compile(r"^### Method Selection$", re.MULTILINE),
+    "decision artifact": re.compile(r"^## Decision Artifact$", re.MULTILINE),
+    "comparison": re.compile(r"^## Comparison$", re.MULTILINE),
+    "comparison conclusion": re.compile(
+        r"^## What The Comparison Shows$", re.MULTILINE
+    ),
+}
 FORBIDDEN_PATTERNS = {
     "private product name": re.compile(r"\bs2a-magic\b", re.IGNORECASE),
     "private routing phrase": re.compile(r"\bS2A Handoff\b", re.IGNORECASE),
@@ -113,7 +129,30 @@ def validate_catalog(all_names: set[str], errors: list[str]) -> None:
             fail(errors, f"catalog source mismatch for {method.get('name')}")
 
 
-def validate_supporting_assets(errors: list[str]) -> None:
+def validate_example(path: Path, all_names: set[str], errors: list[str]) -> None:
+    try:
+        text = path.read_text(encoding="utf-8")
+    except UnicodeDecodeError as exc:
+        fail(errors, f"{path}: not valid UTF-8 ({exc})")
+        return
+    if text.startswith("\ufeff"):
+        fail(errors, f"{path}: contains UTF-8 BOM")
+    for label, pattern in EXAMPLE_REQUIRED_PATTERNS.items():
+        if not pattern.search(text):
+            fail(errors, f"{path}: missing controlled-comparison {label}")
+    method_links = set(
+        re.findall(r"\(\.\./skills/([a-z0-9]+(?:-[a-z0-9]+)*)/SKILL\.md\)", text)
+    )
+    if len(method_links) < 2:
+        fail(errors, f"{path}: must link at least two selected method skills")
+    unknown = sorted(method_links - all_names)
+    if unknown:
+        fail(errors, f"{path}: links unknown method skills {unknown}")
+    if len(text.splitlines()) > 500:
+        fail(errors, f"{path}: exceeds 500-line example limit")
+
+
+def validate_supporting_assets(all_names: set[str], errors: list[str]) -> None:
     required = [
         "README.md",
         "README.zh-CN.md",
@@ -132,6 +171,8 @@ def validate_supporting_assets(errors: list[str]) -> None:
     examples = list((ROOT / "examples").glob("[0-9][0-9]-*.md"))
     if len(examples) != 7:
         fail(errors, f"Expected 7 numbered examples, found {len(examples)}")
+    for path in examples:
+        validate_example(path, all_names, errors)
     cases_path = ROOT / "evaluations" / "representative-cases.yaml"
     if cases_path.exists():
         cases = yaml.safe_load(cases_path.read_text(encoding="utf-8"))
@@ -148,13 +189,16 @@ def main() -> int:
     for path in skill_paths:
         validate_skill(path, names, errors)
     validate_catalog(names, errors)
-    validate_supporting_assets(errors)
+    validate_supporting_assets(names, errors)
     if errors:
         print("Repository validation failed:")
         for error in errors:
             print(f"- {error}")
         return 1
-    print("Repository validation passed: 58 skills, neutral catalog, public boundary intact")
+    print(
+        "Repository validation passed: 58 skills, 7 controlled examples, "
+        "neutral catalog, public boundary intact"
+    )
     return 0
 
 
