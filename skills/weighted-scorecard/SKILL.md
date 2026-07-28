@@ -26,7 +26,7 @@ If an input is missing, do not block automatically. Mark it as `missing`, state 
 
 ## When Not To Use
 
-Do not use before options are explicit enough to compare. First convert vague themes into executable options.
+Do not use before options, criteria, scoring scales, and evidence are comparable. Do not let a strong total score average away a mandatory requirement or a decision-critical unknown.
 
 ## Adjacent Methods
 

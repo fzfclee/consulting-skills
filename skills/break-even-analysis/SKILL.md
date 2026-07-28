@@ -27,7 +27,7 @@ If an input is missing, do not block automatically. Mark it as `missing`, state 
 
 ## When Not To Use
 
-Do not use before options are explicit enough to compare. First convert vague themes into executable options.
+Do not use when fixed costs, variable costs, unit revenue, and the relevant time horizon cannot be estimated. Break-even analysis tests an economic threshold; it does not establish overall strategic fit.
 
 ## Adjacent Methods
 

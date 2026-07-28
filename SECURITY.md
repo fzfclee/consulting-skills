@@ -6,13 +6,13 @@ Do not disclose secrets, private client material, personal information, propriet
 
 Report a suspected security or privacy problem privately through GitHub's security advisory feature for this repository.
 
-## Repository Boundary
+## What not to commit
 
-This repository must not contain:
+Do not commit:
 
 - credentials, tokens, private keys, or identity documents;
 - client names, confidential cases, or personal stakeholder intelligence;
-- private orchestration rules or scoring logic;
+- material that is confidential or not licensed for public distribution;
 - absolute local filesystem paths;
 - unpublished knowledge-base content.
 

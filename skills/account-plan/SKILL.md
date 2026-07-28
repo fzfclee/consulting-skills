@@ -27,7 +27,7 @@ If an input is missing, do not block automatically. Mark it as `missing`, state 
 
 ## When Not To Use
 
-Do not use as a sales slogan. Use it to clarify value, buying logic, proof, operating fit, and next commercial action.
+Do not use without a named account, a defined business need, relevant stakeholders, a value hypothesis, and a next customer decision. It is not a generic market or campaign plan.
 
 ## Adjacent Methods
 

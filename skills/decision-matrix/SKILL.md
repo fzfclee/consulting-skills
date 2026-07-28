@@ -26,7 +26,7 @@ If an input is missing, do not block automatically. Mark it as `missing`, state 
 
 ## When Not To Use
 
-Do not use before options are explicit enough to compare. First convert vague themes into executable options.
+Do not use when there is only one viable option, the decision criteria are not agreed, or mandatory requirements remain unresolved. Apply hard gates before weighted scoring.
 
 ## Adjacent Methods
 

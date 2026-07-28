@@ -26,7 +26,7 @@ If an input is missing, do not block automatically. Mark it as `missing`, state 
 
 ## When Not To Use
 
-Do not use for all users at once. Choose one segment, scenario, journey, job, or service context.
+Do not use without a defined customer context and evidence of how feature presence and absence affect satisfaction. Kano classification alone does not set roadmap priority, cost, or sequence.
 
 ## Adjacent Methods
 

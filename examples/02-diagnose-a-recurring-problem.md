@@ -1,13 +1,13 @@
-# Fictional Recurring Problem: Direct AI Answer vs Method-Skill Chain
+# Recurring Problem: Direct AI Answer vs Method-Skill Chain
 
-> **Privacy note:** CedarWorks, its portfolio process, metrics, and events are entirely fictional.
+> **Example note:** CedarWorks, its portfolio process, metrics, and events were created for this demonstration and do not refer to a specific organization.
 
 This example compares:
 
 1. a direct AI diagnosis with no named method;
 2. a three-skill chain using `change-event-timeline`, `systems-thinking`, and `constraint-analysis`.
 
-## Shared Fictional Input
+## Shared Input
 
 ```text
 CedarWorks runs a monthly portfolio review. The percentage of project updates submitted late

@@ -26,7 +26,7 @@ If an input is missing, do not block automatically. Mark it as `missing`, state 
 
 ## When Not To Use
 
-Do not use to decorate an answer. Use it when the problem is too messy to analyze directly.
+Do not use when the decision requires MECE structure, causal proof, or option scoring. A mind map is for exploration and connection, not final prioritization.
 
 ## Adjacent Methods
 

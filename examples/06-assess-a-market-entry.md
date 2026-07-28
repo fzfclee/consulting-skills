@@ -1,19 +1,19 @@
-# Fictional Market Entry: Direct AI Answer vs Method-Skill Chain
+# Market Entry: Direct AI Answer vs Method-Skill Chain
 
-> **Privacy note:** FieldNova, Ardenia, all regulations, market data, competitors, customers, and economics are entirely fictional.
+> **Example note:** FieldNova, Ardenia, the regulations, market data, competitors, customers, and economics were created for this demonstration and do not refer to a specific organization or market.
 
 This example compares:
 
 1. a direct AI answer with no named method;
 2. a three-skill chain using `pestel-analysis`, `porter-five-forces`, and `competitive-positioning`.
 
-## Shared Fictional Input
+## Shared Input
 
 ```text
 FieldNova is a mid-sized provider of predictive maintenance services for industrial sites. It
-is considering entry into Ardenia, a fictional national market, over the next 18 months.
+is considering entry into Ardenia, the sample national market used in this example, over the next 18 months.
 
-Fictional market evidence:
+Market evidence supplied in the example:
 - industrial maintenance spending is estimated to grow 7% annually;
 - foreign providers need a locally licensed partner for safety-critical sites;
 - new industrial data-residency guidance is expected within nine months;

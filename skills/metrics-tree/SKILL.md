@@ -26,7 +26,7 @@ If an input is missing, do not block automatically. Mark it as `missing`, state 
 
 ## When Not To Use
 
-Do not use to create a large KPI catalog. Use it to connect outcomes, drivers, owners, and decisions.
+Do not use before the outcome metric and decision purpose are defined, or when proposed driver relationships cannot be tested. A metrics tree explains performance logic; it is not a dashboard inventory.
 
 ## Adjacent Methods
 

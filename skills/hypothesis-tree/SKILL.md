@@ -26,7 +26,7 @@ If an input is missing, do not block automatically. Mark it as `missing`, state 
 
 ## When Not To Use
 
-Do not use to decorate an answer. Use it when the problem is too messy to analyze directly.
+Do not use without a decision question and branches that can be tested with evidence. For open-ended exploration before hypotheses are available, use a mind map or affinity diagram.
 
 ## Adjacent Methods
 

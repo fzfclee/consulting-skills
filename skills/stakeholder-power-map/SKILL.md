@@ -26,7 +26,7 @@ If an input is missing, do not block automatically. Mark it as `missing`, state 
 
 ## When Not To Use
 
-Do not use as a personality-reading exercise. Use it only to clarify decision rights, influence, needs, and next engagement moves.
+Do not use to present inferred motives as facts or when a simple responsibility assignment is the real need. Map formal authority, informal influence, stance, and evidence separately.
 
 ## Adjacent Methods
 

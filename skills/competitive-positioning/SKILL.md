@@ -26,7 +26,7 @@ If an input is missing, do not block automatically. Mark it as `missing`, state 
 
 ## When Not To Use
 
-Do not use for generic essay writing. Use it only when external/internal factors must change a strategy, choice, or risk posture.
+Do not use without a target segment, relevant alternatives, buying criteria, and evidence of why customers choose. Positioning is a defensible choice, not a slogan or feature inventory.
 
 ## Adjacent Methods
 

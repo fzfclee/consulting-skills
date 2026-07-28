@@ -27,7 +27,7 @@ If an input is missing, do not block automatically. Mark it as `missing`, state 
 
 ## When Not To Use
 
-Do not use as a sales slogan. Use it to clarify value, buying logic, proof, operating fit, and next commercial action.
+Do not use without a specific opportunity, decision process, competitive position, value case, and next milestone. For the broader relationship and whitespace, use an account plan.
 
 ## Adjacent Methods
 

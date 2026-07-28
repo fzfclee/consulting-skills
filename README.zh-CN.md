@@ -1,26 +1,26 @@
-<h1 align="center">咨询方法 Skills</h1>
-<p align="center"><strong>为 AI Agent 准备的 58 个可执行咨询方法</strong></p>
-<p align="center">把模糊的业务问题，转化为有证据支撑的判断、行动和验证计划。</p>
+<h1 align="center">Consulting Skills</h1>
+<p align="center"><strong>给 AI Agent 用的 58 个咨询方法操作指南</strong></p>
+<p align="center">把一件说不清、拿不准的事，整理成可以判断、可以行动、也可以验证的方案。</p>
 <p align="center"><a href="https://github.com/fzfclee/consulting-skills/actions/workflows/validate.yml"><img src="https://img.shields.io/github/actions/workflow/status/fzfclee/consulting-skills/validate.yml?branch=main&amp;style=for-the-badge&amp;label=validation" alt="Validation"></a> <a href="catalog.yaml"><img src="https://img.shields.io/badge/skills-58-0f766e?style=for-the-badge" alt="58 skills"></a> <a href="https://github.com/fzfclee/consulting-skills/stargazers"><img src="https://img.shields.io/github/stars/fzfclee/consulting-skills?style=for-the-badge" alt="GitHub stars"></a> <a href="LICENSE"><img src="https://img.shields.io/badge/license-Apache--2.0-2563eb?style=for-the-badge" alt="Apache 2.0 license"></a></p>
-<p align="center"><a href="#30-秒开始">30 秒开始</a> · <a href="#按场景选方法">按场景选方法</a> · <a href="#58-个方法-skill">浏览全部 58 个</a> · <a href="examples/README.md">固定案例</a> · <a href="#为可靠执行而设计">质量保证</a> · <a href="README.md">English</a> · <a href="https://www.o2vframework.com">O2V Framework</a></p>
+<p align="center"><a href="#30-秒开始">30 秒开始</a> · <a href="#普通人能用它做什么">日常用途</a> · <a href="#按场景选方法">按场景选方法</a> · <a href="#58-个方法-skill">浏览全部 58 个</a> · <a href="examples/README.md">对照案例</a> · <a href="#怎么检查质量">质量检查</a> · <a href="README.md">English</a> · <a href="https://www.o2vframework.com">O2V Framework</a></p>
 
 ---
 
 ## 为什么需要这个仓库
 
-大多数方法库会解释一个框架**是什么意思**。AI Agent 还需要知道：**什么时候该用、什么时候不该用、缺什么证据、每一步怎么做，以及最后要交付什么能直接使用的成果**。
+很多方法库讲清了一个方法是什么意思，却没有告诉 AI Agent 怎么把它用起来。Agent 还得知道什么时候适合用、缺了哪些信息、每一步怎么走，以及最后应该交出什么。
 
-缺少执行层时，常见问题包括：
+这些内容不清楚，回答很容易出现下面的问题：
 
-| 常见问题 | 可执行 Skill 带来的改变 |
+| 常见问题 | Skill 会补上什么 |
 |---|---|
-| 战略问题一律套 SWOT | 通过触发条件和 `When Not To Use` 选择更合适的方法 |
-| 事实、观点和假设混在一起 | 明确证据要求、置信度和缺口 |
-| 分析写得很完整，却没有改变决策 | 输出契约必须连接到实际决策成果 |
-| 为了显得专业而堆叠多个框架 | 只有能改善行动、风险、验证或交付物时才使用方法 |
-| 输入明显不足，答案却看起来很确定 | 质量门要求标明假设并给出验证动作 |
+| 一遇到战略问题就套 SWOT | 触发条件和 `When Not To Use` 会把范围收窄 |
+| 事实、观点和猜测混在一起 | 证据要求会标出置信度和信息缺口 |
+| 分析写了很多，却没有改变决策 | 输出必须落到一个能使用的决策成果 |
+| 为了显得专业而堆很多框架 | 只有会改变行动、风险、验证或交付物的方法才值得保留 |
+| 输入明显不够，答案却说得很确定 | 质量门要求写明假设和下一步验证 |
 
-这里的每个 Skill 都是一份可以独立执行的方法操作指南，不是只有定义的“框架卡片”。
+这里的每个 Skill 都能单独使用。它告诉 Agent 怎么执行一个方法，不只解释概念。
 
 ## 30 秒开始
 
@@ -43,7 +43,7 @@ gh skill install fzfclee/consulting-skills systems-thinking --agent codex --scop
 区分证据和假设，识别反馈循环、时间延迟、杠杆点、副作用和下一步验证信号。
 ```
 
-58 个方法遵循一致的执行逻辑：
+每个方法都按同一套基本逻辑执行：
 
 ```text
 业务问题
@@ -56,6 +56,21 @@ gh skill install fzfclee/consulting-skills systems-thinking --agent codex --scop
   ↓
 通过方法自己的质量门
 ```
+
+## 普通人能用它做什么
+
+你不用学过咨询，也不用背框架。把事情经过、手里的事实、拿不准的地方和想做的决定告诉 Agent，再从一个合适的 Skill 开始。
+
+| 你可能正在考虑的事 | 可以先用 | 最后能拿到什么 |
+|---|---|---|
+| 要不要换工作、接 Offer，还是继续观望？ | [`evidence-map`](skills/evidence-map/SKILL.md)、[`scenario-planning`](skills/scenario-planning/SKILL.md) | 事实与猜测的边界、几种可能走向，以及改变选择的条件 |
+| 几个产品、供应商或大额方案该选哪个？ | [`decision-matrix`](skills/decision-matrix/SKILL.md)、[`cost-benefit-analysis`](skills/cost-benefit-analysis/SKILL.md) | 看得见取舍、硬约束和证据强弱的比较结果 |
+| 工作里的同一个问题为什么总是反复？ | [`change-event-timeline`](skills/change-event-timeline/SKILL.md)、[`systems-thinking`](skills/systems-thinking/SKILL.md) | 事件时间线、反复模式、反馈循环和更稳妥的干预办法 |
+| 副业或新产品值不值得继续投入？ | [`business-model-canvas`](skills/business-model-canvas/SKILL.md)、[`break-even-analysis`](skills/break-even-analysis/SKILL.md) | 关键假设、盈亏平衡点，以及继续花钱前要验证的事情 |
+| 产品或内部工具为什么没人用？ | [`jobs-to-be-done`](skills/jobs-to-be-done/SKILL.md)、[`metrics-tree`](skills/metrics-tree/SKILL.md) | 使用率低的可能原因、缺失证据、改进动作和成功指标 |
+| 一个方案涉及很多人，怎么推动才不容易卡住？ | [`stakeholder-power-map`](skills/stakeholder-power-map/SKILL.md)、[`communications-plan`](skills/communications-plan/SKILL.md) | 决策人、实际影响者、沟通顺序和具体动作 |
+
+先用一个方法。只有第二个方法会回答另一个足以改变决策的问题时，才把它加进来。
 
 ## 按场景选方法
 
@@ -74,7 +89,7 @@ gh skill install fzfclee/consulting-skills systems-thinking --agent codex --scop
 | 未来取决于关键未知变量 | [`scenario-planning`](skills/scenario-planning/SKILL.md) | 稳健动作、条件动作和信号 |
 | 工作被一个关键瓶颈卡住 | [`constraint-analysis`](skills/constraint-analysis/SKILL.md) | 瓶颈证据和突破方案 |
 
-还不确定时，可以查看中立目录 [`catalog.yaml`](catalog.yaml)，或者从[七个固定案例](examples/README.md)开始。
+还拿不准从哪里开始，可以查 [`catalog.yaml`](catalog.yaml)，也可以直接看[七个对照案例](examples/README.md)。
 
 ## 58 个方法 Skill
 
@@ -180,9 +195,9 @@ gh skill install fzfclee/consulting-skills systems-thinking --agent codex --scop
 
 </details>
 
-## 为可靠执行而设计
+## 怎么检查质量
 
-每个 Skill 都包含五个固定执行契约：
+每个 Skill 都必须写清五件事：
 
 1. `Required Inputs`
 2. `When Not To Use`
@@ -190,17 +205,18 @@ gh skill install fzfclee/consulting-skills systems-thinking --agent codex --scop
 4. `Output Template`
 5. `Quality Gate`
 
-公共仓库还提供以下检查：
+仓库会自动检查这些内容：
 
-| 质量证明 | 当前覆盖 |
+| 检查项目 | 当前覆盖 |
 |---|---:|
 | 已校验的独立 Skill | 58 |
-| 代表性评价题 | 24 |
-| 固定端到端案例 | 6 |
+| 覆盖全部方法的评价题 | 70 |
+| 方法辨析题 | 24 |
+| 受控对照案例 | 7 |
 | 中立目录条目 | 58 |
-| 允许出现的专有产品或本机路径泄露 | 0 |
+| 允许出现的可移植性或本机路径错误 | 0 |
 
-校验器会检查名称唯一性、frontmatter、固定章节、相对链接、UTF-8、目录一致性和公开边界。评价集公开题目与评分标准，不用隐藏答案冒充真实测试。
+校验器会检查名称、frontmatter、必需章节、链接、UTF-8、目录一致性和可移植性。这些属于结构检查，能发现包装和方法契约的问题，但不能证明模型一定会做出正确判断。因此，评价题和评分标准都放在仓库里，结果需要单独运行和记录。
 
 ## 七个对照案例
 
@@ -212,15 +228,15 @@ gh skill install fzfclee/consulting-skills systems-thinking --agent codex --scop
 | 制定利益相关者策略 | [Stakeholder Power Map → Account Plan](examples/04-build-a-stakeholder-strategy.md) |
 | 提升产品采用率和 ROI | [Evidence Map → JTBD → Metrics Tree](examples/05-improve-product-adoption-and-roi.md) |
 | 评估市场进入 | [PESTEL → Five Forces → Positioning](examples/06-assess-a-market-entry.md) |
-| 评估一个虚构换工作决策 | [不使用方法 vs Evidence Map → Stakeholder Power Map → Scenario Planning → Weighted Scorecard](examples/career-change-comparison.zh-CN.md) |
+| 评估换工作决策 | [不使用方法 vs Evidence Map → Stakeholder Power Map → Scenario Planning → Weighted Scorecard](examples/career-change-comparison.zh-CN.md) |
 
-这些案例是控制变量式的说明，不是万能路由，也不是统计意义上的模型基准测试。每个案例都会对同一份虚构输入运行两次：第一次由普通 AI 直接回答，不调用具名方法；第二次使用表中列出的方法链。对照会保留证据边界、方法底稿、对下一步的影响、最终决策成果、行动计划、成功指标和推翻条件。
+这些案例不是万能路由，也不是统计意义上的模型基准测试。每个案例都对同一份输入运行两次：第一次让普通 AI 直接回答，不调用具名方法；第二次使用表中列出的方法链。对照会保留证据边界、方法底稿、步骤之间的交接、最终决策成果、行动计划、成功指标和推翻条件。
 
-### 除了最终结论，方法链还能多交付什么？
+### 方法链多交付了什么？
 
-[七个对照案例](examples/README.md)显示，普通 AI 往往也能快速给出合理方向；方法版不一定改变最终结论，但会额外保留中间底稿、方法之间的推导交接、带 Owner 和时间的行动计划、成功指标、决策门槛和调整触发条件。
+[七个对照案例](examples/README.md)里，普通 AI 往往也能很快给出一个合理方向。方法版不一定改变结论，但会留下中间底稿、方法之间的推导关系、带 Owner 和时间的行动计划、成功指标、决策门槛，以及什么时候应该调整。
 
-这才是方法链的实际价值：让推理可以复核、计划可以执行、结果可以衡量。它并不保证结论自动正确。
+方法链的价值主要在这里：别人能复核推理，执行人知道下一步做什么，之后也能判断方案有没有奏效。它不会让结论自动变正确。
 
 ## 它是什么，不是什么
 
@@ -239,8 +255,8 @@ Consulting Skills 由李智发起，是 [O2V Framework](https://www.o2vframework
 ```text
 skills/<skill-name>/SKILL.md   58 个独立方法 Skill
 catalog.yaml                   中立发现目录
-examples/                      7 个固定决策案例
-evaluations/                   公开评价题与评分标准
+examples/                      7 个受控决策对照案例
+evaluations/                   效果评价题与方法辨析题
 scripts/                       目录生成与质量校验
 ```
 
@@ -269,6 +285,6 @@ Apache License 2.0 适用于本仓库原创的 Skill 文字表达、可执行结
 
 <div align="center">
 
-**如果这个方法库帮助你的 Agent 做出了更好的判断，欢迎 Star，并一起把下一个方法做得更好。**
+**觉得有用，可以点个 Star；发现哪一步站不住脚，请提 Issue。**
 
 </div>

@@ -27,7 +27,7 @@ If an input is missing, do not block automatically. Mark it as `missing`, state 
 
 ## When Not To Use
 
-Do not use as a sales slogan. Use it to clarify value, buying logic, proof, operating fit, and next commercial action.
+Do not use when the product, target segment, market objective, and observed performance gap are undefined. A single campaign problem usually needs a narrower diagnostic.
 
 ## Adjacent Methods
 

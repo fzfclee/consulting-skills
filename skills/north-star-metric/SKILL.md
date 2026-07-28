@@ -26,7 +26,7 @@ If an input is missing, do not block automatically. Mark it as `missing`, state 
 
 ## When Not To Use
 
-Do not use to create a large KPI catalog. Use it to connect outcomes, drivers, owners, and decisions.
+Do not use when customer value, product scope, or strategic objective is unclear, or when one metric would hide harm across segments. Pair the north star with explicit guardrails.
 
 ## Adjacent Methods
 

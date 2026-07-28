@@ -27,7 +27,7 @@ If an input is missing, do not block automatically. Mark it as `missing`, state 
 
 ## When Not To Use
 
-Do not use before options are explicit enough to compare. First convert vague themes into executable options.
+Do not use without a defined customer segment, value alternative, unit economics, and some evidence of willingness to pay. A pricing check cannot replace customer research or a legal review.
 
 ## Adjacent Methods
 

@@ -1,8 +1,7 @@
 catalog_version: 1
-library_version: 0.2.1
+library_version: 0.3.0
 name: consulting-skills
-description: Neutral discovery metadata for standalone consulting method skills. This catalog contains
-  no private orchestration or CLEAR/S2A routing fields.
+description: Neutral discovery metadata for standalone consulting method skills.
 method_count: 58
 categories:
 - name: problem-framing-and-evidence
@@ -50,7 +49,7 @@ methods:
   adjacent_methods:
   - evidence-map
   - five-whys-root-cause
-  version: 0.2.1
+  version: 0.3.0
   source: skills/5w1h-analysis/SKILL.md
 - name: abductive-reasoning
   title: Abductive Reasoning
@@ -77,7 +76,7 @@ methods:
   adjacent_methods:
   - deductive-reasoning
   - inductive-reasoning
-  version: 0.2.1
+  version: 0.3.0
   source: skills/abductive-reasoning/SKILL.md
 - name: account-plan
   title: Account Plan
@@ -85,8 +84,8 @@ methods:
   use_when: Use when pursuing, defending, expanding, or recovering a client account or project opportunity.
     Use when applying the Account Plan consulting method and when a user asks for Account Plan, method
     execution, structured diagnosis, or action planning.
-  do_not_use_when: Do not use as a sales slogan. Use it to clarify value, buying logic, proof, operating
-    fit, and next commercial action.
+  do_not_use_when: Do not use without a named account, a defined business need, relevant stakeholders,
+    a value hypothesis, and a next customer decision. It is not a generic market or campaign plan.
   required_inputs:
   - account background
   - opportunity
@@ -100,7 +99,7 @@ methods:
   - Account risk/path map
   - 30-day account plan
   adjacent_methods: []
-  version: 0.2.1
+  version: 0.3.0
   source: skills/account-plan/SKILL.md
 - name: affinity-diagram
   title: Affinity Diagram
@@ -129,7 +128,7 @@ methods:
   - decision-matrix
   - mece-framework
   - weighted-scorecard
-  version: 0.2.1
+  version: 0.3.0
   source: skills/affinity-diagram/SKILL.md
 - name: assumption-inventory
   title: Assumption Inventory
@@ -156,7 +155,7 @@ methods:
   - five-whys-root-cause
   - raci-matrix
   - wsjf-prioritization
-  version: 0.2.1
+  version: 0.3.0
   source: skills/assumption-inventory/SKILL.md
 - name: balanced-scorecard
   title: Balanced Scorecard
@@ -164,8 +163,8 @@ methods:
   use_when: Use when performance management needs a broader view than financial or single KPI tracking.
     Use when applying the Balanced Scorecard consulting method and when a user asks for Balanced Scorecard,
     method execution, structured diagnosis, or action planning.
-  do_not_use_when: Do not use to create a large KPI catalog. Use it to connect outcomes, drivers, owners,
-    and decisions.
+  do_not_use_when: Do not use before the strategy, intended outcomes, and cause-and-effect logic are clear.
+    A balanced scorecard is a small management system, not a catalogue of every available KPI.
   required_inputs:
   - strategy or objective
   - current metrics
@@ -178,7 +177,7 @@ methods:
   - Targets and initiatives
   - Balanced scorecard
   adjacent_methods: []
-  version: 0.2.1
+  version: 0.3.0
   source: skills/balanced-scorecard/SKILL.md
 - name: break-even-analysis
   title: Break Even Analysis
@@ -186,8 +185,9 @@ methods:
   use_when: Use when a commercial, operational, or investment decision needs a threshold for viability.
     Use when applying the Break Even Analysis consulting method and when a user asks for Break Even Analysis,
     method execution, structured diagnosis, or action planning.
-  do_not_use_when: Do not use before options are explicit enough to compare. First convert vague themes
-    into executable options.
+  do_not_use_when: Do not use when fixed costs, variable costs, unit revenue, and the relevant time horizon
+    cannot be estimated. Break-even analysis tests an economic threshold; it does not establish overall
+    strategic fit.
   required_inputs:
   - fixed costs
   - variable costs
@@ -201,7 +201,7 @@ methods:
   - Break-even threshold
   - Viability interpretation
   adjacent_methods: []
-  version: 0.2.1
+  version: 0.3.0
   source: skills/break-even-analysis/SKILL.md
 - name: business-model-canvas
   title: Business Model Canvas
@@ -209,8 +209,8 @@ methods:
   use_when: Use when clarifying how a business, product, offer, or venture creates, delivers, and captures
     value. Use when applying the Business Model Canvas consulting method and when a user asks for Business
     Model Canvas, method execution, structured diagnosis, or action planning.
-  do_not_use_when: Do not use as a sales slogan. Use it to clarify value, buying logic, proof, operating
-    fit, and next commercial action.
+  do_not_use_when: Do not treat a completed canvas as proof that a business model works. Use it to expose
+    connected assumptions about customers, value, operations, revenue, and cost that still need testing.
   required_inputs:
   - business or offer
   - customer segments
@@ -223,7 +223,7 @@ methods:
   - Operating/cost blocks
   - Model risks and test plan
   adjacent_methods: []
-  version: 0.2.1
+  version: 0.3.0
   source: skills/business-model-canvas/SKILL.md
 - name: change-event-timeline
   title: Change Event Timeline
@@ -249,7 +249,7 @@ methods:
   adjacent_methods:
   - decision-matrix
   - weighted-scorecard
-  version: 0.2.1
+  version: 0.3.0
   source: skills/change-event-timeline/SKILL.md
 - name: change-impact-analysis
   title: Change Impact Analysis
@@ -257,7 +257,9 @@ methods:
   use_when: Use when implementing process, system, organization, policy, or operating-model changes. Use
     when applying the Change Impact Analysis consulting method and when a user asks for Change Impact
     Analysis, method execution, structured diagnosis, or action planning.
-  do_not_use_when: Do not use as a fear list. Each risk or force must have a trigger, owner, and response.
+  do_not_use_when: Do not use before the proposed change, affected groups, processes, systems, locations,
+    and timing are defined. It identifies what must adapt; it does not replace a delivery plan or risk
+    assessment.
   required_inputs:
   - change description
   - affected groups
@@ -270,7 +272,7 @@ methods:
   - Adoption support plan
   - Change rollout plan
   adjacent_methods: []
-  version: 0.2.1
+  version: 0.3.0
   source: skills/change-impact-analysis/SKILL.md
 - name: communications-plan
   title: Communications Plan
@@ -278,8 +280,9 @@ methods:
   use_when: Use when a decision, change, project, or stakeholder move needs coordinated communication.
     Use when applying the Communications Plan consulting method and when a user asks for Communications
     Plan, method execution, structured diagnosis, or action planning.
-  do_not_use_when: Do not use as a personality-reading exercise. Use it only to clarify decision rights,
-    influence, needs, and next engagement moves.
+  do_not_use_when: Do not use before the audience, required behavior, sender, channel, timing, and feedback
+    path are clear. Communication cannot compensate for missing authority, broken process, or misaligned
+    incentives.
   required_inputs:
   - communication objective
   - audiences
@@ -293,7 +296,7 @@ methods:
   - Cadence and feedback plan
   - Ready-to-send communication plan
   adjacent_methods: []
-  version: 0.2.1
+  version: 0.3.0
   source: skills/communications-plan/SKILL.md
 - name: competitive-positioning
   title: Competitive Positioning
@@ -301,8 +304,8 @@ methods:
   use_when: Use when a strategy, offer, pitch, or account plan needs sharper differentiation. Use when
     applying the Competitive Positioning consulting method and when a user asks for Competitive Positioning,
     method execution, structured diagnosis, or action planning.
-  do_not_use_when: Do not use for generic essay writing. Use it only when external/internal factors must
-    change a strategy, choice, or risk posture.
+  do_not_use_when: Do not use without a target segment, relevant alternatives, buying criteria, and evidence
+    of why customers choose. Positioning is a defensible choice, not a slogan or feature inventory.
   required_inputs:
   - offering
   - target customer
@@ -315,7 +318,7 @@ methods:
   - Defensible differentiators
   - Positioning package
   adjacent_methods: []
-  version: 0.2.1
+  version: 0.3.0
   source: skills/competitive-positioning/SKILL.md
 - name: constraint-analysis
   title: Constraint Analysis
@@ -343,7 +346,7 @@ methods:
   adjacent_methods:
   - decision-matrix
   - weighted-scorecard
-  version: 0.2.1
+  version: 0.3.0
   source: skills/constraint-analysis/SKILL.md
 - name: cost-benefit-analysis
   title: Cost Benefit Analysis
@@ -351,8 +354,9 @@ methods:
   use_when: Use when deciding whether an action is worth the resources, attention, or tradeoffs required.
     Use when applying the Cost Benefit Analysis consulting method and when a user asks for Cost Benefit
     Analysis, method execution, structured diagnosis, or action planning.
-  do_not_use_when: Do not use before options are explicit enough to compare. First convert vague themes
-    into executable options.
+  do_not_use_when: Do not use when material costs and benefits cannot be compared over a common time horizon.
+    Treat non-negotiable legal, safety, or policy constraints as gates rather than averaging them into
+    a financial total.
   required_inputs:
   - option or investment
   - benefit estimates
@@ -366,7 +370,7 @@ methods:
   - Scenario comparison
   - Cost-benefit recommendation
   adjacent_methods: []
-  version: 0.2.1
+  version: 0.3.0
   source: skills/cost-benefit-analysis/SKILL.md
 - name: critical-uncertainties
   title: Critical Uncertainties
@@ -393,7 +397,7 @@ methods:
   adjacent_methods:
   - pre-mortem
   - risk-matrix
-  version: 0.2.1
+  version: 0.3.0
   source: skills/critical-uncertainties/SKILL.md
 - name: customer-segmentation
   title: Customer Segmentation
@@ -401,8 +405,9 @@ methods:
   use_when: Use when treating all customers the same is obscuring priorities, offer design, or service
     strategy. Use when applying the Customer Segmentation consulting method and when a user asks for Customer
     Segmentation, method execution, structured diagnosis, or action planning.
-  do_not_use_when: Do not use for all users at once. Choose one segment, scenario, journey, job, or service
-    context.
+  do_not_use_when: Do not use without a defined customer population and evidence of differences that change
+    needs, economics, behavior, or treatment. Avoid segments based on convenient demographics that do
+    not change a decision.
   required_inputs:
   - customer universe
   - needs or behaviors
@@ -415,7 +420,7 @@ methods:
   - Segment profiles
   - Segment strategy
   adjacent_methods: []
-  version: 0.2.1
+  version: 0.3.0
   source: skills/customer-segmentation/SKILL.md
 - name: customer-success-health-score
   title: Customer Success Health Score
@@ -423,8 +428,8 @@ methods:
   use_when: Use when assessing retention risk, expansion potential, account quality, or service intervention
     priority. Use when applying the Customer Success Health Score consulting method and when a user asks
     for Customer Success Health Score, method execution, structured diagnosis, or action planning.
-  do_not_use_when: Do not use for all users at once. Choose one segment, scenario, journey, job, or service
-    context.
+  do_not_use_when: Do not use before customer outcomes, adoption signals, relationship signals, renewal
+    risk, and data quality are defined. One aggregate score must not hide a critical failure condition.
   required_inputs:
   - customer or account list
   - usage/adoption signals
@@ -437,7 +442,7 @@ methods:
   - Health score table
   - CS intervention plan
   adjacent_methods: []
-  version: 0.2.1
+  version: 0.3.0
   source: skills/customer-success-health-score/SKILL.md
 - name: deal-strategy-map
   title: Deal Strategy Map
@@ -445,8 +450,8 @@ methods:
   use_when: Use when pursuing a specific opportunity and needing a structured path to win or advance.
     Use when applying the Deal Strategy Map consulting method and when a user asks for Deal Strategy Map,
     method execution, structured diagnosis, or action planning.
-  do_not_use_when: Do not use as a sales slogan. Use it to clarify value, buying logic, proof, operating
-    fit, and next commercial action.
+  do_not_use_when: Do not use without a specific opportunity, decision process, competitive position,
+    value case, and next milestone. For the broader relationship and whitespace, use an account plan.
   required_inputs:
   - opportunity details
   - buyer process
@@ -460,7 +465,7 @@ methods:
   - Stakeholder pursuit plan
   - Deal action plan
   adjacent_methods: []
-  version: 0.2.1
+  version: 0.3.0
   source: skills/deal-strategy-map/SKILL.md
 - name: decision-matrix
   title: Decision Matrix
@@ -468,8 +473,8 @@ methods:
   use_when: Use when choosing among options and the decision needs explicit criteria, tradeoffs, and defensible
     reasoning. Use when applying the Decision Matrix consulting method and when a user asks for Decision
     Matrix, method execution, structured diagnosis, or action planning.
-  do_not_use_when: Do not use before options are explicit enough to compare. First convert vague themes
-    into executable options.
+  do_not_use_when: Do not use when there is only one viable option, the decision criteria are not agreed,
+    or mandatory requirements remain unresolved. Apply hard gates before weighted scoring.
   required_inputs:
   - options
   - decision criteria
@@ -482,7 +487,7 @@ methods:
   - Completed decision matrix
   - Decision recommendation
   adjacent_methods: []
-  version: 0.2.1
+  version: 0.3.0
   source: skills/decision-matrix/SKILL.md
 - name: deductive-reasoning
   title: Deductive Reasoning
@@ -510,7 +515,7 @@ methods:
   - abductive-reasoning
   - affinity-diagram
   - inductive-reasoning
-  version: 0.2.1
+  version: 0.3.0
   source: skills/deductive-reasoning/SKILL.md
 - name: effort-impact-matrix
   title: Effort Impact Matrix
@@ -518,8 +523,8 @@ methods:
   use_when: Use when there are multiple possible next actions and the user needs quick wins, major projects,
     fill-ins, or deprioritized items. Use when applying the Effort Impact Matrix consulting method and
     when a user asks for Effort Impact Matrix, method execution, structured diagnosis, or action planning.
-  do_not_use_when: Do not use before options are explicit enough to compare. First convert vague themes
-    into executable options.
+  do_not_use_when: Do not use when impact and effort cannot be estimated on a comparable basis or when
+    hard dependencies determine the sequence. This is a relative triage tool, not a full investment case.
   required_inputs:
   - candidate actions
   - impact estimate
@@ -532,7 +537,7 @@ methods:
   - Effort-impact matrix
   - Sequenced action plan
   adjacent_methods: []
-  version: 0.2.1
+  version: 0.3.0
   source: skills/effort-impact-matrix/SKILL.md
 - name: empathy-map
   title: Empathy Map
@@ -540,8 +545,8 @@ methods:
   use_when: Use when stakeholder motivation is unclear and the work requires a grounded, human view before
     messaging or intervention design. Use when applying the Empathy Map consulting method and when a user
     asks for Empathy Map, method execution, structured diagnosis, or action planning.
-  do_not_use_when: Do not use as a personality-reading exercise. Use it only to clarify decision rights,
-    influence, needs, and next engagement moves.
+  do_not_use_when: Do not use to invent what users think or feel, or to map organizational power. Base
+    the map on a defined user and context, with observations or interviews separated from assumptions.
   required_inputs:
   - target person or segment
   - observed behavior
@@ -554,7 +559,7 @@ methods:
   - Need and concern diagnosis
   - Action implications
   adjacent_methods: []
-  version: 0.2.1
+  version: 0.3.0
   source: skills/empathy-map/SKILL.md
 - name: evidence-map
   title: Evidence Map
@@ -581,7 +586,7 @@ methods:
   - decision-matrix
   - effort-impact-matrix
   - weighted-scorecard
-  version: 0.2.1
+  version: 0.3.0
   source: skills/evidence-map/SKILL.md
 - name: fifteen-percent-solutions
   title: Fifteen Percent Solutions
@@ -609,7 +614,7 @@ methods:
   - communications-plan
   - raci-matrix
   - risk-matrix
-  version: 0.2.1
+  version: 0.3.0
   source: skills/fifteen-percent-solutions/SKILL.md
 - name: first-principles-thinking
   title: First Principles Thinking
@@ -637,7 +642,7 @@ methods:
   - evidence-map
   - fishbone-diagram
   - five-whys-root-cause
-  version: 0.2.1
+  version: 0.3.0
   source: skills/first-principles-thinking/SKILL.md
 - name: fishbone-diagram
   title: Fishbone Diagram
@@ -645,7 +650,8 @@ methods:
   use_when: Use when a problem may have multiple operational, human, process, system, or environmental
     causes. Use when applying the Fishbone Diagram consulting method and when a user asks for Fishbone
     Diagram, method execution, structured diagnosis, or action planning.
-  do_not_use_when: Do not use to assign blame. Use it to find controllable causes and recurrence prevention.
+  do_not_use_when: Do not use for a single verified linear cause or treat category branches as proven
+    causes. Fishbone analysis is for exploring multiple cause families that still require evidence.
   required_inputs:
   - problem statement
   - observed symptoms
@@ -658,7 +664,7 @@ methods:
   - Evidence-coded fishbone
   - Root-cause test plan
   adjacent_methods: []
-  version: 0.2.1
+  version: 0.3.0
   source: skills/fishbone-diagram/SKILL.md
 - name: five-whys-root-cause
   title: Five Whys Root Cause
@@ -666,7 +672,8 @@ methods:
   use_when: Use when a problem keeps recurring, the first explanation is too shallow, or the action plan
     risks treating symptoms. Use when applying the Five Whys Root Cause consulting method and when a user
     asks for Five Whys Root Cause, method execution, structured diagnosis, or action planning.
-  do_not_use_when: Do not use to assign blame. Use it to find controllable causes and recurrence prevention.
+  do_not_use_when: Do not use when the problem has several interacting causal paths, feedback loops, or
+    insufficient event evidence. A single Why chain can oversimplify a multi-causal system.
   required_inputs:
   - problem statement
   - evidence
@@ -679,7 +686,7 @@ methods:
   - Cause branches
   - Root-cause action plan
   adjacent_methods: []
-  version: 0.2.1
+  version: 0.3.0
   source: skills/five-whys-root-cause/SKILL.md
 - name: force-field-analysis
   title: Force Field Analysis
@@ -687,7 +694,8 @@ methods:
   use_when: Use when adoption, stakeholder support, or organizational movement depends on shifting incentives
     and resistance. Use when applying the Force Field Analysis consulting method and when a user asks
     for Force Field Analysis, method execution, structured diagnosis, or action planning.
-  do_not_use_when: Do not use as a fear list. Each risk or force must have a trigger, owner, and response.
+  do_not_use_when: 'Do not use when the target change and relevant actors are unclear. Avoid generic pros-and-cons
+    lists: each driving or restraining force needs evidence, relative strength, and a practical response.'
   required_inputs:
   - desired change
   - supporting forces
@@ -701,7 +709,7 @@ methods:
   - Force field map
   - Change lever plan
   adjacent_methods: []
-  version: 0.2.1
+  version: 0.3.0
   source: skills/force-field-analysis/SKILL.md
 - name: go-to-market-diagnosis
   title: Go To Market Diagnosis
@@ -709,8 +717,8 @@ methods:
   use_when: Use when a product, service, or consulting offer needs market entry, growth, or conversion
     improvement. Use when applying the Go To Market Diagnosis consulting method and when a user asks for
     Go To Market Diagnosis, method execution, structured diagnosis, or action planning.
-  do_not_use_when: Do not use as a sales slogan. Use it to clarify value, buying logic, proof, operating
-    fit, and next commercial action.
+  do_not_use_when: Do not use when the product, target segment, market objective, and observed performance
+    gap are undefined. A single campaign problem usually needs a narrower diagnostic.
   required_inputs:
   - target customers
   - offer
@@ -724,7 +732,7 @@ methods:
   - Experiment backlog
   - GTM action plan
   adjacent_methods: []
-  version: 0.2.1
+  version: 0.3.0
   source: skills/go-to-market-diagnosis/SKILL.md
 - name: hypothesis-tree
   title: Hypothesis Tree
@@ -732,7 +740,8 @@ methods:
   use_when: Use when analysis should proceed by testing likely explanations rather than describing the
     whole situation. Use when applying the Hypothesis Tree consulting method and when a user asks for
     Hypothesis Tree, method execution, structured diagnosis, or action planning.
-  do_not_use_when: Do not use to decorate an answer. Use it when the problem is too messy to analyze directly.
+  do_not_use_when: Do not use without a decision question and branches that can be tested with evidence.
+    For open-ended exploration before hypotheses are available, use a mind map or affinity diagram.
   required_inputs:
   - core question
   - candidate explanations
@@ -745,7 +754,7 @@ methods:
   - Test plan
   - Testing sequence
   adjacent_methods: []
-  version: 0.2.1
+  version: 0.3.0
   source: skills/hypothesis-tree/SKILL.md
 - name: inductive-reasoning
   title: Inductive Reasoning
@@ -771,7 +780,7 @@ methods:
   - Validation plan
   adjacent_methods:
   - deductive-reasoning
-  version: 0.2.1
+  version: 0.3.0
   source: skills/inductive-reasoning/SKILL.md
 - name: issue-tree
   title: Issue Tree
@@ -779,7 +788,8 @@ methods:
   use_when: Use when the problem is broad, ambiguous, or mixing symptoms, causes, decisions, and actions.
     Use when applying the Issue Tree consulting method and when a user asks for Issue Tree, method execution,
     structured diagnosis, or action planning.
-  do_not_use_when: Do not use to decorate an answer. Use it when the problem is too messy to analyze directly.
+  do_not_use_when: Do not use when the decision question, scope, and owner are undefined. An issue tree
+    structures what to investigate; it does not prove causality or show feedback over time.
   required_inputs:
   - core question
   - known constraints
@@ -792,7 +802,7 @@ methods:
   - Evidence plan
   - Analysis sequence
   adjacent_methods: []
-  version: 0.2.1
+  version: 0.3.0
   source: skills/issue-tree/SKILL.md
 - name: jobs-to-be-done
   title: Jobs To Be Done
@@ -800,8 +810,9 @@ methods:
   use_when: Use when product, service, sales, or messaging work needs to understand why someone would
     switch, buy, adopt, or reject. Use when applying the Jobs To Be Done consulting method and when a
     user asks for Jobs To Be Done, method execution, structured diagnosis, or action planning.
-  do_not_use_when: Do not use for all users at once. Choose one segment, scenario, journey, job, or service
-    context.
+  do_not_use_when: Do not use to translate feature requests directly into a backlog or to infer a job
+    from demographics. Anchor the analysis in a specific struggling moment, desired progress, context,
+    and current alternatives.
   required_inputs:
   - target customer
   - situation
@@ -815,7 +826,7 @@ methods:
   - Outcome criteria
   - JTBD action implications
   adjacent_methods: []
-  version: 0.2.1
+  version: 0.3.0
   source: skills/jobs-to-be-done/SKILL.md
 - name: kano-model
   title: Kano Model
@@ -823,8 +834,9 @@ methods:
   use_when: Use when deciding which customer needs or service features drive satisfaction, dissatisfaction,
     or differentiation. Use when applying the Kano Model consulting method and when a user asks for Kano
     Model, method execution, structured diagnosis, or action planning.
-  do_not_use_when: Do not use for all users at once. Choose one segment, scenario, journey, job, or service
-    context.
+  do_not_use_when: Do not use without a defined customer context and evidence of how feature presence
+    and absence affect satisfaction. Kano classification alone does not set roadmap priority, cost, or
+    sequence.
   required_inputs:
   - features or service attributes
   - customer segment
@@ -837,7 +849,7 @@ methods:
   - Feature priority implications
   - Kano review plan
   adjacent_methods: []
-  version: 0.2.1
+  version: 0.3.0
   source: skills/kano-model/SKILL.md
 - name: mece-framework
   title: MECE Framework
@@ -865,7 +877,7 @@ methods:
   adjacent_methods:
   - affinity-diagram
   - mind-map-analysis
-  version: 0.2.1
+  version: 0.3.0
   source: skills/mece-framework/SKILL.md
 - name: metrics-tree
   title: Metrics Tree
@@ -873,8 +885,9 @@ methods:
   use_when: Use when a decision or plan needs measurable success criteria, driver logic, and diagnostic
     metrics. Use when applying the Metrics Tree consulting method and when a user asks for Metrics Tree,
     method execution, structured diagnosis, or action planning.
-  do_not_use_when: Do not use to create a large KPI catalog. Use it to connect outcomes, drivers, owners,
-    and decisions.
+  do_not_use_when: Do not use before the outcome metric and decision purpose are defined, or when proposed
+    driver relationships cannot be tested. A metrics tree explains performance logic; it is not a dashboard
+    inventory.
   required_inputs:
   - north-star outcome
   - business model or process
@@ -887,7 +900,7 @@ methods:
   - Guardrail metrics
   - Metric operating plan
   adjacent_methods: []
-  version: 0.2.1
+  version: 0.3.0
   source: skills/metrics-tree/SKILL.md
 - name: min-specs
   title: Min Specs
@@ -914,7 +927,7 @@ methods:
   - decision-matrix
   - weighted-scorecard
   - wsjf-prioritization
-  version: 0.2.1
+  version: 0.3.0
   source: skills/min-specs/SKILL.md
 - name: mind-map-analysis
   title: Mind Map Analysis
@@ -922,7 +935,8 @@ methods:
   use_when: Use when ideas, concerns, stakeholders, causes, or options are scattered and need a clear
     structure before deeper analysis. Use when applying the Mind Map Analysis consulting method and when
     a user asks for Mind Map Analysis, method execution, structured diagnosis, or action planning.
-  do_not_use_when: Do not use to decorate an answer. Use it when the problem is too messy to analyze directly.
+  do_not_use_when: Do not use when the decision requires MECE structure, causal proof, or option scoring.
+    A mind map is for exploration and connection, not final prioritization.
   required_inputs:
   - topic
   - raw ideas or notes
@@ -935,7 +949,7 @@ methods:
   - Usable map
   - Next-analysis recommendation
   adjacent_methods: []
-  version: 0.2.1
+  version: 0.3.0
   source: skills/mind-map-analysis/SKILL.md
 - name: north-star-metric
   title: North Star Metric
@@ -943,8 +957,8 @@ methods:
   use_when: Use when a product, service, or business needs one organizing success metric plus supporting
     driver logic. Use when applying the North Star Metric consulting method and when a user asks for North
     Star Metric, method execution, structured diagnosis, or action planning.
-  do_not_use_when: Do not use to create a large KPI catalog. Use it to connect outcomes, drivers, owners,
-    and decisions.
+  do_not_use_when: Do not use when customer value, product scope, or strategic objective is unclear, or
+    when one metric would hide harm across segments. Pair the north star with explicit guardrails.
   required_inputs:
   - business model
   - user value proposition
@@ -957,7 +971,7 @@ methods:
   - Guardrail set
   - NSM operating plan
   adjacent_methods: []
-  version: 0.2.1
+  version: 0.3.0
   source: skills/north-star-metric/SKILL.md
 - name: pestel-analysis
   title: PESTEL Analysis
@@ -965,8 +979,9 @@ methods:
   use_when: Use when market, policy, macro, or operating context may materially affect strategy or risk.
     Use when applying the PESTEL Analysis consulting method and when a user asks for PESTEL Analysis,
     method execution, structured diagnosis, or action planning.
-  do_not_use_when: Do not use for generic essay writing. Use it only when external/internal factors must
-    change a strategy, choice, or risk posture.
+  do_not_use_when: Do not use PESTEL to assess internal capability or to collect trends with no decision
+    consequence. Use it for external macro factors that could change a strategic choice, assumption, timing,
+    or risk.
   required_inputs:
   - market or situation
   - geography
@@ -979,7 +994,7 @@ methods:
   - Prioritized PESTEL table
   - External-context action plan
   adjacent_methods: []
-  version: 0.2.1
+  version: 0.3.0
   source: skills/pestel-analysis/SKILL.md
 - name: porter-five-forces
   title: Porter Five Forces
@@ -987,8 +1002,9 @@ methods:
   use_when: Use when assessing industry attractiveness, competitive pressure, pricing power, or strategic
     positioning. Use when applying the Porter Five Forces consulting method and when a user asks for Porter
     Five Forces, method execution, structured diagnosis, or action planning.
-  do_not_use_when: Do not use for generic essay writing. Use it only when external/internal factors must
-    change a strategy, choice, or risk posture.
+  do_not_use_when: Do not use when the industry boundary is unclear or when the task is to compare individual
+    competitors and features. Five Forces examines industry economics and bargaining structure, not company
+    execution.
   required_inputs:
   - industry or market
   - competitors
@@ -1002,7 +1018,7 @@ methods:
   - Industry attractiveness diagnosis
   - Competitive strategy implications
   adjacent_methods: []
-  version: 0.2.1
+  version: 0.3.0
   source: skills/porter-five-forces/SKILL.md
 - name: power-interest-grid
   title: Power Interest Grid
@@ -1010,8 +1026,8 @@ methods:
   use_when: Use when stakeholders need to be grouped into manage closely, keep satisfied, keep informed,
     or monitor categories. Use when applying the Power Interest Grid consulting method and when a user
     asks for Power Interest Grid, method execution, structured diagnosis, or action planning.
-  do_not_use_when: Do not use as a personality-reading exercise. Use it only to clarify decision rights,
-    influence, needs, and next engagement moves.
+  do_not_use_when: Do not use when informal influence, stakeholder stance, or relationship networks require
+    a more detailed map. The grid is a coarse engagement triage, not proof of motives or support.
   required_inputs:
   - stakeholder list
   - decision context
@@ -1024,7 +1040,7 @@ methods:
   - Engagement category per actor
   - Communication and engagement plan
   adjacent_methods: []
-  version: 0.2.1
+  version: 0.3.0
   source: skills/power-interest-grid/SKILL.md
 - name: pre-mortem
   title: Pre Mortem
@@ -1032,7 +1048,8 @@ methods:
   use_when: Use before launching a plan, project, deal, or change when failure modes should be surfaced
     early. Use when applying the Pre Mortem consulting method and when a user asks for Pre Mortem, method
     execution, structured diagnosis, or action planning.
-  do_not_use_when: Do not use as a fear list. Each risk or force must have a trigger, owner, and response.
+  do_not_use_when: Do not use after a failure has already occurred; use root-cause analysis instead. A
+    pre-mortem requires a specific plan and time horizon, not a generic list of things that might go wrong.
   required_inputs:
   - planned action
   - success criteria
@@ -1046,7 +1063,7 @@ methods:
   - Priority failure modes
   - Pre-mortem action plan
   adjacent_methods: []
-  version: 0.2.1
+  version: 0.3.0
   source: skills/pre-mortem/SKILL.md
 - name: pricing-strategy-check
   title: Pricing Strategy Check
@@ -1054,8 +1071,8 @@ methods:
   use_when: Use when designing, reviewing, or defending pricing for a product, service, project, or offer.
     Use when applying the Pricing Strategy Check consulting method and when a user asks for Pricing Strategy
     Check, method execution, structured diagnosis, or action planning.
-  do_not_use_when: Do not use before options are explicit enough to compare. First convert vague themes
-    into executable options.
+  do_not_use_when: Do not use without a defined customer segment, value alternative, unit economics, and
+    some evidence of willingness to pay. A pricing check cannot replace customer research or a legal review.
   required_inputs:
   - offer description
   - target segment
@@ -1069,7 +1086,7 @@ methods:
   - Pricing risk list
   - Pricing action plan
   adjacent_methods: []
-  version: 0.2.1
+  version: 0.3.0
   source: skills/pricing-strategy-check/SKILL.md
 - name: raci-matrix
   title: RACI Matrix
@@ -1077,8 +1094,9 @@ methods:
   use_when: Use when ownership, approval rights, handoffs, or decision authority are unclear. Use when
     applying the RACI Matrix consulting method and when a user asks for RACI Matrix, method execution,
     structured diagnosis, or action planning.
-  do_not_use_when: Do not use as a personality-reading exercise. Use it only to clarify decision rights,
-    influence, needs, and next engagement moves.
+  do_not_use_when: Do not use before the work products, decisions, and role boundaries are defined. RACI
+    clarifies accountability for work; it does not resolve stakeholder resistance, authority gaps, or
+    capacity shortages.
   required_inputs:
   - work items or decisions
   - roles or named owners
@@ -1091,7 +1109,7 @@ methods:
   - Ownership gap list
   - Final RACI and role clarification actions
   adjacent_methods: []
-  version: 0.2.1
+  version: 0.3.0
   source: skills/raci-matrix/SKILL.md
 - name: rice-scoring
   title: RICE Scoring
@@ -1099,8 +1117,9 @@ methods:
   use_when: Use when ranking product, business, GTM, process, or analysis initiatives with explicit uncertainty
     and effort. Use when applying the RICE Scoring consulting method and when a user asks for RICE Scoring,
     method execution, structured diagnosis, or action planning.
-  do_not_use_when: Do not use before options are explicit enough to compare. First convert vague themes
-    into executable options.
+  do_not_use_when: Do not use when reach, impact, confidence, and effort are measured at incompatible
+    levels or when compliance and dependency gates dominate the choice. RICE ranks comparable initiatives;
+    it does not make strategy.
   required_inputs:
   - candidate initiatives
   - reach estimate
@@ -1114,7 +1133,7 @@ methods:
   - Effort values
   - Ranked RICE backlog
   adjacent_methods: []
-  version: 0.2.1
+  version: 0.3.0
   source: skills/rice-scoring/SKILL.md
 - name: risk-matrix
   title: Risk Matrix
@@ -1122,7 +1141,9 @@ methods:
   use_when: Use when a plan, deal, project, or stakeholder move has material downside that needs explicit
     controls. Use when applying the Risk Matrix consulting method and when a user asks for Risk Matrix,
     method execution, structured diagnosis, or action planning.
-  do_not_use_when: Do not use as a fear list. Each risk or force must have a trigger, owner, and response.
+  do_not_use_when: Do not use when numeric ratings would create false precision or when thresholds and
+    owners are undefined. Treat legal, safety, and regulatory stop conditions separately from relative
+    risk ranking.
   required_inputs:
   - planned action or project
   - risk list
@@ -1135,7 +1156,7 @@ methods:
   - Risk response plan
   - Risk monitoring plan
   adjacent_methods: []
-  version: 0.2.1
+  version: 0.3.0
   source: skills/risk-matrix/SKILL.md
 - name: scenario-planning
   title: Scenario Planning
@@ -1143,7 +1164,9 @@ methods:
   use_when: Use when external uncertainty is material and a single forecast would create false confidence.
     Use when applying the Scenario Planning consulting method and when a user asks for Scenario Planning,
     method execution, structured diagnosis, or action planning.
-  do_not_use_when: Do not use as a fear list. Each risk or force must have a trigger, owner, and response.
+  do_not_use_when: Do not use for a short-term forecast when one outcome can be estimated reliably. Scenarios
+    explore a small set of high-impact uncertainties; they are not predictions or collections of generic
+    risks.
   required_inputs:
   - strategic question
   - time horizon
@@ -1156,7 +1179,7 @@ methods:
   - Scenario implications
   - Scenario action plan
   adjacent_methods: []
-  version: 0.2.1
+  version: 0.3.0
   source: skills/scenario-planning/SKILL.md
 - name: service-blueprint
   title: Service Blueprint
@@ -1164,8 +1187,9 @@ methods:
   use_when: Use when improving service delivery, handoffs, operational reliability, or customer-facing
     execution. Use when applying the Service Blueprint consulting method and when a user asks for Service
     Blueprint, method execution, structured diagnosis, or action planning.
-  do_not_use_when: Do not use for all users at once. Choose one segment, scenario, journey, job, or service
-    context.
+  do_not_use_when: Do not use when the service boundary and customer scenario are undefined or when backstage
+    activities would have to be invented from a frontstage complaint. Mark missing customer and process
+    evidence explicitly.
   required_inputs:
   - service scope
   - customer journey
@@ -1178,7 +1202,7 @@ methods:
   - Backstage/support rows
   - Service improvement plan
   adjacent_methods: []
-  version: 0.2.1
+  version: 0.3.0
   source: skills/service-blueprint/SKILL.md
 - name: signal-vs-noise-filter
   title: Signal vs Noise Filter
@@ -1205,7 +1229,7 @@ methods:
   adjacent_methods:
   - 5w1h-analysis
   - evidence-map
-  version: 0.2.1
+  version: 0.3.0
   source: skills/signal-vs-noise-filter/SKILL.md
 - name: stakeholder-power-map
   title: Stakeholder Power Map
@@ -1213,8 +1237,8 @@ methods:
   use_when: Use when a decision depends on named people, sponsors, blockers, buyers, approvers, influencers,
     or hidden veto rights. Use when applying the Stakeholder Power Map consulting method and when a user
     asks for Stakeholder Power Map, method execution, structured diagnosis, or action planning.
-  do_not_use_when: Do not use as a personality-reading exercise. Use it only to clarify decision rights,
-    influence, needs, and next engagement moves.
+  do_not_use_when: Do not use to present inferred motives as facts or when a simple responsibility assignment
+    is the real need. Map formal authority, informal influence, stance, and evidence separately.
   required_inputs:
   - stakeholder list
   - decision to be influenced
@@ -1226,7 +1250,7 @@ methods:
   - Needs, concerns, and likely objections
   - Stakeholder action plan
   adjacent_methods: []
-  version: 0.2.1
+  version: 0.3.0
   source: skills/stakeholder-power-map/SKILL.md
 - name: swot-analysis
   title: SWOT Analysis
@@ -1234,8 +1258,8 @@ methods:
   use_when: Use when the situation needs a balanced snapshot of position, options, and external pressure
     before choosing a strategy. Use when applying the SWOT Analysis consulting method and when a user
     asks for SWOT Analysis, method execution, structured diagnosis, or action planning.
-  do_not_use_when: Do not use for generic essay writing. Use it only when external/internal factors must
-    change a strategy, choice, or risk posture.
+  do_not_use_when: Do not start with an empty four-box brainstorm. Use SWOT only after the decision scope
+    and evidence are clear, and only when the synthesis will change a choice, risk response, or action.
   required_inputs:
   - objective
   - internal capabilities
@@ -1248,7 +1272,7 @@ methods:
   - Priority SWOT factors
   - Strategic action implications
   adjacent_methods: []
-  version: 0.2.1
+  version: 0.3.0
   source: skills/swot-analysis/SKILL.md
 - name: systems-thinking
   title: Systems Thinking
@@ -1280,7 +1304,7 @@ methods:
   - decision-matrix
   - deductive-reasoning
   - risk-matrix
-  version: 0.2.1
+  version: 0.3.0
   source: skills/systems-thinking/SKILL.md
 - name: user-journey-mapping
   title: User Journey Mapping
@@ -1288,8 +1312,8 @@ methods:
   use_when: Use when improving a customer, employee, partner, or stakeholder experience across a process
     or lifecycle. Use when applying the User Journey Mapping consulting method and when a user asks for
     User Journey Mapping, method execution, structured diagnosis, or action planning.
-  do_not_use_when: Do not use for all users at once. Choose one segment, scenario, journey, job, or service
-    context.
+  do_not_use_when: Do not combine unrelated segments, goals, and journeys in one map. A journey map needs
+    a defined user, context, goal, and evidence; it is not a substitute for an internal process map.
   required_inputs:
   - persona or user segment
   - journey scope
@@ -1302,7 +1326,7 @@ methods:
   - Pain point and opportunity list
   - Journey improvement plan
   adjacent_methods: []
-  version: 0.2.1
+  version: 0.3.0
   source: skills/user-journey-mapping/SKILL.md
 - name: validation-plan
   title: Validation Plan
@@ -1329,7 +1353,7 @@ methods:
   - evidence-map
   - hypothesis-tree
   - issue-tree
-  version: 0.2.1
+  version: 0.3.0
   source: skills/validation-plan/SKILL.md
 - name: weighted-scorecard
   title: Weighted Scorecard
@@ -1338,8 +1362,8 @@ methods:
     for procurement, partner selection, or service qualification. Use when applying the Weighted Scorecard
     consulting method and when a user asks for Weighted Scorecard, method execution, structured diagnosis,
     or action planning.
-  do_not_use_when: Do not use before options are explicit enough to compare. First convert vague themes
-    into executable options.
+  do_not_use_when: Do not use before options, criteria, scoring scales, and evidence are comparable. Do
+    not let a strong total score average away a mandatory requirement or a decision-critical unknown.
   required_inputs:
   - evaluation object
   - criteria
@@ -1352,7 +1376,7 @@ methods:
   - Weighted scorecard
   - Decision and caveats
   adjacent_methods: []
-  version: 0.2.1
+  version: 0.3.0
   source: skills/weighted-scorecard/SKILL.md
 - name: win-loss-review
   title: Win Loss Review
@@ -1375,7 +1399,7 @@ methods:
   - Lessons learned
   - Improvement action plan
   adjacent_methods: []
-  version: 0.2.1
+  version: 0.3.0
   source: skills/win-loss-review/SKILL.md
 - name: wsjf-prioritization
   title: WSJF Prioritization
@@ -1400,5 +1424,5 @@ methods:
   - WSJF-ranked sequence with caveats
   adjacent_methods:
   - effort-impact-matrix
-  version: 0.2.1
+  version: 0.3.0
   source: skills/wsjf-prioritization/SKILL.md

@@ -1,28 +1,28 @@
 <h1 align="center">Consulting Skills</h1>
-<p align="center"><strong>58 execution-ready consulting methods for AI agents</strong></p>
-<p align="center">Turn ambiguous business questions into evidence-aware decisions, actions, and validation plans.</p>
+<p align="center"><strong>58 consulting methods, written as runnable skills for AI agents</strong></p>
+<p align="center">Give your agent a messy question. Get back a clearer decision, a usable plan, and a way to check whether it worked.</p>
 <p align="center"><a href="https://github.com/fzfclee/consulting-skills/actions/workflows/validate.yml"><img src="https://img.shields.io/github/actions/workflow/status/fzfclee/consulting-skills/validate.yml?branch=main&amp;style=for-the-badge&amp;label=validation" alt="Validation"></a> <a href="catalog.yaml"><img src="https://img.shields.io/badge/skills-58-0f766e?style=for-the-badge" alt="58 skills"></a> <a href="https://github.com/fzfclee/consulting-skills/stargazers"><img src="https://img.shields.io/github/stars/fzfclee/consulting-skills?style=for-the-badge" alt="GitHub stars"></a> <a href="LICENSE"><img src="https://img.shields.io/badge/license-Apache--2.0-2563eb?style=for-the-badge" alt="Apache 2.0 license"></a></p>
-<p align="center"><a href="#30-second-start">30-second start</a> · <a href="#choose-by-situation">Choose a skill</a> · <a href="#the-58-skill-library">Browse all 58</a> · <a href="examples/README.md">Examples</a> · <a href="#built-for-reliable-execution">Quality</a> · <a href="README.zh-CN.md">中文</a> · <a href="https://www.o2vframework.com">O2V Framework</a></p>
+<p align="center"><a href="#30-second-start">30-second start</a> · <a href="#what-can-you-use-these-skills-for">Everyday uses</a> · <a href="#choose-by-situation">Choose a skill</a> · <a href="#the-58-skill-library">Browse all 58</a> · <a href="examples/README.md">Examples</a> · <a href="#how-quality-is-checked">Quality</a> · <a href="README.zh-CN.md">中文</a> · <a href="https://www.o2vframework.com">O2V Framework</a></p>
 
 ---
 
-## Why This Repository Exists
+## Why this repo exists
 
-Most framework collections tell you **what a method means**. AI agents also need to know **when to use it, when to stop, what evidence is missing, how to execute it, and what usable output to produce**.
+Most method libraries stop at definitions. That is not enough for an AI agent. The agent also needs to know when a method fits, what input is missing, how to work through the steps, and what to produce at the end.
 
-Without that execution layer, common failure modes appear:
+Otherwise, familiar problems show up:
 
-| Common failure | What an executable skill changes |
+| What goes wrong | What the skill adds |
 |---|---|
-| The agent uses SWOT for every strategic question | Trigger and `When Not To Use` rules select a narrower method |
-| Facts, opinions, and assumptions are mixed together | Evidence requirements make confidence and gaps visible |
-| A polished analysis does not change the decision | Output contracts tie the method to a decision artifact |
-| Several frameworks are stacked without purpose | A method is used only when it improves action, risk, validation, or a deliverable |
-| The answer sounds complete despite missing inputs | Quality gates force assumptions and validation actions to be stated |
+| The agent reaches for SWOT whenever a question sounds strategic | Triggers and `When Not To Use` rules narrow the choice |
+| Facts, opinions, and assumptions get mixed together | Evidence requirements expose confidence and gaps |
+| The analysis sounds polished but changes nothing | The output has to support an actual decision |
+| Several frameworks are stacked for show | A method stays only if it changes the action, risk, validation, or deliverable |
+| The answer sounds certain even though key inputs are missing | Quality gates make assumptions and validation actions visible |
 
-Each skill in this repository is a standalone operating guide, not a framework definition card.
+Each skill is a standalone working guide. It tells an agent how to run the method, not just how to describe it.
 
-## 30-Second Start
+## 30-second start
 
 Install the library with the open Skills CLI:
 
@@ -44,7 +44,7 @@ Separate evidence from assumptions. Identify feedback loops, delays, leverage po
 side effects, and the next validation signal.
 ```
 
-The execution pattern is consistent across the library:
+Every skill follows the same basic pattern:
 
 ```text
 Business question
@@ -58,7 +58,22 @@ Produce a reusable decision artifact
 Run the method-specific quality gate
 ```
 
-## Choose By Situation
+## What can you use these skills for?
+
+You do not need to be a consultant or memorize a framework. Give your agent the situation, the facts you have, what you are unsure about, and the decision you need to make. Then start with one relevant skill.
+
+| A question you might have | Useful starting skills | What you get back |
+|---|---|---|
+| Should I stay in this job, take an offer, or keep looking? | [`evidence-map`](skills/evidence-map/SKILL.md), [`scenario-planning`](skills/scenario-planning/SKILL.md) | Facts and assumptions, plausible futures, and conditions for changing course |
+| Which product, supplier, or large purchase should I choose? | [`decision-matrix`](skills/decision-matrix/SKILL.md), [`cost-benefit-analysis`](skills/cost-benefit-analysis/SKILL.md) | A comparison that shows tradeoffs, weak evidence, and hard constraints |
+| Why does the same problem keep coming back at work? | [`change-event-timeline`](skills/change-event-timeline/SKILL.md), [`systems-thinking`](skills/systems-thinking/SKILL.md) | A timeline, recurring pattern, feedback loops, and a safer intervention |
+| Does a side business or new product make economic sense? | [`business-model-canvas`](skills/business-model-canvas/SKILL.md), [`break-even-analysis`](skills/break-even-analysis/SKILL.md) | Key assumptions, the break-even threshold, and what to test before spending more |
+| Why are people not using a product or internal tool? | [`jobs-to-be-done`](skills/jobs-to-be-done/SKILL.md), [`metrics-tree`](skills/metrics-tree/SKILL.md) | Adoption hypotheses, missing evidence, actions, and success measures |
+| How do I get a proposal through a complicated group? | [`stakeholder-power-map`](skills/stakeholder-power-map/SKILL.md), [`communications-plan`](skills/communications-plan/SKILL.md) | Decision makers, informal influence, engagement moves, and a communication plan |
+
+Use one method first. Add a second only when it answers a different question that could change the decision.
+
+## Choose by situation
 
 Start with the problem you have, not the framework you remember.
 
@@ -75,9 +90,9 @@ Start with the problem you have, not the framework you remember.
 | The future depends on critical unknowns | [`scenario-planning`](skills/scenario-planning/SKILL.md) | Robust moves, contingent moves, signposts |
 | Work is blocked by one limiting factor | [`constraint-analysis`](skills/constraint-analysis/SKILL.md) | Constraint proof and exploitation plan |
 
-Not sure where to start? Browse the neutral discovery metadata in [`catalog.yaml`](catalog.yaml), or open one of the [seven fixed examples](examples/README.md).
+If the right starting point is still unclear, browse [`catalog.yaml`](catalog.yaml) or look at the [seven controlled comparisons](examples/README.md).
 
-## The 58-Skill Library
+## The 58-skill library
 
 | Method family | Skills | Typical decisions |
 |---|---:|---|
@@ -94,7 +109,7 @@ Not sure where to start? Browse the neutral discovery metadata in [`catalog.yaml
 <details>
 <summary><strong>Browse all 58 skills by method family</strong></summary>
 
-### Problem Framing And Evidence
+### Problem framing and evidence
 
 [`5w1h-analysis`](skills/5w1h-analysis/SKILL.md) ·
 [`affinity-diagram`](skills/affinity-diagram/SKILL.md) ·
@@ -105,7 +120,7 @@ Not sure where to start? Browse the neutral discovery metadata in [`catalog.yaml
 [`mind-map-analysis`](skills/mind-map-analysis/SKILL.md) ·
 [`signal-vs-noise-filter`](skills/signal-vs-noise-filter/SKILL.md)
 
-### Reasoning And Root Cause
+### Reasoning and root cause
 
 [`abductive-reasoning`](skills/abductive-reasoning/SKILL.md) ·
 [`constraint-analysis`](skills/constraint-analysis/SKILL.md) ·
@@ -116,7 +131,7 @@ Not sure where to start? Browse the neutral discovery metadata in [`catalog.yaml
 [`hypothesis-tree`](skills/hypothesis-tree/SKILL.md) ·
 [`inductive-reasoning`](skills/inductive-reasoning/SKILL.md)
 
-### Systems, Risk, And Futures
+### Systems, risk, and futures
 
 [`critical-uncertainties`](skills/critical-uncertainties/SKILL.md) ·
 [`pre-mortem`](skills/pre-mortem/SKILL.md) ·
@@ -124,7 +139,7 @@ Not sure where to start? Browse the neutral discovery metadata in [`catalog.yaml
 [`scenario-planning`](skills/scenario-planning/SKILL.md) ·
 [`systems-thinking`](skills/systems-thinking/SKILL.md)
 
-### Strategy, Market, And Commercial
+### Strategy, market, and commercial
 
 [`account-plan`](skills/account-plan/SKILL.md) ·
 [`business-model-canvas`](skills/business-model-canvas/SKILL.md) ·
@@ -137,7 +152,7 @@ Not sure where to start? Browse the neutral discovery metadata in [`catalog.yaml
 [`swot-analysis`](skills/swot-analysis/SKILL.md) ·
 [`win-loss-review`](skills/win-loss-review/SKILL.md)
 
-### Customer, Product, And Experience
+### Customer, product, and experience
 
 [`customer-segmentation`](skills/customer-segmentation/SKILL.md) ·
 [`customer-success-health-score`](skills/customer-success-health-score/SKILL.md) ·
@@ -147,7 +162,7 @@ Not sure where to start? Browse the neutral discovery metadata in [`catalog.yaml
 [`service-blueprint`](skills/service-blueprint/SKILL.md) ·
 [`user-journey-mapping`](skills/user-journey-mapping/SKILL.md)
 
-### Prioritization And Economics
+### Prioritization and economics
 
 [`break-even-analysis`](skills/break-even-analysis/SKILL.md) ·
 [`cost-benefit-analysis`](skills/cost-benefit-analysis/SKILL.md) ·
@@ -157,13 +172,13 @@ Not sure where to start? Browse the neutral discovery metadata in [`catalog.yaml
 [`weighted-scorecard`](skills/weighted-scorecard/SKILL.md) ·
 [`wsjf-prioritization`](skills/wsjf-prioritization/SKILL.md)
 
-### Measurement And Performance
+### Measurement and performance
 
 [`balanced-scorecard`](skills/balanced-scorecard/SKILL.md) ·
 [`metrics-tree`](skills/metrics-tree/SKILL.md) ·
 [`north-star-metric`](skills/north-star-metric/SKILL.md)
 
-### Stakeholder, Change, And Governance
+### Stakeholder, change, and governance
 
 [`change-event-timeline`](skills/change-event-timeline/SKILL.md) ·
 [`change-impact-analysis`](skills/change-impact-analysis/SKILL.md) ·
@@ -173,7 +188,7 @@ Not sure where to start? Browse the neutral discovery metadata in [`catalog.yaml
 [`raci-matrix`](skills/raci-matrix/SKILL.md) ·
 [`stakeholder-power-map`](skills/stakeholder-power-map/SKILL.md)
 
-### Execution And Validation
+### Execution and validation
 
 [`fifteen-percent-solutions`](skills/fifteen-percent-solutions/SKILL.md) ·
 [`min-specs`](skills/min-specs/SKILL.md) ·
@@ -181,9 +196,9 @@ Not sure where to start? Browse the neutral discovery metadata in [`catalog.yaml
 
 </details>
 
-## Built For Reliable Execution
+## How quality is checked
 
-Every skill contains the same five execution contracts:
+Every skill must include five practical sections:
 
 1. `Required Inputs`
 2. `When Not To Use`
@@ -191,19 +206,20 @@ Every skill contains the same five execution contracts:
 4. `Output Template`
 5. `Quality Gate`
 
-The repository adds public checks around those contracts:
+The repository checks those sections automatically:
 
-| Quality proof | Current coverage |
+| Check | Current coverage |
 |---|---:|
 | Standalone skills validated | 58 |
-| Representative evaluation prompts | 24 |
-| Fixed end-to-end examples | 7 |
+| Evaluation prompts covering all skills | 70 |
+| Method-selection discrimination cases | 24 |
+| Controlled comparisons | 7 |
 | Neutral catalog entries | 58 |
-| Repository-specific routing or local-path leakage allowed | 0 |
+| Portability or local-path failures allowed | 0 |
 
-The validator checks unique names, frontmatter, required sections, portable links, UTF-8 text, catalog consistency, and public-boundary rules. The evaluation set contains prompts and a rubric rather than hidden expected answers.
+The validator checks names, frontmatter, required sections, links, UTF-8 text, catalog consistency, and portability. These are structural checks. They catch broken packages and weak method contracts, but they do not prove that a model will make the right decision. The evaluation set therefore keeps its prompts and scoring rubric in the open.
 
-## Seven Controlled Comparisons
+## Seven controlled comparisons
 
 | Decision problem | Example route |
 |---|---|
@@ -213,17 +229,17 @@ The validator checks unique names, frontmatter, required sections, portable link
 | Build a stakeholder strategy | [Stakeholder Power Map → Account Plan](examples/04-build-a-stakeholder-strategy.md) |
 | Improve product adoption and ROI | [Evidence Map → JTBD → Metrics Tree](examples/05-improve-product-adoption-and-roi.md) |
 | Assess market entry | [PESTEL → Five Forces → Positioning](examples/06-assess-a-market-entry.md) |
-| Evaluate a fictional career decision | [No method vs Evidence Map → Stakeholder Power Map → Scenario Planning → Weighted Scorecard](examples/07-career-change-baseline-vs-method-chain.md) |
+| Evaluate a career decision | [No method vs Evidence Map → Stakeholder Power Map → Scenario Planning → Weighted Scorecard](examples/07-career-change-baseline-vs-method-chain.md) |
 
-These are controlled illustrations, not a universal router or scientific model benchmark. Each example runs the same fictional input twice: first as a direct AI answer with no named method, then with the listed method chain. The comparison records the evidence boundary, method-specific workpapers, effect on the next step, final decision artifact, action plan, success measures, and reversal conditions.
+These examples are not a universal router or a scientific model benchmark. Each one runs the same input twice: first as a direct AI answer with no named method, then with the listed method chain. The comparison keeps the evidence boundary, method workpapers, handoff between steps, final decision artifact, action plan, success measures, and reversal conditions.
 
-### What Does A Method Chain Add Beyond The Final Answer?
+### What does a method chain add?
 
-Across the [seven comparisons](examples/README.md), the direct answer often reaches a sensible recommendation quickly. The method-based run may reach the same conclusion, but it also preserves intermediate workpapers, the reasoning handoff between methods, an owner-and-timing action plan, success metrics, decision gates, and adjustment triggers.
+In the [seven comparisons](examples/README.md), the direct answer often reaches a sensible recommendation quickly. The method-based run may reach the same conclusion. The difference is that it leaves behind workpapers, the handoff from one method to the next, owners and timing, success measures, decision gates, and triggers for changing course.
 
-That is the practical value of a method chain: it makes the reasoning reviewable, the plan executable, and the result measurable. It does not guarantee that a conclusion is correct.
+A method chain makes the reasoning easier to review and the plan easier to run. It does not make the conclusion automatically correct.
 
-## What This Is, And What It Is Not
+## What this is, and what it is not
 
 | This repository is | This repository is not |
 |---|---|
@@ -234,13 +250,13 @@ That is the practical value of a method chain: it makes the reasoning reviewable
 
 Consulting Skills is initiated by Li Zhi and maintained as an open method library in the broader [O2V Framework](https://www.o2vframework.com) knowledge ecosystem. O2V Framework and CLEAR / Signal-to-Action are maintained separately as complete methodology assets.
 
-## Repository Structure
+## Repository structure
 
 ```text
 skills/<skill-name>/SKILL.md   58 standalone method skills
 catalog.yaml                   neutral discovery metadata
-examples/                      seven fixed decision examples
-evaluations/                   public prompts and scoring rubric
+examples/                      seven controlled decision comparisons
+evaluations/                   behavior and method-selection test cases
 scripts/                       catalog generation and validation
 ```
 
@@ -250,7 +266,7 @@ Contributions should improve method fidelity, trigger clarity, evidence discipli
 
 Read [`CONTRIBUTING.md`](CONTRIBUTING.md), open an [issue](https://github.com/fzfclee/consulting-skills/issues), or submit a pull request.
 
-## Intellectual Property
+## Intellectual property
 
 This project does not claim ownership of established consulting tools, analytical methods, academic theories, or management frameworks. Method names are used descriptively; their rights and academic contributions remain with their respective creators, researchers, institutions, and rights holders.
 
@@ -268,6 +284,6 @@ Email: [contact@o2vframework.com](mailto:contact@o2vframework.com)
 
 <div align="center">
 
-**If this library helps your agent make a better decision, star the repository and help improve the next method.**
+**Found it useful? A star helps others find it. Found a weak method? Open an issue.**
 
 </div>

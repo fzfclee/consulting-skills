@@ -26,7 +26,7 @@ If an input is missing, do not block automatically. Mark it as `missing`, state 
 
 ## When Not To Use
 
-Do not use to assign blame. Use it to find controllable causes and recurrence prevention.
+Do not use for a single verified linear cause or treat category branches as proven causes. Fishbone analysis is for exploring multiple cause families that still require evidence.
 
 ## Adjacent Methods
 

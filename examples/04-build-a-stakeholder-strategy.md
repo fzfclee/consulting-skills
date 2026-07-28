@@ -1,13 +1,13 @@
-# Fictional Account Strategy: Direct AI Answer vs Method-Skill Chain
+# Account Strategy: Direct AI Answer vs Method-Skill Chain
 
-> **Privacy note:** BrightGrid Analytics, Alderstone University, CampusMeter, all stakeholders, and all commercial details are entirely fictional.
+> **Example note:** BrightGrid Analytics, Alderstone University, CampusMeter, the stakeholders, and the commercial details were created for this demonstration and do not refer to specific organizations.
 
 This example compares:
 
 1. a direct AI answer with no named method;
 2. a two-skill chain using `stakeholder-power-map` and `account-plan`.
 
-## Shared Fictional Input
+## Shared Input
 
 ```text
 BrightGrid Analytics wants to win a two-building energy-analytics pilot at Alderstone University.
@@ -23,7 +23,7 @@ BrightGrid has not met this person. The Sustainability Lead wants better buildin
 data and is willing to join a benchmark review. IT Security can veto any pilot that requires
 new cloud data flows. The CFO delegate controls the pilot budget.
 
-BrightGrid has evidence from three other fictional campuses showing 8% to 12% avoidable-energy
+BrightGrid has evidence from three reference campuses showing 8% to 12% avoidable-energy
 identification, but has no Alderstone result. What should BrightGrid do next?
 ```
 
@@ -128,7 +128,7 @@ Answer the question directly. Do not use or name any consulting framework or met
 
 | Buyer need | BrightGrid value hypothesis | Current proof | Alternative strength | Proof gap |
 |---|---|---|---|---|
-| Reduce avoidable energy | Multi-building anomaly analysis | 8%-12% identification at three fictional campuses | Incumbent has local integration | Alderstone-specific result |
+| Reduce avoidable energy | Multi-building anomaly analysis | 8%-12% identification at three reference campuses | Incumbent has local integration | Alderstone-specific result |
 | Improve carbon reporting | Building-level audit trail | Demonstration only | Existing reports require no change | Reporting acceptance test |
 | Avoid operational disruption | Read-only benchmark before integration | Proposed architecture | Incumbent is already embedded | IT validation |
 | Defend procurement decision | Transparent comparison criteria | Draft benchmark protocol | Status quo is low effort | Buyer-approved process |

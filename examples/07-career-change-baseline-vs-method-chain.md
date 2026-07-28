@@ -1,21 +1,21 @@
-# Fictional Career Decision: Direct ChatGPT Answer vs Method-Skill Chain
+# Career Decision: Direct ChatGPT Answer vs Method-Skill Chain
 
-> **Privacy note:** This is an entirely fictional composite scenario created for demonstration. Avery, Northstar Mobility, all roles, events, timelines, and thresholds are invented and are not based on a specific person or company.
+> **Example note:** This scenario was created for demonstration. Avery, Northstar Mobility, the roles, events, timelines, and thresholds do not refer to a specific person or company.
 
 This example tests a practical question: **what does a method-skill chain produce beyond the final recommendation?**
 
-It uses the same fictional input twice:
+It uses the same input twice:
 
 1. a direct answer with no named method skill;
 2. a four-skill reasoning chain selected because each method creates a useful intermediate deliverable.
 
 This is a controlled illustration, not a scientific LLM benchmark. Results can vary by model and run. The comparison does not claim that named methods automatically make a conclusion correct.
 
-## Shared Fictional Input
+## Shared Input
 
 ```text
-Avery is a product operations manager at Northstar Mobility, a fictional 400-person software
-company. The company has announced an acquisition, and Avery's role may be redesigned or
+Avery is a product operations manager at Northstar Mobility, a 400-person software company.
+The company has announced an acquisition, and Avery's role may be redesigned or
 consolidated during the next four to six months.
 
 A written retention plan would pay Avery a bonus after an integration milestone in five months.

@@ -26,7 +26,7 @@ If an input is missing, do not block automatically. Mark it as `missing`, state 
 
 ## When Not To Use
 
-Do not use to decorate an answer. Use it when the problem is too messy to analyze directly.
+Do not use when the decision question, scope, and owner are undefined. An issue tree structures what to investigate; it does not prove causality or show feedback over time.
 
 ## Adjacent Methods
 

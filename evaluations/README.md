@@ -47,4 +47,14 @@ Repository-level release readiness requires at least 80% of representative cases
 
 ## Cases
 
-[`representative-cases.yaml`](representative-cases.yaml) contains 24 prompts across 12 representative skills. The file deliberately excludes expected answers.
+[`representative-cases.yaml`](representative-cases.yaml) contains 70 prompts covering all 58 skills. Higher-confusion methods have a second case. The file deliberately excludes expected answers.
+
+Coverage is not the same as a passing result. A repository validation run confirms that every
+skill has a test prompt; it does not claim that a model has passed the behavioral rubric. Record
+model, date, condition, raw outputs, blinded scores, order reversal, and evaluator disagreement
+before reporting a behavioral pass rate.
+
+[`method-selection-cases.yaml`](method-selection-cases.yaml) adds 24 discrimination cases for
+methods that are often confused. Each case states the expected primary method, methods that should
+not lead, and the reason for that boundary. These cases test selection quality; they do not prescribe
+one route for every situation.

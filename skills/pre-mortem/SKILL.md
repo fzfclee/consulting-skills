@@ -27,7 +27,7 @@ If an input is missing, do not block automatically. Mark it as `missing`, state 
 
 ## When Not To Use
 
-Do not use as a fear list. Each risk or force must have a trigger, owner, and response.
+Do not use after a failure has already occurred; use root-cause analysis instead. A pre-mortem requires a specific plan and time horizon, not a generic list of things that might go wrong.
 
 ## Adjacent Methods
 

@@ -26,7 +26,7 @@ If an input is missing, do not block automatically. Mark it as `missing`, state 
 
 ## When Not To Use
 
-Do not use as a fear list. Each risk or force must have a trigger, owner, and response.
+Do not use when numeric ratings would create false precision or when thresholds and owners are undefined. Treat legal, safety, and regulatory stop conditions separately from relative risk ranking.
 
 ## Adjacent Methods
 

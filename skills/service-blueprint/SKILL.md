@@ -26,7 +26,7 @@ If an input is missing, do not block automatically. Mark it as `missing`, state 
 
 ## When Not To Use
 
-Do not use for all users at once. Choose one segment, scenario, journey, job, or service context.
+Do not use when the service boundary and customer scenario are undefined or when backstage activities would have to be invented from a frontstage complaint. Mark missing customer and process evidence explicitly.
 
 ## Adjacent Methods
 

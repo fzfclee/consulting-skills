@@ -27,7 +27,7 @@ If an input is missing, do not block automatically. Mark it as `missing`, state 
 
 ## When Not To Use
 
-Do not use before options are explicit enough to compare. First convert vague themes into executable options.
+Do not use when reach, impact, confidence, and effort are measured at incompatible levels or when compliance and dependency gates dominate the choice. RICE ranks comparable initiatives; it does not make strategy.
 
 ## Adjacent Methods
 

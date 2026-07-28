@@ -26,7 +26,7 @@ If an input is missing, do not block automatically. Mark it as `missing`, state 
 
 ## When Not To Use
 
-Do not use as a sales slogan. Use it to clarify value, buying logic, proof, operating fit, and next commercial action.
+Do not treat a completed canvas as proof that a business model works. Use it to expose connected assumptions about customers, value, operations, revenue, and cost that still need testing.
 
 ## Adjacent Methods
 

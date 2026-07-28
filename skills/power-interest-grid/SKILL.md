@@ -26,7 +26,7 @@ If an input is missing, do not block automatically. Mark it as `missing`, state 
 
 ## When Not To Use
 
-Do not use as a personality-reading exercise. Use it only to clarify decision rights, influence, needs, and next engagement moves.
+Do not use when informal influence, stakeholder stance, or relationship networks require a more detailed map. The grid is a coarse engagement triage, not proof of motives or support.
 
 ## Adjacent Methods
 

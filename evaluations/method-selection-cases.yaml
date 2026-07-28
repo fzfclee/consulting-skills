@@ -1,0 +1,220 @@
+selection_version: 1
+description: Method-discrimination cases for commonly confused consulting skills.
+cases:
+  - id: recurring-feedback
+    situation: >
+      A reporting problem improves after extra meetings, returns two months later, and the added
+      meetings reduce the time available to resolve delivery risks.
+    expected_primary: systems-thinking
+    reject_as_primary:
+      - five-whys-root-cause
+      - fishbone-diagram
+      - constraint-analysis
+    reason: Feedback, delay, and intervention side effects define the problem.
+  - id: bounded-causal-chain
+    situation: >
+      One regulatory submission was late because a required review was missed. The team has a clear
+      event sequence and needs to trace the controllable process failure.
+    expected_primary: five-whys-root-cause
+    reject_as_primary:
+      - systems-thinking
+      - fishbone-diagram
+    reason: A bounded event with a plausible linear chain is available.
+  - id: multiple-cause-families
+    situation: >
+      Product defects may come from materials, equipment, method, measurement, environment, or
+      training, and no cause family has yet been ruled out.
+    expected_primary: fishbone-diagram
+    reject_as_primary:
+      - five-whys-root-cause
+      - constraint-analysis
+    reason: The task is broad cause exploration before causal verification.
+  - id: binding-bottleneck
+    situation: >
+      A 30-day release process spends 14 days waiting for one approval step while every other step
+      has spare capacity.
+    expected_primary: constraint-analysis
+    reject_as_primary:
+      - systems-thinking
+      - fishbone-diagram
+    reason: Flow data points to one binding constraint.
+  - id: failure-rehearsal
+    situation: >
+      A named project is about to start. The team needs to imagine that it failed, identify plausible
+      failure paths, and assign prevention and contingency actions.
+    expected_primary: pre-mortem
+    reject_as_primary:
+      - risk-matrix
+      - scenario-planning
+    reason: The question is a plan-specific prospective failure rehearsal.
+  - id: current-risk-portfolio
+    situation: >
+      A program has a known list of schedule, supplier, privacy, and adoption risks that need
+      thresholds, owners, treatment, and escalation priority.
+    expected_primary: risk-matrix
+    reject_as_primary:
+      - pre-mortem
+      - scenario-planning
+    reason: Identified risks need consistent assessment and treatment.
+  - id: uncertain-future-environment
+    situation: >
+      A strategic choice depends on two high-impact external uncertainties whose outcomes cannot be
+      forecast reliably.
+    expected_primary: scenario-planning
+    reject_as_primary:
+      - pre-mortem
+      - risk-matrix
+    reason: Distinct plausible futures and signposts are needed.
+  - id: mixed-evidence
+    situation: >
+      A decision file combines system data, interview quotes, executive opinions, second-hand claims,
+      and missing records.
+    expected_primary: evidence-map
+    reject_as_primary:
+      - assumption-inventory
+      - signal-vs-noise-filter
+    reason: The immediate need is to classify evidence and expose confidence gaps.
+  - id: plan-assumptions
+    situation: >
+      A proposed new service depends on beliefs about demand, price, delivery capacity, legal
+      feasibility, and partner behavior that have not been tested.
+    expected_primary: assumption-inventory
+    reject_as_primary:
+      - evidence-map
+      - signal-vs-noise-filter
+    reason: Decision-critical beliefs about a future plan need prioritization and tests.
+  - id: repeated-noisy-signals
+    situation: >
+      Sixty alerts and comments appear to show a problem, but many repeat the same original source and
+      vivid anecdotes conflict with stable operating data.
+    expected_primary: signal-vs-noise-filter
+    reject_as_primary:
+      - evidence-map
+      - assumption-inventory
+    reason: Source independence, materiality, and noise are the primary issue.
+  - id: multi-option-decision
+    situation: >
+      Three vendor options need comparison against agreed criteria, uncertainty, tradeoffs, and one
+      mandatory requirement.
+    expected_primary: decision-matrix
+    reject_as_primary:
+      - rice-scoring
+      - wsjf-prioritization
+    reason: This is a bounded option choice, not backlog sequencing.
+  - id: governed-weighted-assessment
+    situation: >
+      Several business units must use a shared set of weighted criteria, evidence ratings, hard gates,
+      and sensitivity checks for a repeatable investment review.
+    expected_primary: weighted-scorecard
+    reject_as_primary:
+      - rice-scoring
+      - effort-impact-matrix
+    reason: The need is a reusable governed scoring model.
+  - id: product-opportunity-ranking
+    situation: >
+      Comparable product initiatives have estimates for user reach, impact, confidence, and delivery
+      effort.
+    expected_primary: rice-scoring
+    reject_as_primary:
+      - decision-matrix
+      - wsjf-prioritization
+    reason: The available inputs match RICE and the task is product opportunity ranking.
+  - id: cost-of-delay-sequencing
+    situation: >
+      A delivery backlog needs sequencing based on business value, time criticality, risk reduction,
+      and job size.
+    expected_primary: wsjf-prioritization
+    reject_as_primary:
+      - rice-scoring
+      - decision-matrix
+    reason: Cost of delay relative to job size is the sequencing logic.
+  - id: progress-and-alternatives
+    situation: >
+      Users keep returning to spreadsheets despite requesting product features. The team needs to
+      understand the progress users seek, the struggling moment, alternatives, and switching forces.
+    expected_primary: jobs-to-be-done
+    reject_as_primary:
+      - empathy-map
+      - user-journey-mapping
+    reason: The question is why users hire or reject an approach in a specific context.
+  - id: observed-user-perspective
+    situation: >
+      Interview quotes, observed behavior, pains, and desired gains need to be organized for one user
+      group and one work situation.
+    expected_primary: empathy-map
+    reject_as_primary:
+      - jobs-to-be-done
+      - service-blueprint
+    reason: The immediate need is a grounded snapshot of the user's perspective.
+  - id: end-to-end-user-experience
+    situation: >
+      A team needs to map what one customer does, thinks, and experiences across discovery, purchase,
+      use, support, and renewal.
+    expected_primary: user-journey-mapping
+    reject_as_primary:
+      - empathy-map
+      - service-blueprint
+    reason: The focus is the customer's experience over time.
+  - id: frontstage-backstage-service
+    situation: >
+      Customers receive inconsistent updates, and the team must connect customer actions and visible
+      touchpoints to backstage work, systems, handoffs, and failure points.
+    expected_primary: service-blueprint
+    reject_as_primary:
+      - user-journey-mapping
+      - jobs-to-be-done
+    reason: Frontstage and backstage service operations must be connected.
+  - id: macro-environment
+    situation: >
+      A market decision may change because of regulation, economic conditions, demographics,
+      technology, environmental requirements, and law.
+    expected_primary: pestel-analysis
+    reject_as_primary:
+      - porter-five-forces
+      - competitive-positioning
+    reason: The unit of analysis is the external macro environment.
+  - id: industry-economics
+    situation: >
+      A company needs to understand buyer power, supplier power, substitutes, entry barriers, and
+      rivalry in a clearly bounded industry.
+    expected_primary: porter-five-forces
+    reject_as_primary:
+      - pestel-analysis
+      - competitive-positioning
+    reason: The decision depends on industry structure and bargaining economics.
+  - id: buyer-choice-position
+    situation: >
+      A product needs a defensible reason why one target segment should choose it over named
+      alternatives, supported by proof and explicit tradeoffs.
+    expected_primary: competitive-positioning
+    reject_as_primary:
+      - pestel-analysis
+      - porter-five-forces
+    reason: The question is the offer's position in a buyer's choice.
+  - id: rule-to-conclusion
+    situation: >
+      The team has an accepted policy rule and verified case facts and needs to determine what
+      conclusion necessarily follows.
+    expected_primary: deductive-reasoning
+    reject_as_primary:
+      - inductive-reasoning
+      - abductive-reasoning
+    reason: The conclusion should follow from stated premises.
+  - id: observations-to-pattern
+    situation: >
+      Several observations show a recurring pattern, and the team needs a bounded generalization with
+      sample limits and confidence.
+    expected_primary: inductive-reasoning
+    reject_as_primary:
+      - deductive-reasoning
+      - abductive-reasoning
+    reason: The task moves from observations to a probable broader pattern.
+  - id: competing-explanations
+    situation: >
+      An unexpected outcome has several plausible explanations, and the team needs discriminating
+      evidence before choosing one.
+    expected_primary: abductive-reasoning
+    reject_as_primary:
+      - deductive-reasoning
+      - inductive-reasoning
+    reason: The task is inference to the best current explanation.

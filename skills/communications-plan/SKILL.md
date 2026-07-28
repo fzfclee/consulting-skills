@@ -27,7 +27,7 @@ If an input is missing, do not block automatically. Mark it as `missing`, state 
 
 ## When Not To Use
 
-Do not use as a personality-reading exercise. Use it only to clarify decision rights, influence, needs, and next engagement moves.
+Do not use before the audience, required behavior, sender, channel, timing, and feedback path are clear. Communication cannot compensate for missing authority, broken process, or misaligned incentives.
 
 ## Adjacent Methods
 

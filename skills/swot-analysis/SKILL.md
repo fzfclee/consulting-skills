@@ -26,7 +26,7 @@ If an input is missing, do not block automatically. Mark it as `missing`, state 
 
 ## When Not To Use
 
-Do not use for generic essay writing. Use it only when external/internal factors must change a strategy, choice, or risk posture.
+Do not start with an empty four-box brainstorm. Use SWOT only after the decision scope and evidence are clear, and only when the synthesis will change a choice, risk response, or action.
 
 ## Adjacent Methods
 

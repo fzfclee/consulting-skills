@@ -1,6 +1,6 @@
 # Controlled Use-Case Comparisons
 
-Each example runs the same fictional input twice:
+Each example runs the same input twice:
 
 1. a direct AI answer with no named consulting method;
 2. a second answer using only the listed method skills.
@@ -15,11 +15,11 @@ They are controlled illustrations, not scientific model benchmarks or a dynamic 
 | [04](04-build-a-stakeholder-strategy.md) | Win support in a complex power structure | Stakeholder Power Map, Account Plan |
 | [05](05-improve-product-adoption-and-roi.md) | Improve adoption and value realization | Evidence Map, Jobs To Be Done, Metrics Tree |
 | [06](06-assess-a-market-entry.md) | Assess a market-entry decision | PESTEL, Porter Five Forces, Competitive Positioning |
-| [07](07-career-change-baseline-vs-method-chain.md) | Evaluate a fictional career decision | Evidence Map, Stakeholder Power Map, Scenario Planning, Weighted Scorecard |
+| [07](07-career-change-baseline-vs-method-chain.md) | Evaluate a career decision | Evidence Map, Stakeholder Power Map, Scenario Planning, Weighted Scorecard |
 
 Each comparison records:
 
-- the shared fictional input and evidence boundary;
+- the shared input and evidence boundary;
 - a representative direct AI answer;
 - why each method changes the decision;
 - the method-specific intermediate workpapers;

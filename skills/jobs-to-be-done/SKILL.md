@@ -27,7 +27,7 @@ If an input is missing, do not block automatically. Mark it as `missing`, state 
 
 ## When Not To Use
 
-Do not use for all users at once. Choose one segment, scenario, journey, job, or service context.
+Do not use to translate feature requests directly into a backlog or to infer a job from demographics. Anchor the analysis in a specific struggling moment, desired progress, context, and current alternatives.
 
 ## Adjacent Methods
 

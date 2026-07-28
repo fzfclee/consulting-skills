@@ -26,7 +26,7 @@ If an input is missing, do not block automatically. Mark it as `missing`, state 
 
 ## When Not To Use
 
-Do not use to create a large KPI catalog. Use it to connect outcomes, drivers, owners, and decisions.
+Do not use before the strategy, intended outcomes, and cause-and-effect logic are clear. A balanced scorecard is a small management system, not a catalogue of every available KPI.
 
 ## Adjacent Methods
 

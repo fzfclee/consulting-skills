@@ -26,7 +26,7 @@ If an input is missing, do not block automatically. Mark it as `missing`, state 
 
 ## When Not To Use
 
-Do not use to assign blame. Use it to find controllable causes and recurrence prevention.
+Do not use when the problem has several interacting causal paths, feedback loops, or insufficient event evidence. A single Why chain can oversimplify a multi-causal system.
 
 ## Adjacent Methods
 

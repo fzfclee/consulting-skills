@@ -1,5 +1,5 @@
-evaluation_version: 1
-description: Public forward-test prompts without expected answers.
+evaluation_version: 2
+description: Public forward-test prompts without expected answers, covering every skill.
 cases:
   - id: evidence-map-01
     skill: evidence-map
@@ -160,3 +160,325 @@ cases:
       A pilot claims success because 80% of invited users logged in once. The intended value is faster
       case resolution with no quality loss. Define the hypothesis, measures, evidence standard,
       timeline, owner, and decision gate.
+  - id: 5w1h-analysis-01
+    skill: 5w1h-analysis
+    risk: vague complaint converted into an assumed problem
+    prompt: >
+      A regional manager says the new operating model is not working and asks for an immediate
+      redesign. Reports mention delays, rework, and unclear ownership, but do not identify where,
+      when, for whom, or how often they occur. Build a fact-finding frame before recommending action.
+  - id: account-plan-01
+    skill: account-plan
+    risk: friendly contact mistaken for an account strategy
+    prompt: >
+      A software supplier wants to grow a large manufacturing account. One operations manager is
+      supportive, procurement controls vendor access, two plants use a competitor, and no funded
+      expansion project exists. Build an account plan without treating relationships as commitment.
+  - id: affinity-diagram-01
+    skill: affinity-diagram
+    risk: qualitative evidence forced into preselected categories
+    prompt: >
+      Forty-six interview notes about a new employee service contain repeated comments about access,
+      trust, manager approval, mobile use, response time, and unclear policy. Group the observations
+      from the data up, preserve outliers, and show which themes still need interpretation.
+  - id: assumption-inventory-01
+    skill: assumption-inventory
+    risk: hidden assumptions presented as facts
+    prompt: >
+      A team plans to launch a premium support tier because it believes customers will pay more,
+      existing agents can absorb demand, response time drives retention, and the billing system can
+      support the offer. Identify, classify, and prioritize the assumptions that need testing.
+  - id: balanced-scorecard-01
+    skill: balanced-scorecard
+    risk: strategy replaced by a large KPI list
+    prompt: >
+      A service business wants profitable growth without reducing customer trust or overloading its
+      delivery team. Leaders have proposed 27 KPIs. Build a small scorecard that connects financial,
+      customer, operating, and capability outcomes to decisions and owners.
+  - id: break-even-analysis-01
+    skill: break-even-analysis
+    risk: threshold hidden by mixed fixed and variable costs
+    prompt: >
+      A training product would require $90,000 in design and setup, cost $35 per participant to
+      deliver, and sell for $140 per participant. Annual support adds $18,000. Calculate and interpret
+      the break-even threshold, timing assumptions, and sensitivity to price and volume.
+  - id: business-model-canvas-01
+    skill: business-model-canvas
+    risk: completed canvas treated as business-model validation
+    prompt: >
+      A startup wants to sell predictive maintenance alerts to small factories through equipment
+      distributors. Customer demand, distributor incentives, data access, service cost, and pricing
+      are uncertain. Build a canvas that exposes connected assumptions and next tests.
+  - id: change-event-timeline-01
+    skill: change-event-timeline
+    risk: recollection and interpretation mixed with dated events
+    prompt: >
+      Adoption of a workflow tool fell after a policy change, a release, a team reorganization, and
+      the removal of local support. Dates and accounts differ across interviews. Build a timeline that
+      separates confirmed events, reported events, metrics, and unresolved sequence questions.
+  - id: change-impact-analysis-01
+    skill: change-impact-analysis
+    risk: generic impact list without a defined change
+    prompt: >
+      A company will replace local purchasing approvals with a global shared-service workflow in
+      twelve weeks. Assess the impact on requesters, approvers, finance, suppliers, data, controls,
+      training, and transition timing, while marking missing evidence.
+  - id: communications-plan-01
+    skill: communications-plan
+    risk: communication used to cover authority and process gaps
+    prompt: >
+      A policy rollout is being ignored. Staff received two emails, managers interpret the policy
+      differently, the approval process is unfinished, and no one owns questions. Build a
+      communication plan while separating issues that communication cannot solve.
+  - id: competitive-positioning-01
+    skill: competitive-positioning
+    risk: feature list and slogans substituted for a market position
+    prompt: >
+      A project-management product targets regulated mid-sized firms. Buyers compare it with a global
+      suite, spreadsheets, and a specialist local vendor. Develop a position using segment needs,
+      alternatives, proof, tradeoffs, and reasons to believe.
+  - id: cost-benefit-analysis-01
+    skill: cost-benefit-analysis
+    risk: different time horizons and hard constraints averaged together
+    prompt: >
+      A company is considering automating invoice review. Benefits include labor savings and fewer
+      duplicate payments; costs include implementation, licenses, controls, and process disruption.
+      Compare the economics over three years and keep mandatory compliance requirements as gates.
+  - id: critical-uncertainties-01
+    skill: critical-uncertainties
+    risk: every unknown treated as equally important
+    prompt: >
+      A retailer is considering same-day delivery. Demand, courier regulation, competitor response,
+      warehouse capacity, fuel cost, and customer willingness to pay are uncertain. Identify which
+      uncertainties are both highly consequential and genuinely unresolved.
+  - id: customer-segmentation-01
+    skill: customer-segmentation
+    risk: convenient demographics that do not change action
+    prompt: >
+      An accounting product serves freelancers, small agencies, and growing online retailers. Usage,
+      workflow complexity, support cost, willingness to pay, and retention differ. Build actionable
+      segments and show how treatment would change for each one.
+  - id: customer-success-health-score-01
+    skill: customer-success-health-score
+    risk: aggregate score hides a critical failure
+    prompt: >
+      A SaaS provider wants an account health score using adoption, outcome attainment, support,
+      relationship strength, payment, and renewal data. Some large accounts have high usage but an
+      unresolved security issue. Design the score, hard-stop rules, thresholds, and owner actions.
+  - id: deal-strategy-map-01
+    skill: deal-strategy-map
+    risk: positive relationship mistaken for deal progress
+    prompt: >
+      A consulting firm is pursuing a six-month analytics engagement. A director likes the proposal,
+      finance questions the business case, procurement has not opened a process, and an incumbent is
+      helping define requirements. Map the deal, evidence, gaps, and next milestone.
+  - id: deductive-reasoning-01
+    skill: deductive-reasoning
+    risk: conclusion does not follow from the premises
+    prompt: >
+      Leadership argues that all high-adoption tools reduce cycle time, this tool has high adoption,
+      therefore it must have reduced cycle time. Test the argument, state the valid deduction, and
+      identify the evidence required for the stronger claim.
+  - id: effort-impact-matrix-01
+    skill: effort-impact-matrix
+    risk: rough scores ignore dependencies and hard gates
+    prompt: >
+      A team must triage twelve improvement ideas with rough impact and effort estimates. Two ideas
+      are regulatory requirements, three depend on a data-platform change, and confidence varies.
+      Build a useful matrix without letting rough placement override gates and dependencies.
+  - id: empathy-map-01
+    skill: empathy-map
+    risk: assumptions about users presented as observed feelings
+    prompt: >
+      Nurses are avoiding a new scheduling tool. Interview notes include direct quotes, observed
+      workarounds, manager interpretations, and product-team guesses. Build an empathy map for one
+      shift context while keeping evidence and assumptions separate.
+  - id: fifteen-percent-solutions-01
+    skill: fifteen-percent-solutions
+    risk: action depends on authority the participant does not have
+    prompt: >
+      A team member wants to improve slow cross-team decisions but cannot change governance, budget,
+      or reporting lines. Identify actions within their discretion that can be started now, with
+      evidence of progress and clear limits.
+  - id: first-principles-thinking-01
+    skill: first-principles-thinking
+    risk: inherited design constraints accepted without examination
+    prompt: >
+      A company assumes every customer onboarding needs six approval stages because that is how the
+      legacy process works. Rebuild the problem from required outcomes, non-negotiable constraints,
+      and testable design choices.
+  - id: fishbone-diagram-01
+    skill: fishbone-diagram
+    risk: brainstormed cause categories treated as proof
+    prompt: >
+      Product returns increased from 4% to 7%. Teams suspect training, suppliers, packaging,
+      specifications, equipment, and measurement changes, but evidence is fragmented. Build a
+      fishbone analysis and a plan to test the strongest branches.
+  - id: force-field-analysis-01
+    skill: force-field-analysis
+    risk: generic pros and cons with no practical response
+    prompt: >
+      A hospital wants to introduce virtual follow-up visits. Patient demand and clinician flexibility
+      support the change; reimbursement uncertainty, scheduling rules, technology access, and clinical
+      concerns restrain it. Assess force strength, evidence, and practical moves.
+  - id: go-to-market-diagnosis-01
+    skill: go-to-market-diagnosis
+    risk: acquisition adoption and retention problems blended together
+    prompt: >
+      A B2B analytics product has strong demo attendance, low trial activation, long security reviews,
+      and weak renewal among small customers. Diagnose where the go-to-market system is breaking
+      before proposing more marketing.
+  - id: hypothesis-tree-01
+    skill: hypothesis-tree
+    risk: overlapping hypotheses that cannot be disproved
+    prompt: >
+      A regional service margin fell by six points. Build testable hypotheses across price, mix,
+      volume, direct cost, and delivery productivity, with evidence that would support or reject each
+      branch.
+  - id: inductive-reasoning-01
+    skill: inductive-reasoning
+    risk: small biased sample generalized to the full population
+    prompt: >
+      Six interviewed power users praise a new dashboard, while usage logs show most users open it
+      once a month. Develop a bounded inductive conclusion, assess sample bias, and specify what
+      additional observations would justify a broader claim.
+  - id: kano-model-01
+    skill: kano-model
+    risk: feature importance guessed without satisfaction evidence
+    prompt: >
+      Customers request export, mobile access, approval alerts, custom branding, and faster search.
+      Design a Kano assessment that distinguishes basic, performance, and delight attributes without
+      classifying features from request frequency alone.
+  - id: mece-framework-01
+    skill: mece-framework
+    risk: branches overlap and omit a material category
+    prompt: >
+      A team explains revenue decline using fewer customers, lower prices, weaker conversion, smaller
+      orders, churn, sales capacity, and market demand. Rebuild the structure so branches do not double
+      count and the full revenue equation is covered.
+  - id: metrics-tree-01
+    skill: metrics-tree
+    risk: driver correlations treated as causal and guardrails omitted
+    prompt: >
+      A service wants to reduce case-resolution time without increasing reopen rates or staff burnout.
+      Build a metrics tree linking the outcome to controllable drivers, guardrails, owners, and tests
+      of the assumed relationships.
+  - id: mind-map-analysis-01
+    skill: mind-map-analysis
+    risk: exploratory associations mistaken for priorities
+    prompt: >
+      A founder has scattered notes about customers, product gaps, cash, hiring, partnerships,
+      competitors, and personal workload. Organize the landscape, show connections and open questions,
+      and stop before claiming a ranked strategy.
+  - id: min-specs-01
+    skill: min-specs
+    risk: preferred features confused with essential conditions
+    prompt: >
+      A cross-company data-sharing pilot has a 20-page requirement list. Reduce it to the minimum
+      conditions needed for legal use, reliable exchange, customer value, ownership, and learning,
+      while recording what can wait.
+  - id: north-star-metric-01
+    skill: north-star-metric
+    risk: activity metric chosen without a value connection
+    prompt: >
+      A learning platform proposes logins, lessons viewed, certificates, weekly learners, and skill
+      improvement as its north star. Select or construct a metric tied to user value and business
+      durability, with guardrails against shallow activity.
+  - id: pestel-analysis-01
+    skill: pestel-analysis
+    risk: internal weaknesses mixed into external macro analysis
+    prompt: >
+      A medical-device company is considering entry into a new country. Assess political, economic,
+      social, technological, environmental, and legal factors, then connect only decision-relevant
+      external changes to timing, assumptions, and risk.
+  - id: porter-five-forces-01
+    skill: porter-five-forces
+    risk: competitor feature comparison substituted for industry economics
+    prompt: >
+      Assess the economics of the commercial drone-inspection market. Buyers are concentrated,
+      certified pilots are scarce, hardware suppliers are global, in-house inspection is an
+      alternative, and software competitors are entering. Define the industry boundary and forces.
+  - id: power-interest-grid-01
+    skill: power-interest-grid
+    risk: formal title treated as the only source of influence
+    prompt: >
+      A workplace-policy change involves an executive sponsor, HR, line managers, an employee council,
+      payroll, and frontline staff. Place stakeholders for initial engagement triage while marking
+      informal influence and uncertain interest.
+  - id: pricing-strategy-check-01
+    skill: pricing-strategy-check
+    risk: cost-plus price set without value or willingness-to-pay evidence
+    prompt: >
+      A workflow product plans to charge $30 per user because that produces a target margin. Customers
+      vary in value realized, alternatives, procurement behavior, and usage. Test the pricing logic
+      and define the evidence needed before launch.
+  - id: raci-matrix-01
+    skill: raci-matrix
+    risk: multiple accountable owners and undefined work products
+    prompt: >
+      A data migration involves business owners, data engineering, security, a vendor, finance, and
+      local teams. Build a RACI for defined decisions and deliverables, resolving multiple accountable
+      owners and missing escalation paths.
+  - id: rice-scoring-01
+    skill: rice-scoring
+    risk: incomparable reach periods and confidence ignored
+    prompt: >
+      Rank five product initiatives whose reach estimates use weekly users, annual accounts, and
+      one-time transactions. Impact evidence ranges from experiments to executive opinion. Normalize
+      the inputs, expose confidence, and state where RICE should not decide.
+  - id: risk-matrix-01
+    skill: risk-matrix
+    risk: colors and scores without triggers owners or hard stops
+    prompt: >
+      A launch faces data-privacy, supplier, adoption, schedule, and reputation risks. Build a risk
+      matrix with evidence, thresholds, triggers, owners, responses, and separate treatment for any
+      non-negotiable legal condition.
+  - id: scenario-planning-01
+    skill: scenario-planning
+    risk: scenarios written as predictions
+    prompt: >
+      A manufacturer is deciding whether to localize production. Demand growth and trade restrictions
+      are both highly uncertain. Build distinct plausible scenarios, robust moves, contingent moves,
+      signposts, and conditions for revisiting the decision.
+  - id: signal-vs-noise-filter-01
+    skill: signal-vs-noise-filter
+    risk: repeated claims and vivid anecdotes overweighted
+    prompt: >
+      Leaders receive 60 comments about a service decline. Many repeat one social-media post, five
+      come from major customers, incident data is stable, and response-time data is incomplete.
+      Separate decision-relevant signals from repetition, anecdotes, and unresolved evidence.
+  - id: swot-analysis-01
+    skill: swot-analysis
+    risk: four-box brainstorm with no strategic implication
+    prompt: >
+      A regional professional-services firm is considering an AI-enabled offer. Synthesize verified
+      internal capabilities and external conditions into a SWOT, then derive a small number of choices
+      and evidence gaps rather than stopping at the four boxes.
+  - id: user-journey-mapping-01
+    skill: user-journey-mapping
+    risk: internal process map presented as a customer journey
+    prompt: >
+      Map the journey of a first-time small-business borrower from recognizing a need through
+      application, decision, funding, and first repayment. Include actions, questions, emotions,
+      touchpoints, evidence, and moments that affect completion.
+  - id: weighted-scorecard-01
+    skill: weighted-scorecard
+    risk: mandatory requirement averaged away by a high total score
+    prompt: >
+      Compare four outsourcing providers using service quality, transition risk, cost, capability,
+      cultural fit, and data residency. One provider lacks mandatory residency evidence. Build a
+      scorecard with weights, confidence, hard gates, and sensitivity.
+  - id: win-loss-review-01
+    skill: win-loss-review
+    risk: sales narrative and small sample treated as buyer truth
+    prompt: >
+      A company won three deals and lost five. Sales attributes wins to relationships and losses to
+      price, but only two buyers were interviewed and CRM reasons are inconsistent. Build a review that
+      separates evidence, patterns, rival explanations, and follow-up learning.
+  - id: wsjf-prioritization-01
+    skill: wsjf-prioritization
+    risk: cost of delay and job size measured on incompatible scales
+    prompt: >
+      Prioritize six platform initiatives using business value, time criticality, risk reduction, and
+      job size. Two items are mandatory, estimates use different time horizons, and dependencies affect
+      sequence. Normalize the inputs and keep hard gates separate from WSJF.

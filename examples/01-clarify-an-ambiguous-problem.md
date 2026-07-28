@@ -1,6 +1,6 @@
-# Fictional Ambiguous Problem: Direct AI Answer vs Method-Skill Chain
+# Ambiguous Problem: Direct AI Answer vs Method-Skill Chain
 
-> **Privacy note:** Blue Harbor Foods, the program, metrics, people, and events in this example are entirely fictional.
+> **Example note:** Blue Harbor Foods, its program, metrics, people, and events were created for this demonstration and do not refer to a specific organization.
 
 This example uses the same input twice:
 
@@ -9,7 +9,7 @@ This example uses the same input twice:
 
 The purpose is not to prove that methods always produce a different conclusion. It is to show what becomes inspectable and actionable when an ambiguous statement is converted into a decision-ready problem.
 
-## Shared Fictional Input
+## Shared Input
 
 ```text
 Blue Harbor Foods is six months into an order-to-cash transformation across four business units.

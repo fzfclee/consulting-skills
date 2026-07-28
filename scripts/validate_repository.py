@@ -5,6 +5,7 @@ from __future__ import annotations
 
 import re
 import sys
+from urllib.parse import unquote
 from pathlib import Path
 
 import yaml
@@ -20,8 +21,8 @@ REQUIRED_SECTIONS = {
     "## Quality Gate",
 }
 EXAMPLE_REQUIRED_PATTERNS = {
-    "privacy note": re.compile(r"\*\*Privacy note:\*\*"),
-    "shared fictional input": re.compile(r"^## Shared Fictional Input$", re.MULTILINE),
+    "example note": re.compile(r"\*\*Example note:\*\*"),
+    "shared input": re.compile(r"^## Shared Input$", re.MULTILINE),
     "direct answer run": re.compile(
         r"^## Run A: Direct (?:AI )?Answer, No Method Skill$", re.MULTILINE
     ),
@@ -35,6 +36,10 @@ EXAMPLE_REQUIRED_PATTERNS = {
         r"^## What The Comparison Shows$", re.MULTILINE
     ),
 }
+EXAMPLE_DISALLOWED_LANGUAGE = re.compile(
+    r"\b(?:fictional|invented)\b|虚构|杜撰",
+    re.IGNORECASE,
+)
 FORBIDDEN_PATTERNS = {
     "private product name": re.compile(r"\bs2a-magic\b", re.IGNORECASE),
     "private routing phrase": re.compile(r"\bS2A Handoff\b", re.IGNORECASE),
@@ -96,6 +101,60 @@ def validate_skill(path: Path, all_names: set[str], errors: list[str]) -> None:
         fail(errors, f"{path}: references unknown adjacent methods {unknown}")
 
 
+def validate_boundary_uniqueness(skill_paths: list[Path], errors: list[str]) -> None:
+    boundaries: dict[str, list[str]] = {}
+    for path in skill_paths:
+        text = path.read_text(encoding="utf-8")
+        match = re.search(
+            r"^## When Not To Use\s*\n+(.*?)(?=^## )",
+            text,
+            re.MULTILINE | re.DOTALL,
+        )
+        if not match:
+            continue
+        normalized = " ".join(match.group(1).split())
+        boundaries.setdefault(normalized, []).append(path.parent.name)
+    duplicates = [names for names in boundaries.values() if len(names) > 1]
+    for names in duplicates:
+        fail(
+            errors,
+            "When Not To Use text is duplicated across methods: "
+            + ", ".join(sorted(names)),
+        )
+
+
+def validate_text_files(errors: list[str]) -> None:
+    text_suffixes = {".md", ".py", ".txt", ".yaml", ".yml"}
+    for path in ROOT.rglob("*"):
+        if not path.is_file() or ".git" in path.parts or path.suffix.lower() not in text_suffixes:
+            continue
+        data = path.read_bytes()
+        if data.startswith(b"\xef\xbb\xbf"):
+            fail(errors, f"{path}: contains UTF-8 BOM")
+        if b"\r\n" in data:
+            fail(errors, f"{path}: contains CRLF despite repository LF policy")
+        try:
+            data.decode("utf-8")
+        except UnicodeDecodeError as exc:
+            fail(errors, f"{path}: not valid UTF-8 ({exc})")
+
+
+def validate_markdown_links(errors: list[str]) -> None:
+    link_pattern = re.compile(r"!?\[[^\]]*\]\(([^)]+)\)")
+    for path in ROOT.rglob("*.md"):
+        if ".git" in path.parts:
+            continue
+        text = path.read_text(encoding="utf-8")
+        for match in link_pattern.finditer(text):
+            raw_target = match.group(1).strip()
+            target = raw_target.split()[0].strip("<>")
+            if target.startswith(("http://", "https://", "mailto:", "#")):
+                continue
+            relative = unquote(target.split("#", 1)[0])
+            if relative and not (path.parent / relative).exists():
+                fail(errors, f"{path}: broken relative link {raw_target}")
+
+
 def validate_catalog(all_names: set[str], errors: list[str]) -> None:
     path = ROOT / "catalog.yaml"
     try:
@@ -137,6 +196,8 @@ def validate_example(path: Path, all_names: set[str], errors: list[str]) -> None
         return
     if text.startswith("\ufeff"):
         fail(errors, f"{path}: contains UTF-8 BOM")
+    if EXAMPLE_DISALLOWED_LANGUAGE.search(text):
+        fail(errors, f"{path}: contains discouraged example-label language")
     for label, pattern in EXAMPLE_REQUIRED_PATTERNS.items():
         if not pattern.search(text):
             fail(errors, f"{path}: missing controlled-comparison {label}")
@@ -164,6 +225,7 @@ def validate_supporting_assets(all_names: set[str], errors: list[str]) -> None:
         "examples/README.md",
         "evaluations/README.md",
         "evaluations/representative-cases.yaml",
+        "evaluations/method-selection-cases.yaml",
     ]
     for relative in required:
         if not (ROOT / relative).is_file():
@@ -173,11 +235,73 @@ def validate_supporting_assets(all_names: set[str], errors: list[str]) -> None:
         fail(errors, f"Expected 7 numbered examples, found {len(examples)}")
     for path in examples:
         validate_example(path, all_names, errors)
+    language_check_paths = list((ROOT / "examples").glob("*.md")) + [
+        ROOT / "README.md",
+        ROOT / "README.zh-CN.md",
+    ]
+    for path in language_check_paths:
+        text = path.read_text(encoding="utf-8")
+        if EXAMPLE_DISALLOWED_LANGUAGE.search(text):
+            fail(errors, f"{path}: contains discouraged example-label language")
     cases_path = ROOT / "evaluations" / "representative-cases.yaml"
     if cases_path.exists():
         cases = yaml.safe_load(cases_path.read_text(encoding="utf-8"))
-        if len(cases.get("cases", [])) != 24:
-            fail(errors, "representative-cases.yaml must contain 24 cases")
+        case_list = cases.get("cases", [])
+        if len(case_list) != 70:
+            fail(errors, "representative-cases.yaml must contain 70 cases")
+        case_ids = [case.get("id") for case in case_list]
+        if len(case_ids) != len(set(case_ids)):
+            fail(errors, "representative-cases.yaml contains duplicate case ids")
+        tested_skills = {case.get("skill") for case in case_list}
+        unknown_skills = sorted(tested_skills - all_names)
+        if unknown_skills:
+            fail(
+                errors,
+                "representative-cases.yaml references unknown skills "
+                + ", ".join(unknown_skills),
+            )
+        missing_skills = sorted(all_names - tested_skills)
+        if missing_skills:
+            fail(
+                errors,
+                "representative-cases.yaml does not cover skills "
+                + ", ".join(missing_skills),
+            )
+    selection_path = ROOT / "evaluations" / "method-selection-cases.yaml"
+    if selection_path.exists():
+        selection = yaml.safe_load(selection_path.read_text(encoding="utf-8"))
+        selection_cases = selection.get("cases", [])
+        if len(selection_cases) != 24:
+            fail(errors, "method-selection-cases.yaml must contain 24 cases")
+        selection_ids = [case.get("id") for case in selection_cases]
+        if len(selection_ids) != len(set(selection_ids)):
+            fail(errors, "method-selection-cases.yaml contains duplicate case ids")
+        for case in selection_cases:
+            expected = case.get("expected_primary")
+            rejected = set(case.get("reject_as_primary", []))
+            if expected not in all_names:
+                fail(
+                    errors,
+                    f"method-selection case {case.get('id')} expects unknown skill {expected}",
+                )
+            unknown_rejected = sorted(rejected - all_names)
+            if unknown_rejected:
+                fail(
+                    errors,
+                    f"method-selection case {case.get('id')} rejects unknown skills "
+                    + ", ".join(unknown_rejected),
+                )
+            if expected in rejected:
+                fail(
+                    errors,
+                    f"method-selection case {case.get('id')} rejects its expected method",
+                )
+            for field in ("situation", "reason"):
+                if len(str(case.get(field, "")).strip()) < 40:
+                    fail(
+                        errors,
+                        f"method-selection case {case.get('id')} has weak {field}",
+                    )
 
 
 def main() -> int:
@@ -188,6 +312,9 @@ def main() -> int:
         fail(errors, f"Expected 58 unique skills, found {len(skill_paths)} files and {len(names)} names")
     for path in skill_paths:
         validate_skill(path, names, errors)
+    validate_boundary_uniqueness(skill_paths, errors)
+    validate_text_files(errors)
+    validate_markdown_links(errors)
     validate_catalog(names, errors)
     validate_supporting_assets(names, errors)
     if errors:
@@ -197,7 +324,7 @@ def main() -> int:
         return 1
     print(
         "Repository validation passed: 58 skills, 7 controlled examples, "
-        "neutral catalog, public boundary intact"
+        "70 evaluation prompts, 24 selection cases, portability checks passed"
     )
     return 0
 

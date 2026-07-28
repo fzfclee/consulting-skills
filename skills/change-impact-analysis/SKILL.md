@@ -26,7 +26,7 @@ If an input is missing, do not block automatically. Mark it as `missing`, state 
 
 ## When Not To Use
 
-Do not use as a fear list. Each risk or force must have a trigger, owner, and response.
+Do not use before the proposed change, affected groups, processes, systems, locations, and timing are defined. It identifies what must adapt; it does not replace a delivery plan or risk assessment.
 
 ## Adjacent Methods
 

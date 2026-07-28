@@ -14,7 +14,7 @@ import yaml
 ROOT = Path(__file__).resolve().parents[1]
 SKILLS_DIR = ROOT / "skills"
 CATALOG_PATH = ROOT / "catalog.yaml"
-VERSION = "0.2.1"
+VERSION = "0.3.0"
 
 CATEGORIES = {
     "problem-framing-and-evidence": {
@@ -195,8 +195,7 @@ def build_catalog() -> dict:
         "library_version": VERSION,
         "name": "consulting-skills",
         "description": (
-            "Neutral discovery metadata for standalone consulting method skills. "
-            "This catalog contains no private orchestration or CLEAR/S2A routing fields."
+            "Neutral discovery metadata for standalone consulting method skills."
         ),
         "method_count": len(skills),
         "categories": [

@@ -1,13 +1,13 @@
-# Fictional Product Adoption: Direct AI Answer vs Method-Skill Chain
+# Product Adoption: Direct AI Answer vs Method-Skill Chain
 
-> **Privacy note:** Harborline Manufacturing, FlowApprove, all users, metrics, costs, and interviews are entirely fictional.
+> **Example note:** Harborline Manufacturing, FlowApprove, the users, metrics, costs, and interviews were created for this demonstration and do not refer to a specific organization.
 
 This example compares:
 
 1. a direct AI answer with no named method;
 2. a three-skill chain using `evidence-map`, `jobs-to-be-done`, and `metrics-tree`.
 
-## Shared Fictional Input
+## Shared Input
 
 ```text
 Harborline Manufacturing introduced an internal purchase-request product called FlowApprove.

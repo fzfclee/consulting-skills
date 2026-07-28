@@ -1,13 +1,13 @@
-# Fictional Product Prioritization: Direct AI Answer vs Method-Skill Chain
+# Product Prioritization: Direct AI Answer vs Method-Skill Chain
 
-> **Privacy note:** LumenDesk, its products, customers, estimates, and financial figures are entirely fictional.
+> **Example note:** LumenDesk, its products, customers, estimates, and financial figures were created for this demonstration and do not refer to a specific organization.
 
 This example compares:
 
 1. a direct AI recommendation with no named method;
 2. a two-skill chain using `decision-matrix` and `risk-matrix`.
 
-## Shared Fictional Input
+## Shared Input
 
 ```text
 LumenDesk has 14 person-months of product capacity for the next quarter and must choose two

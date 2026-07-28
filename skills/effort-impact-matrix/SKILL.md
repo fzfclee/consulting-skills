@@ -26,7 +26,7 @@ If an input is missing, do not block automatically. Mark it as `missing`, state 
 
 ## When Not To Use
 
-Do not use before options are explicit enough to compare. First convert vague themes into executable options.
+Do not use when impact and effort cannot be estimated on a comparable basis or when hard dependencies determine the sequence. This is a relative triage tool, not a full investment case.
 
 ## Adjacent Methods
 

@@ -27,7 +27,7 @@ If an input is missing, do not block automatically. Mark it as `missing`, state 
 
 ## When Not To Use
 
-Do not use as a fear list. Each risk or force must have a trigger, owner, and response.
+Do not use when the target change and relevant actors are unclear. Avoid generic pros-and-cons lists: each driving or restraining force needs evidence, relative strength, and a practical response.
 
 ## Adjacent Methods
 

@@ -26,7 +26,7 @@ If an input is missing, do not block automatically. Mark it as `missing`, state 
 
 ## When Not To Use
 
-Do not use for all users at once. Choose one segment, scenario, journey, job, or service context.
+Do not use without a defined customer population and evidence of differences that change needs, economics, behavior, or treatment. Avoid segments based on convenient demographics that do not change a decision.
 
 ## Adjacent Methods
 

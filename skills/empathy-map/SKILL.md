@@ -26,7 +26,7 @@ If an input is missing, do not block automatically. Mark it as `missing`, state 
 
 ## When Not To Use
 
-Do not use as a personality-reading exercise. Use it only to clarify decision rights, influence, needs, and next engagement moves.
+Do not use to invent what users think or feel, or to map organizational power. Base the map on a defined user and context, with observations or interviews separated from assumptions.
 
 ## Adjacent Methods
 

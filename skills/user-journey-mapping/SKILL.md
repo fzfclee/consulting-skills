@@ -26,7 +26,7 @@ If an input is missing, do not block automatically. Mark it as `missing`, state 
 
 ## When Not To Use
 
-Do not use for all users at once. Choose one segment, scenario, journey, job, or service context.
+Do not combine unrelated segments, goals, and journeys in one map. A journey map needs a defined user, context, goal, and evidence; it is not a substitute for an internal process map.
 
 ## Adjacent Methods
 

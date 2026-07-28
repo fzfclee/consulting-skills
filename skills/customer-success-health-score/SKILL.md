@@ -26,7 +26,7 @@ If an input is missing, do not block automatically. Mark it as `missing`, state 
 
 ## When Not To Use
 
-Do not use for all users at once. Choose one segment, scenario, journey, job, or service context.
+Do not use before customer outcomes, adoption signals, relationship signals, renewal risk, and data quality are defined. One aggregate score must not hide a critical failure condition.
 
 ## Adjacent Methods
 

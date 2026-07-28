@@ -26,7 +26,7 @@ If an input is missing, do not block automatically. Mark it as `missing`, state 
 
 ## When Not To Use
 
-Do not use as a personality-reading exercise. Use it only to clarify decision rights, influence, needs, and next engagement moves.
+Do not use before the work products, decisions, and role boundaries are defined. RACI clarifies accountability for work; it does not resolve stakeholder resistance, authority gaps, or capacity shortages.
 
 ## Adjacent Methods
 

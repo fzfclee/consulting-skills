@@ -27,7 +27,7 @@ If an input is missing, do not block automatically. Mark it as `missing`, state 
 
 ## When Not To Use
 
-Do not use before options are explicit enough to compare. First convert vague themes into executable options.
+Do not use when material costs and benefits cannot be compared over a common time horizon. Treat non-negotiable legal, safety, or policy constraints as gates rather than averaging them into a financial total.
 
 ## Adjacent Methods
 

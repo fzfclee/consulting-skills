@@ -27,7 +27,7 @@ If an input is missing, do not block automatically. Mark it as `missing`, state 
 
 ## When Not To Use
 
-Do not use for generic essay writing. Use it only when external/internal factors must change a strategy, choice, or risk posture.
+Do not use when the industry boundary is unclear or when the task is to compare individual competitors and features. Five Forces examines industry economics and bargaining structure, not company execution.
 
 ## Adjacent Methods
 

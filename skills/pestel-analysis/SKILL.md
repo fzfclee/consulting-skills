@@ -26,7 +26,7 @@ If an input is missing, do not block automatically. Mark it as `missing`, state 
 
 ## When Not To Use
 
-Do not use for generic essay writing. Use it only when external/internal factors must change a strategy, choice, or risk posture.
+Do not use PESTEL to assess internal capability or to collect trends with no decision consequence. Use it for external macro factors that could change a strategic choice, assumption, timing, or risk.
 
 ## Adjacent Methods
 

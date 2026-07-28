@@ -26,7 +26,7 @@ If an input is missing, do not block automatically. Mark it as `missing`, state 
 
 ## When Not To Use
 
-Do not use as a fear list. Each risk or force must have a trigger, owner, and response.
+Do not use for a short-term forecast when one outcome can be estimated reliably. Scenarios explore a small set of high-impact uncertainties; they are not predictions or collections of generic risks.
 
 ## Adjacent Methods
 
