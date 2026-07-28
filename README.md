@@ -217,11 +217,11 @@ The validator checks unique names, frontmatter, required sections, portable link
 
 These are fixed illustrations, not a universal router. Each one records the input boundary, why the selected method matters, intermediate output, effect on the next step, methods deliberately not used, and the final decision artifact.
 
-### Does A Method Skill Actually Improve The Answer?
+### What Does A Method Chain Add Beyond The Final Answer?
 
-The [career-change comparison](examples/07-career-change-baseline-vs-method-chain.md) uses the same input twice. The direct answer is sensible and concise. The four-skill run reaches the same current recommendation, but makes the evidence boundary, stakeholder power, plausible scenarios, option scores, sensitivity, and reversal gates visible.
+The [career-change comparison](examples/07-career-change-baseline-vs-method-chain.md) uses the same input twice. Both runs reach the same current recommendation. The direct answer mainly delivers advice; the four-skill run also preserves intermediate workpapers, the reasoning handoff between methods, an owner-and-timing action plan, success metrics, decision gates, and adjustment triggers.
 
-That is the standard for using a method here: it should improve the decision, validation, or risk control, not merely add framework terminology.
+That is the practical value of a method chain: it makes the reasoning reviewable, the plan executable, and the result measurable. It does not guarantee that a conclusion is correct.
 
 ## What This Is, And What It Is Not
 
