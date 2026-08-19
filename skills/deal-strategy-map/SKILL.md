@@ -12,6 +12,9 @@ Use this skill to run `Deal Strategy Map` as a practical consulting method, not 
 
 - Map buying process, stakeholders, win themes, objections, proof, and next commitment.
 - The plan must name the next buyer action needed.
+- When the pursuit requires a client proposal, executive pitch, storyline, or proposal deck, apply the [Proposal Shaping Extension](proposal-shaping.md) before building the story.
+- Do not invent client pain to make a proposal look specific. Separate confirmed client facts, target-state point of view, working hypotheses, and evidence-based diagnostic findings.
+- Do not jump from generic industry context directly to a platform or solution. Develop the problem deeply enough that the proposed mechanism and solution are logically derived.
 
 ## Required Inputs
 
@@ -84,3 +87,4 @@ Confirmed buying stage:
 - Convert the result into a named action or decision with an owner or stakeholder, timing, and observable signal.
 - State missing inputs and the smallest validation action instead of inventing precision.
 - Keep wording professional and plain enough that a smart non-specialist can use the output directly.
+- For proposal work, confirm the story has a target-state / diagnostic bridge between WHY and WHAT, distinguishes governance or operating mechanism from enabling technology, and asks for a specific buyer decision.
