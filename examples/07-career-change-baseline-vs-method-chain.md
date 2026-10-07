@@ -144,7 +144,7 @@ Scoring uses a 1–5 scale. Weights and scores are explicit illustrative assumpt
 | Reversibility | 15% | 1 | 4 | 3 | 5 |
 | Current evidence strength | 10% | 1 | 3 | 2 | 4 |
 | Energy and search sustainability | 10% | 2 | 2 | 3 | 3 |
-| **Weighted total / 5** | **100%** | **1.85** | **2.75** | **3.15** | **4.25** |
+| **Weighted total / 5** | **100%** | **1.90** | **2.75** | **3.15** | **4.25** |
 
 **Sensitivity check**
 

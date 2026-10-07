@@ -22,7 +22,7 @@ Collect or infer these inputs before execution:
 - weights
 - evidence for scoring
 
-If an input is missing, do not block automatically. Mark it as `missing`, state the assumption used, and add a validation action.
+Apply the When Not To Use conditions before this missing-input rule. If any condition applies, do not score or rank options; state the blocking condition and the smallest next clarification or validation action. For other missing inputs, mark them as missing, label any assumption used, and add a validation action.
 
 ## When Not To Use
 

@@ -103,6 +103,8 @@ Answer the question directly. Do not use or name any consulting framework or met
 
 **Target circumstance**
 
+Working hypotheses for validation: the shared input does not establish urgent maintenance purchases, production-delay motives, or a responsive known buyer. The job statement below is provisional. The 18 interviews are not broken down by user segment, so segment-specific forces also require confirmation.
+
 - Target customer: plant supervisor handling an urgent maintenance purchase.
 - Trigger: equipment requires a part or service and delay may affect production.
 - Current workaround: email a known buyer, attach a spreadsheet, and chase status through messages.
@@ -120,7 +122,7 @@ Answer the question directly. Do not use or name any consulting framework or met
 | Pull: digital completion takes 3.1 days | Product metric | Medium | Show expected progress and owner |
 | Anxiety: request may disappear after submission | 9 interviews | Medium | Confirmation and visible status are essential |
 | Anxiety: wrong supplier or cost center may delay work | Duplicate-entry complaints | Medium | Prefill and validation should reduce risk |
-| Habit: known buyer responds to email | Current workaround | Medium | Product must preserve human escalation path |
+| Hypothesized habit: a known buyer may respond to email | Assumption; buyer responsiveness is not established in the shared input | Missing | Test whether a reliable human escalation path matters |
 | Pull toward dashboard | 7 requests | Weak for supervisors | May serve managers, not the first adoption job |
 
 **Adoption tests**
