@@ -12,6 +12,7 @@ Use this skill to run `RICE Scoring` as a practical consulting method, not as a 
 
 - Use Reach x Impact x Confidence / Effort.
 - Use the same time window and reach unit for every item.
+- Effort must be strictly positive and use the same unit and estimation basis across items. Leave Effort <= 0 unscored and request a corrected estimate; separately evaluate claimed true zero incremental work outside the ratio. Do not invent a denominator or replace zero with epsilon.
 
 ## Required Inputs
 
@@ -22,6 +23,8 @@ Collect or infer these inputs before execution:
 - impact estimate
 - confidence level
 - effort estimate
+
+Record input status and source: supplied / proposed / approved / validated. Supplied values may be used for the requested calculation when the existing comparability and eligibility conditions are met; approval is not an additional prerequisite. Only label an input approved or validated when its source explicitly establishes that status. Pending approval or validation belongs in the next action, not in the stated input facts.
 
 If an input is missing, do not block automatically. Mark it as `missing`, state the assumption used, and add a validation action.
 
@@ -54,6 +57,7 @@ Time horizon:
 Reach unit:
 Impact scale:
 Effort unit:
+Input status and source:
 
 ### 2. Scores
 | Initiative | Reach | Impact | Confidence | Effort | RICE | Evidence |
@@ -83,6 +87,7 @@ Review trigger:
 
 - Produce the method-specific outputs for Scope And Scale, Scores, Ranking And Caveats; do not substitute a generic framework summary.
 - Tie every material score, causal claim, or stakeholder judgment to evidence or label it as an assumption.
+- Preserve the source-established status of values, scales, and anchors in the output; distinguish supplied or proposed inputs from explicitly approved or validated inputs, and record any pending approval or validation as a next action.
 - Include at least one disconfirming check, sensitivity, alternative explanation, or failure condition appropriate to the method.
 - Convert the result into a named action or decision with an owner or stakeholder, timing, and observable signal.
 - State missing inputs and the smallest validation action instead of inventing precision.

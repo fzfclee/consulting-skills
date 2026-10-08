@@ -12,7 +12,7 @@ Use this skill to understand how parts of a system interact and why behavior per
 
 - Systems thinking focuses on relationships, feedback loops, delays, incentives, and patterns.
 - It is useful when direct cause-and-effect explanations are too shallow.
-- The goal is to identify leverage points, not to draw a complicated map for its own sake.
+- L0 diagnoses dynamic mechanisms and identifies evidence to validate; L1 also evaluates leverage points and stress-tests a proposed intervention. Neither level needs a complicated map for its own sake.
 - Keep the system boundary explicit so the analysis stays usable.
 
 ## Required Inputs
@@ -49,8 +49,8 @@ Do not use when the issue is a one-off decision with stable criteria. Use `decis
 | Map directional relationships | Variables, observations, causal evidence. | For each link, state whether the source increases or decreases the target, assign positive, negative, or unknown polarity, and mark delay and evidence. | Signed relationship map. |
 | Close feedback loops | Signed relationships. | Trace closed paths. Label reinforcing loops that amplify change and balancing loops that counter it. Do not call an open chain a loop. | Named R/B loops and dominant conditions. |
 | Add delays, incentives, and constraints | Process timing, rules, rewards, decision rights. | Show where response is delayed, which incentives create behavior, and which constraints limit adjustment. | Dynamic mechanism diagnosis. |
-| Identify leverage points | Loops, constraints, control rights, intervention options. | Find changes that alter information, incentives, rules, capacity, delay, or decision rights. Rate controllability and evidence. | Ranked leverage points. |
-| Stress-test intervention | Proposed action, loops, delay, affected actors. | Predict direction over time, lag, compensating response, side effects, and problem displacement. Define a lower-regret version. | L1 intervention stress test. |
+| Identify leverage points | Loops, constraints, control rights, intervention options. | For L1, find changes that alter information, incentives, rules, capacity, delay, or decision rights; rate controllability and evidence. For L0, record diagnostic mechanisms and validation needs without requiring ranked leverage points or intervention selection. | L0 diagnostic mechanisms or L1 ranked leverage points. |
+| Stress-test intervention | Proposed action, loops, delay, affected actors. | For L1, predict direction over time, lag, compensating response, side effects, and problem displacement; define a lower-regret version. For L0, mark this step N/A because the selected scope is diagnosis only. | L1 intervention stress test. |
 | Define learning loop | Expected trend, leading indicators, review cadence. | Set signals, thresholds, owner, review date, and the assumption that must be revised if the pattern differs. | Monitoring and model-revision plan. |
 
 ## Output Template
@@ -75,11 +75,13 @@ Do not use when the issue is a one-off decision with stable criteria. Use `decis
 |  | reinforcing / balancing |  |  |  |
 
 ### 4. Incentives, Constraints, And Leverage
+L0: describe incentives, constraints, and diagnostic mechanisms; leverage point and control owner may be N/A with a reason. L1: identify leverage points and control owners.
 | Actor / rule | Incentive or constraint | Behavior created | Leverage point | Control owner |
 |---|---|---|---|---|
 |  |  |  |  |  |
 
 ### 5. Intervention Stress Test
+L0: mark this section N/A because the selected scope is diagnosis only; do not select an intervention to fill the table. L1: complete the table for at least one proposed intervention.
 | Intervention | Expected direction over time | Delay | Side effect / displacement | Low-regret adjustment |
 |---|---|---|---|---|
 |  |  |  |  |  |
@@ -97,6 +99,7 @@ Do not use when the issue is a one-off decision with stable criteria. Use `decis
 - Give each material relationship a direction and polarity; mark unknown polarity rather than inventing it.
 - Include at least one reinforcing or balancing loop only when the loop closes; a long cause list is not a system map.
 - Mark delays, incentives, constraints, evidence strength, and assumptions.
-- Stress-test at least one intervention for side effects, problem displacement, and delayed response.
+- For L0: do not require intervention selection or stress testing. Provide an evidence-backed or explicitly hypothetical dynamic diagnosis, the unresolved relationships, and the next evidence-validation action with an owner and review date; explain why the intervention section is N/A.
+- For L1: stress-test at least one intervention for side effects, problem displacement, and delayed response; define a lower-regret adjustment. An L1 output cannot claim completion by marking the intervention test N/A.
 - Define leading signals, expected trend, decision threshold, and when the model should be revised.
 - Use a simpler root-cause, constraint, or decision method when dynamic complexity is absent.

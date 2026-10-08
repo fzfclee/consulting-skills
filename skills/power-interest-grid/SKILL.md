@@ -39,8 +39,8 @@ Do not use when informal influence, stakeholder stance, or relationship networks
 |---|---|---|---|
 | Define the change or decision | Decision/change, deadline, affected groups. | State what outcome the grid is meant to influence. | Grid scope. |
 | Identify stakeholders | Named people, teams, customers, regulators, partners. | List actors and remove duplicates or irrelevant observers. | Stakeholder list. |
-| Score power and interest | Authority, influence, dependency, impact, concern level. | Place each actor on high/low power and high/low interest axes. | 2x2 power-interest grid. |
-| Choose engagement strategy | Grid placement and relationship constraints. | Assign manage closely, keep satisfied, keep informed, or monitor. | Engagement category per actor. |
+| Score power and interest | Authority, influence, dependency, impact, concern level. | Use evidence for each axis; retain an unknown axis and provisional placement when evidence is missing. A title alone does not establish power, interest or stance. | 2x2 power-interest grid. |
+| Choose engagement strategy | Grid placement and relationship constraints. | Map high power / high interest: manage closely; high power / low interest: keep satisfied; low power / high interest: keep informed; low power / low interest: monitor. Explain any engagement adjustment for relationship constraints rather than changing the axis evidence. | Engagement category per actor. |
 | Define communication actions | Category, message need, channel, owner, cadence. | Specify message, sender, timing, and feedback signal. | Communication and engagement plan. |
 
 ## Output Template

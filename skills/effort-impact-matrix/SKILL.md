@@ -41,7 +41,7 @@ Do not use when impact and effort cannot be estimated on a comparable basis or w
 | List actions | Candidate actions or initiatives. | Rewrite broad ideas into one-action items. | Normalized action list. |
 | Define scoring anchors | Objective, constraints, available capacity. | Define what high/medium/low impact and effort mean. | Scoring scale. |
 | Score each action | Action list, evidence, effort estimates. | Rate impact and effort separately; mark confidence. | Scored action table. |
-| Place quadrants | Scored table. | Classify quick wins, major bets, fill-ins, and defer/drop items. | Effort-impact matrix. |
+| Place quadrants | Scored table. | State the case-specific high/low boundary for each axis or a rule for medium/boundary items before placement. Map high impact/low effort to quick wins, high/high to major bets, low/low to fill-ins, and low impact/high effort to defer/drop. Without a defensible mapping, retain provisional / unplaced items rather than silently assigning medium to a quadrant. | Effort-impact matrix. |
 | Choose sequence | Matrix, dependencies, timing, risk. | Recommend first actions, later actions, and items to reject or validate. | Sequenced action plan. |
 
 ## Output Template
@@ -51,6 +51,7 @@ Do not use when impact and effort cannot be estimated on a comparable basis or w
 Decision horizon:
 Impact definition:
 Effort definition:
+High/low boundary or medium / boundary-item handling:
 Constraints:
 
 ### 2. Action Scores

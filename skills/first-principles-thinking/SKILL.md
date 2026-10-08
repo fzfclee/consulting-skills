@@ -38,8 +38,8 @@ Do not use for a routine root-cause investigation, evidence classification, or o
 | State the problem plainly | Problem statement, desired outcome, decision context. | Rewrite the issue without inherited labels, solution language, or organizational shorthand. | Plain problem statement. |
 | List assumptions and analogies | Current beliefs, constraints, common practice, benchmark logic. | Separate facts from assumptions, habits, analogies, and rules of thumb. | Assumption inventory. |
 | Strip to fundamentals | Evidence, physical/economic/customer/process realities. | Ask what must be true, what is directly observed, and what cannot be reduced further for this decision. | First-principles breakdown. |
-| Rebuild options | Fundamental truths, desired outcome, constraints. | Create options from the fundamentals instead of starting from existing solutions. | Rebuilt solution options. |
-| Test against reality | Options, constraints, economics, stakeholder needs, validation data. | Check feasibility, risks, tradeoffs, and the fastest test that would prove or disprove each option. | Validation plan and recommended option. |
+| Rebuild options | Fundamental truths, desired outcome, constraints. | Derive candidate options from fundamentals, then check them against evidenced constraints. Do not invent alternatives to satisfy novelty. | Rebuilt solution options. |
+| Test against reality | Options, constraints, economics, stakeholder needs, validation data. | Check feasibility, risks, tradeoffs, and the fastest test that would prove or disprove each option. If no feasible new alternative survives, retain the current solution or take no action; state the constraint evidence and observable condition for reopening the choice. | Validation plan and recommended option. |
 
 ## Output Template
 
@@ -66,6 +66,9 @@ Do not use for a routine root-cause investigation, evidence classification, or o
 
 ### 5. Recommendation
 - Best next move:
+- New alternative / retain current solution / no action:
+- Constraint evidence and reasons alternatives are infeasible:
+- Condition and signal for reopening the choice:
 - What to stop assuming:
 - Validation signal:
 ```
@@ -74,6 +77,6 @@ Do not use for a routine root-cause investigation, evidence classification, or o
 
 - Do not confuse first principles with personal opinion.
 - Every first principle must be backed by evidence, direct observation, economics, physics, customer reality, process reality, or a clearly stated context boundary.
-- The final options must be meaningfully different from the inherited solution set.
+- When feasible new alternatives survive, show how they differ meaningfully from inherited solutions. If no feasible new alternative survives, a justified decision to retain the current solution or take no action is valid; provide constraint evidence, reasons alternatives are infeasible, and a condition and signal for reopening the choice. Do not invent alternatives or treat an unverified constraint as immutable.
 - Do not ignore execution constraints; reintroduce constraints after rebuilding options from fundamentals.
 - Keep wording professional and plain enough that a smart non-specialist can use it without translation.

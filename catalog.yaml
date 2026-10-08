@@ -280,9 +280,11 @@ methods:
   use_when: Use when a decision, change, project, or stakeholder move needs coordinated communication.
     Use when applying the Communications Plan consulting method and when a user asks for Communications
     Plan, method execution, structured diagnosis, or action planning.
-  do_not_use_when: Do not use before the audience, required behavior, sender, channel, timing, and feedback
-    path are clear. Communication cannot compensate for missing authority, broken process, or misaligned
-    incentives.
+  do_not_use_when: Use a marked planning draft to clarify missing audience, required behavior, sender,
+    channel, timing, approval, or feedback ownership. Do not describe a plan as ready until applicable
+    prerequisites are confirmed; a confirmed unmet prerequisite blocks readiness. Communication cannot
+    compensate for missing authority, broken process, or misaligned incentives. Readiness is a planning
+    assessment and does not grant permission to send.
   required_inputs:
   - communication objective
   - audiences
@@ -294,7 +296,7 @@ methods:
   - Audience segments
   - Audience-message matrix
   - Cadence and feedback plan
-  - Ready-to-send communication plan
+  - Communication plan and readiness status
   adjacent_methods: []
   version: 0.3.0
   source: skills/communications-plan/SKILL.md
@@ -1071,8 +1073,12 @@ methods:
   use_when: Use when designing, reviewing, or defending pricing for a product, service, project, or offer.
     Use when applying the Pricing Strategy Check consulting method and when a user asks for Pricing Strategy
     Check, method execution, structured diagnosis, or action planning.
-  do_not_use_when: Do not use without a defined customer segment, value alternative, unit economics, and
-    some evidence of willingness to pay. A pricing check cannot replace customer research or a legal review.
+  do_not_use_when: 'Define the offer and customer segment before analysis. Choose scope: diagnostic /
+    test-design / price recommendation. Missing willingness-to-pay or unit-economic evidence permits a
+    labeled diagnostic and validation plan; it does not establish a validated price or launch endorsement.
+    A price recommendation requires evidence on buyer willingness to pay, value alternatives and relevant
+    economics, with remaining limits stated. A target margin or competitor price is not proof of willingness
+    to pay. A pricing check cannot replace customer research or a legal review.'
   required_inputs:
   - offer description
   - target segment
@@ -1297,7 +1303,7 @@ methods:
   - Signed relationship map
   - Named R/B loops and dominant conditions
   - Dynamic mechanism diagnosis
-  - Ranked leverage points
+  - L0 diagnostic mechanisms or L1 ranked leverage points
   - L1 intervention stress test
   - Monitoring and model-revision plan
   adjacent_methods:

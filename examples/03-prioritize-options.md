@@ -56,7 +56,7 @@ Answer the question directly. Do not use or name any consulting framework or met
 ### What The Direct Answer Does Not Preserve
 
 - The criteria and weights behind the recommendation.
-- How close Option A is to Option D and what assumption changes the ranking.
+- Whether unresolved delivery gates permit a formal ranking at all.
 - A consistent definition of likelihood and impact.
 - Named risk owners, triggers, controls, and contingency timing.
 
@@ -66,8 +66,8 @@ Answer the question directly. Do not use or name any consulting framework or met
 
 | Sequence | Skill | Why it changes the work | Intermediate output |
 |---|---|---|---|
-| 1 | [`decision-matrix`](../skills/decision-matrix/SKILL.md) | Makes strategic, user, evidence, speed, and reversibility tradeoffs explicit | Weighted option ranking and sensitivity |
-| 2 | [`risk-matrix`](../skills/risk-matrix/SKILL.md) | Prevents a high-scoring option from hiding a time-critical dependency | Risk register, controls, triggers, and contingencies |
+| 1 | [`decision-matrix`](../skills/decision-matrix/SKILL.md) | Checks mandatory eligibility before scoring | Blocking conditions and clarification actions; ranking deferred |
+| 2 | [`risk-matrix`](../skills/risk-matrix/SKILL.md) | Helps resolve time-critical dependencies before the decision matrix resumes | Risk register, controls, triggers, and contingencies |
 
 `rice-scoring` and `wsjf-prioritization` are not used because reach and cost-of-delay data are not comparable or sufficiently reliable across all options.
 
@@ -80,7 +80,9 @@ Answer the question directly. Do not use or name any consulting framework or met
 - No option proceeds if a critical dependency makes delivery infeasible within the quarter.
 - Evidence cut-off is the current planning date.
 
-**Weighted criteria**
+**Draft criteria for a later scoring run**
+
+These illustrative weights and anchors are proposals, not stakeholder-approved inputs. Confirm them before scoring. No formal scores or ranking are produced while mandatory requirements remain unresolved.
 
 | Criterion | Weight | 1-point anchor | 5-point anchor |
 |---|---:|---|---|
@@ -91,39 +93,41 @@ Answer the question directly. Do not use or name any consulting framework or met
 | Reversibility | 10% | High lock-in or difficult rollback | Easy to stage, stop, or redirect |
 | Strategic fit | 10% | Peripheral | Directly supports target market and retention |
 
-**Option scores**
+**Eligibility register**
 
-| Option | Revenue | User outcome | Evidence | Speed | Reversibility | Fit | Weighted total / 5 |
-|---|---:|---:|---:|---:|---:|---:|---:|
-| A: Reliability | 3 | 5 | 4 | 4 | 4 | 4 | 3.90 |
-| B: Access controls | 5 | 3 | 5 | 4 | 3 | 5 | 4.25 |
-| C: AI summarizer | 2 | 3 | 2 | 2 | 3 | 3 | 2.40 |
-| D: Accessibility | 4 | 3 | 4 | 5 | 4 | 4 | 3.95 |
+| Option | Current evidence | Eligibility status / next check |
+|---|---|---|
+| A: Reliability | 6 person-month estimate; small pilot | No blocking dependency stated; confirm quarter delivery scope |
+| B: Access controls | 8 person-month estimate; architecture decision due in ten days | Unresolved hard gate; hold outside formal ranking pending feasibility confirmation |
+| C: AI summarizer | 10 person-month estimate; interest only | Cannot form a two-option pair within 14 person-months: even C + D requires 15 |
+| D: Accessibility | 5 person-month estimate; certification slot must be booked | Eligibility depends on securing certification capacity and confirming bid timing |
 
-**Feasible pair comparison**
+**Capacity check only, without scores or preference order**
 
-| Pair | Effort | Combined score | Main tradeoff |
+| Pair | Effort | Unused capacity | Unresolved eligibility |
 |---|---:|---:|---|
-| A + B | 14 | 8.15 | Protects users and renewals but does not unlock public bids |
-| A + D | 11 | 7.85 | Strong risk reduction; leaves 3 person-months unused |
-| B + D | 13 | 8.20 | Strongest evidenced commercial portfolio; two external dependencies |
+| A + B | 14 | 0 | B architecture feasibility; A delivery scope |
+| A + D | 11 | 3 | D certification capacity; A delivery scope |
+| B + D | 13 | 1 | B architecture feasibility and D certification capacity |
 
-**Sensitivity**
+All other pairs exceed capacity: A + C = 16, B + C = 18, C + D = 15. Capacity fit alone does not establish eligibility or commercial preference.
 
-- A overtakes D if reliability receives a score of 5 on revenue impact or if the public bids slip beyond the planning horizon.
-- B remains first unless the renewal evidence weakens or the vendor dependency makes delivery infeasible.
+**Sensitivity plan after gates clear**
 
-**Effect on the next step:** B + D is the provisional portfolio, but both options require explicit risk gates.
+- Revisit commercial criteria if renewal evidence weakens or public bids move beyond the quarter.
+- Test whether changes to agreed weights or evidence-backed scores change the eligible pair choice; no ranking sensitivity is claimed before scoring.
+
+**Effect on the next step:** The decision matrix stops before scoring. Use the risk register to resolve the blocking gates, then resume with confirmed eligible options and agreed criteria.
 
 ### Step 2: Risk Matrix
 
-**Scales:** Likelihood and impact use 1-5. Impact 5 means failure to deliver the selected option or loss of the commercial outcome.
+**Scales:** Likelihood and impact use 1-5. Impact 5 means failure to deliver an option or loss of its commercial outcome. The ratings, proposed owners, controls, and escalation thresholds below are illustrative planning assumptions, not additional facts from the Shared Input; validate them with the responsible stakeholders.
 
 | Risk event | Cause | Consequence | Likelihood | Impact | Evidence |
 |---|---|---|---:|---:|---|
 | B cannot finalize architecture | External identity-vendor decision is delayed or incompatible | Renewal feature misses the quarter | 3 | 5 | Decision pending in ten days |
-| B customer renewal still fails | Access controls are necessary but not sufficient | Expected protected revenue is overstated | 2 | 5 | Customer statements, no signed renewal |
-| D misses certification slot | Booking is not completed within three weeks | Public bids become ineligible | 3 | 4 | Certification availability confirmed |
+| B customer renewal still fails | Access controls may be necessary but not sufficient | Expected protected revenue is overstated | 2 | 5 | Customer statements; signed renewal evidence not supplied |
+| D misses certification slot | Booking is not completed within three weeks | Public bids become ineligible | 3 | 4 | Shared Input says capacity is available if booked; reservation not confirmed |
 | D does not influence bid awards | Compliance is a gate but not a differentiator | Pipeline value is overstated | 3 | 3 | Bid requirement, no buyer preference evidence |
 | A incidents worsen while deferred | Reliability investment is postponed | Support cost or churn risk increases | 3 | 4 | 120 incidents per month |
 
@@ -131,23 +135,23 @@ Answer the question directly. Do not use or name any consulting framework or met
 
 | Priority risk | Response | Owner | Trigger | Contingency |
 |---|---|---|---|---|
-| B architecture dependency | Obtain written go/no-go and run a two-day design spike | VP Engineering | No feasible decision by day 10 | Replace B with A |
+| B architecture dependency | Obtain written go/no-go and run a two-day design spike | VP Engineering | No feasible decision by day 10 | Exclude B; check whether A + D clears its gates |
 | D certification slot | Place refundable booking | Product operations | Slot not reserved by end of week 1 | Reassess D against A |
-| Deferred reliability | Create incident guardrail and reserve emergency capacity | Engineering director | Incidents exceed 150/month or a severity-1 pattern appears | Pull forward A or reduce B/D scope |
+| Reliability while selection is pending | Create incident guardrail and reserve emergency capacity | Engineering director | Incidents exceed 150/month or a severity-1 pattern appears | Reassess scope and capacity before selecting a pair |
 | Revenue evidence | Confirm renewal and bid decision criteria | Commercial lead | Customers will not document dependency | Rescore commercial criteria |
 
-**Effect on the decision:** B + D remains preferred only as a conditional portfolio. The risk outputs supply the dated gates and fallback combinations that the score alone cannot provide.
+**Effect on the decision:** No pair is formally preferred yet. The risk outputs supply dated validation actions and conditions for reopening the decision matrix; they do not override its hard gates.
 
 ## Decision Artifact
 
-**Conditional decision:** Select B and D, using 13 person-months, only after the following gates:
+**Current decision state:** Selection and formal ranking are blocked. Resolve the following gates and confirm the proposed decision criteria before selecting two options:
 
 1. B receives architecture feasibility confirmation by day 10.
 2. D secures certification capacity by the end of week 1.
 3. Commercial owners document the renewal and bid requirements.
 4. Reliability incidents remain below the escalation threshold.
 
-**Fallback:** If B fails its gate, select A + D. If D fails its gate, compare A + B against current commercial evidence.
+**Contingency set:** If B fails its gate, A + D is the only capacity-fitting pair left, requiring 11 person-months, and can be selected only if A and D clear their gates. If D fails its gate, A + B is the only capacity-fitting pair left, requiring 14 person-months, subject to A and B eligibility. If both B and D fail, no two-option pair fits capacity. If both clear, compare all eligible pairs with agreed criteria and current evidence; this example does not invent a future ranking.
 
 ### Evaluation Scorecard
 
@@ -163,13 +167,13 @@ Answer the question directly. Do not use or name any consulting framework or met
 
 | Deliverable | Direct AI answer | Method-skill chain |
 |---|---|---|
-| Recommendation | B + D, with A fallback | Same provisional portfolio |
-| Priority rationale | Commercial value and capacity | Explicit criteria, weights, scores, and pair eligibility |
-| Sensitivity | General caveat | States what evidence makes A overtake D |
+| Recommendation | B + D, with A fallback | Selection blocked until mandatory gates clear |
+| Priority rationale | Commercial value and capacity | Eligibility register, capacity arithmetic, and draft criteria for later approval |
+| Sensitivity | General caveat | Identifies evidence changes to test when scoring becomes valid |
 | Risk handling | Confirm dependencies | Event-cause-consequence register with owners |
 | Decision gates | Mentioned | Dated go/no-go triggers and fallback pairs |
 | Success measures | Not detailed | Feasibility, commercial evidence, and reliability guardrails |
 
 ## What The Comparison Shows
 
-The direct answer reaches the same sensible portfolio quickly. The method chain makes the ranking auditable and turns dependency concerns into timed decision gates. Its value is not a more complicated score; it is knowing exactly when B + D should no longer remain the preferred choice.
+The direct answer proposes a conditional portfolio quickly. The method chain applies a stricter prerequisite: unresolved mandatory feasibility gates block scoring and ranking. It provides a capacity check and dated validation plan, then leaves the portfolio choice open until the evidence permits a decision. This constructed comparison illustrates that contract difference; it does not establish model superiority or a real business outcome.
