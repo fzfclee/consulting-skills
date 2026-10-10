@@ -1,6 +1,6 @@
 <h1 align="center">Consulting Skills</h1>
-<p align="center"><strong>58 consulting methods, written as runnable skills for AI agents</strong></p>
-<p align="center">Give your agent a messy question. Get back a clearer decision, a usable plan, and a way to check whether it worked.</p>
+<p align="center"><strong>58 consulting methods your AI agent can work through, step by step</strong></p>
+<p align="center">Give your agent a working guide for the question in front of you.</p>
 <p align="center"><a href="https://github.com/fzfclee/consulting-skills/actions/workflows/validate.yml"><img src="https://img.shields.io/github/actions/workflow/status/fzfclee/consulting-skills/validate.yml?branch=main&amp;style=for-the-badge&amp;label=validation" alt="Validation"></a> <a href="catalog.yaml"><img src="https://img.shields.io/badge/skills-58-0f766e?style=for-the-badge" alt="58 skills"></a> <a href="https://github.com/fzfclee/consulting-skills/stargazers"><img src="https://img.shields.io/github/stars/fzfclee/consulting-skills?style=for-the-badge" alt="GitHub stars"></a> <a href="LICENSE"><img src="https://img.shields.io/badge/license-Apache--2.0-2563eb?style=for-the-badge" alt="Apache 2.0 license"></a></p>
 <p align="center"><a href="#30-second-start">30-second start</a> · <a href="#what-can-you-use-these-skills-for">Everyday uses</a> · <a href="#choose-by-situation">Choose a skill</a> · <a href="#the-58-skill-library">Browse all 58</a> · <a href="examples/README.md">Examples</a> · <a href="#how-quality-is-checked">Quality</a> · <a href="README.zh-CN.md">中文</a> · <a href="https://www.o2vframework.com">O2V Framework</a></p>
 
@@ -8,19 +8,51 @@
 
 ## Why this repo exists
 
-Most method libraries stop at definitions. That is not enough for an AI agent. The agent also needs to know when a method fits, what input is missing, how to work through the steps, and what to produce at the end.
+An AI answer can sound sensible and still leave you unsure what to do next. When the notes are scattered and people disagree about the cause, a recommendation needs supporting work you can examine.
 
-Otherwise, familiar problems show up:
+Consulting Skills starts there. The idea behind the project is to turn established consulting methods into working guides an agent can follow. The guide connects the material you provide to a concrete output, such as an evidence ledger or a decision table, and explains how to check it.
 
-| What goes wrong | What the skill adds |
-|---|---|
-| The agent reaches for SWOT whenever a question sounds strategic | Triggers and `When Not To Use` rules narrow the choice |
-| Facts, opinions, and assumptions get mixed together | Evidence requirements expose confidence and gaps |
-| The analysis sounds polished but changes nothing | The output has to support an actual decision |
-| Several frameworks are stacked for show | A method stays only if it changes the action, risk, validation, or deliverable |
-| The answer sounds certain even though key inputs are missing | Quality gates make assumptions and validation actions visible |
+Asking an agent to “use SWOT” leaves much of the execution unspecified. A skill fills in those details. It sets out the evidence needed and the steps to work through, with boundaries for situations where the method does not fit.
 
-Each skill is a standalone working guide. It tells an agent how to run the method, not just how to describe it.
+Li Zhi initiated this library to make consulting methods easier to apply through AI agents. It contains 58 standalone skills. You can start with one relevant to your question and add another if its output would help you make the decision.
+
+## See the difference in one small example
+
+Imagine a team deciding how to improve use of an internal request tool. **The input and output below are a synthetic illustration of the format. They are not a customer story or a model test result.**
+
+Give the agent these notes:
+
+```text
+Use evidence-map to help decide whether we should add training this week.
+A. Dashboard export: weekly active users fell from 42 to 28 across two weeks.
+B. Interview notes: 3 of 5 people said they could not see their request status.
+C. Sponsor's explanation: “People just need more training.”
+The decision is due Friday. Separate evidence, explanations and unknowns.
+```
+
+A useful output would make the decision easier to examine:
+
+| Input | What it supports | What it does not establish |
+|---|---|---|
+| A: dashboard export | Reported activity fell in this two-week window | Why it fell; whether the weeks are comparable |
+| B: five interview notes | Status visibility is a plausible problem for some interviewees | How common the problem is, or whether it caused lower use |
+| C: sponsor's explanation | A training hypothesis to investigate | Evidence that training is the cause or the right intervention |
+
+The accompanying evidence map would rate source strength and relevance, record the missing information, and finish with a small next move:
+
+> **Do not conclude yet:** the notes do not establish that a training gap caused the decline. **Proposed check before Friday:** an analyst, once assigned, reviews whether the two dashboard weeks are comparable and follows up on the five interviews. Evidence of users not knowing how to complete a request would support the training hypothesis; evidence of users completing requests but being unable to track them would support testing status visibility. Neither finding alone establishes population-wide impact.
+
+Now there is something to review and a test to run. The full [`evidence-map`](skills/evidence-map/SKILL.md) guide adds the evidence ledger, confidence readout, proposed owners and deadlines, and the result that would change the recommendation. Missing evidence stays visible.
+
+## From methods to working guides
+
+The work goes beyond collecting 58 framework names. Each guide has explicit inputs, use boundaries, execution steps, an output template and a quality gate. Method-specific differences matter: a scoring method needs valid scales and denominators; a causal diagnosis needs competing explanations and tests; a stakeholder map must keep unknown influence visible.
+
+The library was audited across all 58 methods for those contracts. Findings led to focused refinements in 13 methods, clearer worked examples and a separate [service-plan review](examples/review-a-service-plan.md). The [changelog](CHANGELOG.md) records the scope. Structure and links are checked by the repository's validation scripts; actual model outputs need separate evaluation.
+
+For the audited skill source, a recorded paired, blinded, order-reversed evaluation of the 70 representative cases produced **65 PASS and 5 TIE/INCONCLUSIVE** under the [published artifact rubric](evaluations/README.md). All cases remain in the denominator. These are AI reviewer judgments; exact runtime model metadata was not exposed. They do not establish independent human expert endorsement, real business outcomes or universal superiority. The raw records and limitations are retained in the audit delivery; this README does not claim a public evidence download. The 24 method-selection cases are available but were not executed in that 70-case batch.
+
+The guides are meant to be used and questioned. See [how quality is checked](#how-quality-is-checked) for what the different checks establish.
 
 ## 30-second start
 
@@ -221,7 +253,7 @@ The repository checks those sections automatically:
 | Neutral catalog entries | 58 |
 | Portability or local-path failures allowed | 0 |
 
-The validator checks names, frontmatter, required sections, links, UTF-8 text, catalog consistency, and portability. These are structural checks. They catch broken packages and weak method contracts, but they do not prove that a model will make the right decision. The evaluation set therefore keeps its prompts and scoring rubric in the open.
+The validator checks names, frontmatter, required sections, links, UTF-8 text, catalog consistency, and portability. These structural checks catch packaging errors and missing contract sections; they do not establish semantic quality or prove that a model will make the right decision. The [evaluation contract](evaluations/README.md) therefore publishes the prompts and scoring rubric separately.
 
 ## Seven controlled comparisons
 
@@ -235,13 +267,13 @@ The validator checks names, frontmatter, required sections, links, UTF-8 text, c
 | Assess market entry | [PESTEL → Five Forces → Positioning](examples/06-assess-a-market-entry.md) |
 | Evaluate a career decision | [No method vs Evidence Map → Stakeholder Power Map → Scenario Planning → Weighted Scorecard](examples/07-career-change-baseline-vs-method-chain.md) |
 
-These examples are not a universal router or a scientific model benchmark. Each one runs the same input twice: first as a direct AI answer with no named method, then with the listed method chain. The comparison keeps the evidence boundary, method workpapers, handoff between steps, final decision artifact, action plan, success measures, and reversal conditions.
+These authored illustrations are not a universal router, native execution receipts or a scientific model benchmark. Each presents the same input in two forms: a representative direct answer with no named method, and a worked answer using the listed method chain. The comparison shows the evidence boundary, method workpapers, handoff between steps, final decision artifact, action plan, success measures, and reversal conditions.
 
 ### What does a method chain add?
 
-In the [seven comparisons](examples/README.md), the direct answer often reaches a sensible recommendation quickly. The method-based run may reach the same conclusion. The difference is that it leaves behind workpapers, the handoff from one method to the next, owners and timing, success measures, decision gates, and triggers for changing course.
+In the [seven comparisons](examples/README.md), the representative direct answer often reaches a sensible recommendation quickly. The worked method answer may reach the same conclusion. The difference is that it leaves behind workpapers, the handoff from one method to the next, owners and timing, success measures, decision gates, and triggers for changing course.
 
-A method chain makes the reasoning easier to review and the plan easier to run. It does not make the conclusion automatically correct.
+A method chain is intended to make the reasoning easier to review and the plan easier to run. It does not make the conclusion automatically correct.
 
 ## What this is, and what it is not
 
