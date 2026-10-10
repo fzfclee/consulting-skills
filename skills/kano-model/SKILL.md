@@ -12,6 +12,9 @@ Use this skill to run `Kano Model` as a practical consulting method, not as a ge
 
 - Classify features as must-be, performance, delighter, indifferent, or reverse.
 - Kano categories shift over time; mark evidence age.
+- Pair functional (present) and dysfunctional (absent) reactions. Qualitative logic: expected presence with disliked absence suggests must-be; satisfaction with presence and dissatisfaction with absence suggests performance; liked presence with acceptable/neutral absence suggests delighter; little reaction either way suggests indifferent; disliked presence with preferred absence suggests reverse.
+- State mode: qualitative evidence gives tentative categories; a standardized survey uses paired response options and a documented evaluation mapping. These qualitative cues are not a substitute for that mapping. Retain contradictory pairs, subgroup differences and ties as mixed / unclear unless a stated grouping/aggregation rule resolves them; do not force one class or a universal tie-break.
+- Basis: [ASQ Kano model](https://asq.org/quality-resources/kano-model) and [Society of Sensory Professionals classification and paired questionnaire](https://www.sensorysociety.org/knowledge/sspwiki/Pages/Kano%20Modeling%20in%20Product%20Development.aspx).
 
 ## Required Inputs
 
@@ -51,6 +54,7 @@ Customer segment:
 Decision:
 Attributes tested:
 Research basis:
+Mode, response mapping, and grouping / aggregation rule:
 
 ### 2. Classification
 | Attribute | Functional response | Dysfunctional response | Kano class | Confidence |
@@ -82,4 +86,5 @@ Research basis:
 - Include at least one disconfirming check, sensitivity, alternative explanation, or failure condition appropriate to the method.
 - Convert the result into a named action or decision with an owner or stakeholder, timing, and observable signal.
 - State missing inputs and the smallest validation action instead of inventing precision.
+- Preserve tentative, mixed / unclear and reverse reactions; for standardized survey claims, name the evaluation mapping used and handle inconsistent/questionable responses explicitly.
 - Keep wording professional and plain enough that a smart non-specialist can use the output directly.

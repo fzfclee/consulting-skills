@@ -36,10 +36,10 @@ Do not use for ordinary risks with known mitigation paths. Use `risk-matrix` or 
 |---|---|---|---|
 | Define the decision horizon | Decision question, time horizon, action deadline. | State how far ahead the uncertainty matters. | Decision horizon. |
 | List uncertainties | Unknowns, external variables, stakeholder unknowns, market shifts. | Write each uncertainty as a variable that can move in more than one direction. | Uncertainty list. |
-| Rate uncertainty and impact | Evidence, volatility, consequence, controllability. | Rate uncertainty and impact as high / medium / low. | Uncertainty-impact table. |
+| Rate uncertainty and impact | Evidence, volatility, consequence, controllability. | Rate uncertainty and impact as high / medium / low; retain a source or labeled assumption and brief rating rationale for each material judgment. | Uncertainty-impact table. |
 | Select critical uncertainties | Rating table. | Choose the 1-3 uncertainties with high impact and high uncertainty. | Critical uncertainty set. |
 | Define poles or outcomes | Critical uncertainties. | For each, define plausible opposite states or outcome ranges. | Uncertainty poles. |
-| Create signposts | Evidence sources, leading indicators, stakeholder signals. | Define early signs that show which way the uncertainty is moving. | Signpost list. |
+| Create signposts | Evidence sources, leading indicators, stakeholder signals. | Define early signs that show which way the uncertainty is moving; retain signpost sources or evidence gaps. Explain material conflicts and why outdated information is superseded, or why the conflict remains unresolved. | Signpost list. |
 | Link to actions | Current plan, options, thresholds. | Decide what to do under each signal. | Contingent action logic. |
 
 ## Output Template
@@ -72,4 +72,5 @@ Do not use for ordinary risks with known mitigation paths. Use `risk-matrix` or 
 - A useful uncertainty must have more than one plausible outcome.
 - Focus on variables that would change the plan.
 - Include signposts, not just abstract possibilities.
+- Preserve material rating rationale and provenance, signpost sources/gaps, and the basis for resolving or retaining substantive contradictions; newer information does not automatically supersede evidence from a different scope.
 - Keep output concrete enough to guide monitoring and next action.

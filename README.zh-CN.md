@@ -72,6 +72,10 @@ gh skill install fzfclee/consulting-skills systems-thinking --agent codex --scop
 
 先用一个方法。只有第二个方法会回答另一个足以改变决策的问题时，才把它加进来。
 
+### 执行前审方案
+
+审已有的流程改进方案时，提供带版本的原文、注明适用范围的证据和规则、约束、批准状态及已有运营数据。按需要使用 Evidence Map、Deductive Reasoning 和 Validation Plan，得到可追溯的问题清单、影响及其证据边界、最小措辞修订和通过／调整／停止条件。缺失的证据或批准仍须明确标记。[服务流程审方案合成样例](examples/review-a-service-plan.md)展示这种产物；它是编写的使用演示，尚非原生执行测试，也不能证明真实业务效果。
+
 ## 按场景选方法
 
 先看你要解决什么问题，不要先想自己记得哪个框架。

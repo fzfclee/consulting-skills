@@ -38,8 +38,8 @@ Do not use before customer outcomes, adoption signals, relationship signals, ren
 | Step | Required input | How to execute | Output |
 |---|---|---|---|
 | Define health outcome | Retention, expansion, value realization, satisfaction objective. | State what healthy means for customer and business. | Health definition. |
-| Select signal categories | Adoption, value, relationship, support, commercial, risk data. | Choose signals that predict health in this context. | Signal model. |
-| Set weights and thresholds | Signal model, historical evidence, expert judgment. | Assign weights, green/yellow/red thresholds, and missing-data rules. | Health scoring rubric. |
+| Select signal categories | Adoption, value, relationship, support, commercial, risk data. | Choose candidate health signals and state their evidence; predictive value is unvalidated unless tested. | Signal model. |
+| Set weights and thresholds | Signal model, historical evidence, expert judgment. | Specify how raw signals map to scores or grades and the combination rule: weighted aggregation or ordered qualitative rules. Define tier boundaries, missing-data handling and critical-failure overrides. Mark designed rules proposed / unvalidated unless evidence supports validation. | Health scoring rubric. |
 | Score accounts | Customer/account data. | Calculate health tier and explain drivers. | Health score table. |
 | Assign interventions | Health tier, owner capacity, account value. | Define save, nurture, expand, or monitor actions. | CS intervention plan. |
 
@@ -53,6 +53,8 @@ Prediction window:
 Population:
 
 ### 2. Signals And Weights
+Raw-to-score / grade mapping, combination rule, missing-data and critical-failure precedence:
+Rubric status and validation evidence:
 | Signal | Definition | Source | Weight | Threshold | Lag / leading |
 |---|---|---|---|---|---|
 |  |  |  |  |  |  |
@@ -82,4 +84,5 @@ Population:
 - Include at least one disconfirming check, sensitivity, alternative explanation, or failure condition appropriate to the method.
 - Convert the result into a named action or decision with an owner or stakeholder, timing, and observable signal.
 - State missing inputs and the smallest validation action instead of inventing precision.
+- Carry mapping, combination rules, missing-data effects and any critical-failure override into each result; do not let a healthy average hide a critical failure. Proposed / unvalidated rubric values do not establish predictive accuracy.
 - Keep wording professional and plain enough that a smart non-specialist can use the output directly.

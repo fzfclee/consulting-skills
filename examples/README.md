@@ -29,3 +29,7 @@ Each comparison records:
 - a side-by-side comparison of the two runs.
 
 The examples do not claim that named methods automatically make an answer correct. A method is useful only when its output materially improves evidence discipline, diagnosis, stakeholder judgment, prioritization, risk control, execution, or validation.
+
+## Worked Plan Review
+
+[Review a service improvement plan](review-a-service-plan.md) shows a separate synthetic worked artifact using Evidence Map, Deductive Reasoning and Validation Plan. Provide the original proposal, scoped source documents, constraints, approval status and available data. The artifact traces each issue to an original sentence and evidence, then supplies minimal replacement wording and acceptance tests. Missing evidence and approvals remain visible. It is an authored illustration, not a controlled model comparison, native execution result or proof of business effectiveness.

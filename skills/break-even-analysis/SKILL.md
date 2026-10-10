@@ -12,6 +12,8 @@ Use this skill to run `Break Even Analysis` as a practical consulting method, no
 
 - Separate fixed cost, variable cost, unit economics, and time horizon.
 - State the exact threshold that makes the option viable.
+- For a single-product constant unit-price/unit-cost model in one period, q >= 0, fixed cost F >= 0, price p and variable cost v give profit(q) = (p - v)q - F. Use consistent units, currency and period. If F > 0 and p - v > 0, break-even q = F / (p - v); for indivisible units, round up for a non-loss volume. If F > 0 and p - v <= 0, no feasible nonnegative quantity breaks even; a negative quantity is not a target.
+- If F = 0, q = 0 breaks even in this model; positive quantities break even only when p = v, gain when p > v, and lose when p < v. Revenue, time-to-payback, savings or nonconstant/multi-product models need their own stated formula, assumptions and domain; do not mechanically reuse the unit-volume formula.
 
 ## Required Inputs
 
@@ -84,4 +86,5 @@ Capacity check:
 - Include at least one disconfirming check, sensitivity, alternative explanation, or failure condition appropriate to the method.
 - Convert the result into a named action or decision with an owner or stakeholder, timing, and observable signal.
 - State missing inputs and the smallest validation action instead of inventing precision.
+- State the model domain and denominator condition beside the formula/result; report no feasible break-even when appropriate rather than an invalid negative-volume target.
 - Keep wording professional and plain enough that a smart non-specialist can use the output directly.

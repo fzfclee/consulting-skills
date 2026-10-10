@@ -12,9 +12,12 @@ Use this skill to run `WSJF Prioritization` as a practical consulting method, no
 
 - WSJF means Weighted Shortest Job First.
 - Core formula: `WSJF = Cost of Delay / Job Size`.
-- Cost of Delay is commonly estimated as `User/Business Value + Time Criticality + Risk Reduction / Opportunity Enablement`.
+- Cost of Delay is commonly estimated as three additive components: `Cost of Delay = User/Business Value + Time Criticality + (Risk Reduction or Opportunity Enablement)`. The last component is one combined term, not division.
 - Use relative scoring for comparison. Do not pretend the numbers are precise financial forecasts unless real financial data is available.
 - Revisit WSJF when market timing, risk, dependency, or job size changes.
+- Job Size must be strictly positive and use the same sizing basis across jobs. Leave jobs with Job Size <= 0 unscored and request corrected estimates. Do not substitute epsilon or another artificial denominator.
+- Identify mandatory requirements, deadlines and dependency feasibility before sequencing; apply WSJF within a feasible sequence. Mandatory does not mean universally first: respect prerequisite order and report infeasible deadlines instead of presenting an impossible sequence.
+- Preserve source status: describe something as approved or validated only for the specific object explicitly established by the source. Approval of relative scoring anchors does not approve job identifiers, the recommended sequence, or execution. Label provided jobs and scores as supplied unless their source establishes more; calculate with supplied comparable values and do not add an approval prerequisite for calculation.
 
 ## Required Inputs
 
@@ -38,9 +41,9 @@ Do not use WSJF when options are too vague to size, when the work is purely expl
 |---|---|---|---|
 | Normalize jobs | Candidate jobs, initiatives, features, epics, or projects. | Rewrite each item so it is one comparable job with a clear outcome and boundary. | Normalized job list. |
 | Estimate Cost of Delay components | User/business value, time criticality, risk reduction, opportunity enablement evidence. | Score each component on the same relative scale, such as Fibonacci or 1-10; record rationale and confidence. | Component scoring table. |
-| Calculate Cost of Delay | Component scores. | Add User/Business Value + Time Criticality + Risk Reduction / Opportunity Enablement. | Cost of Delay score per job. |
+| Calculate Cost of Delay | Component scores. | Add the three scores: User/Business Value + Time Criticality + (Risk Reduction or Opportunity Enablement); the last component is one combined term, not division. | Cost of Delay score per job. |
 | Estimate Job Size | Scope, complexity, duration, effort, dependencies, delivery capacity. | Score relative job size using the same sizing discipline for every item. | Job Size score per job. |
-| Calculate and sequence | Cost of Delay and Job Size scores. | Divide Cost of Delay by Job Size and rank high to low; then check dependencies and confidence. | WSJF-ranked sequence with caveats. |
+| Calculate and sequence | Cost of Delay and positive comparable Job Size scores, deadlines and dependencies. | First establish feasible sequencing constraints; then divide Cost of Delay by Job Size and prioritize within feasible orders, with confidence caveats. Leave invalid sizes unscored and report infeasible deadlines. | WSJF-ranked sequence with caveats. |
 
 ## Output Template
 

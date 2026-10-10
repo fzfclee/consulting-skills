@@ -105,11 +105,13 @@ Answer the question directly. Do not use or name any consulting framework or met
 
 | Force | Strength | Evidence | Profit mechanism | Trend |
 |---|---|---|---|---|
-| Rivalry | High | Three established providers bundle service with equipment | Bundling reduces standalone price visibility | Stable |
-| Buyer power | High | Top ten buyers control 64% of spending | Concentrated buyers demand proof and price concessions | Stable |
-| Supplier / partner power | High | Only four certified local partners | Partners capture margin and control delivery access | May increase |
-| Threat of entrants | Medium | Licensing and support requirements slow entry | Barriers protect incumbents but do not prevent capable entrants | Stable |
-| Substitutes | High | In-house maintenance teams and OEM service contracts | Buyers can avoid a standalone provider | Stable |
+| Rivalry | High | Three established providers bundle service with equipment | Bundling reduces standalone price visibility | Unknown / validate |
+| Buyer power | High | Top ten buyers control 64% of spending | Concentrated buyers demand proof and price concessions | Unknown / validate |
+| Supplier / partner power | High | Only four certified local partners | Partners capture margin and control delivery access | Unknown / validate |
+| Threat of entrants | Medium | Licensing and support requirements slow entry | Barriers protect incumbents but do not prevent capable entrants | Unknown / validate |
+| Substitutes | High | In-house maintenance teams and OEM service contracts | Buyers can avoid a standalone provider | Unknown / validate |
+
+The strength ratings and profit mechanisms are qualitative judgments from the current structural snapshot; the substitute set is a hypothesis to confirm with buyers. The Shared Input supplies no force-specific time-series or before/after evidence, so current concentration, scarcity, or barriers do not establish stable or increasing force trends. Revisit the five trends during the qualification sprint by comparing dated competitor offers, buyer concentration, certified-partner availability, entry requirements, and substitute adoption with the current baseline; leave each trend unknown until comparable evidence exists. These are proposed validation actions, not additional market facts.
 
 **Structural diagnosis**
 

@@ -22,6 +22,8 @@ Collect or infer these inputs before execution:
 - weights
 - evidence and scoring scale
 
+Record input status and source: supplied / proposed / approved / validated. Supplied values may be used for the requested calculation when the existing comparability and eligibility conditions are met; approval is not an additional prerequisite. Only label an input approved or validated when its source explicitly establishes that status. Pending approval or validation belongs in the next action, not in the stated input facts.
+
 If an input is missing, do not block automatically. Mark it as `missing`, state the assumption used, and add a validation action.
 
 ## When Not To Use
@@ -54,6 +56,7 @@ Must-pass gates:
 Evidence cut-off:
 
 ### 2. Dimensions And Anchors
+Input status and source:
 | Dimension | Weight | Scoring anchor | Evidence standard |
 |---|---|---|---|
 |  |  |  |  |
@@ -81,6 +84,7 @@ Review / approval owner:
 
 - Produce the method-specific outputs for Purpose And Eligibility, Dimensions And Anchors, Scores; do not substitute a generic framework summary.
 - Tie every material score, causal claim, or stakeholder judgment to evidence or label it as an assumption.
+- Preserve the source-established status of weights, scores, scales, and anchors in the output; distinguish supplied or proposed inputs from explicitly approved or validated inputs, and record any pending approval or validation as a next action.
 - Include at least one disconfirming check, sensitivity, alternative explanation, or failure condition appropriate to the method.
 - Convert the result into a named action or decision with an owner or stakeholder, timing, and observable signal.
 - State missing inputs and the smallest validation action instead of inventing precision.

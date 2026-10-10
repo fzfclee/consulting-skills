@@ -73,6 +73,10 @@ You do not need to be a consultant or memorize a framework. Give your agent the 
 
 Use one method first. Add a second only when it answers a different question that could change the decision.
 
+### Review a plan before execution
+
+For an existing process-improvement proposal, provide the versioned original text, scoped evidence and rules, constraints, approval status and available operating data. Ask for an Evidence Map, a Deductive Reasoning check and a Validation Plan only where each is needed. Expect a traceable issue list, impact caveats, minimal wording revisions and pass/adjust/stop conditions. Missing evidence or approvals remain unresolved. The [synthetic service-plan review](examples/review-a-service-plan.md) demonstrates this artifact; it is authored guidance, not a native execution test or proof of business effectiveness.
+
 ## Choose by situation
 
 Start with the problem you have, not the framework you remember.

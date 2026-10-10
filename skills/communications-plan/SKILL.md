@@ -27,7 +27,7 @@ If an input is missing, do not block automatically. Mark it as `missing`, state 
 
 ## When Not To Use
 
-Do not use before the audience, required behavior, sender, channel, timing, and feedback path are clear. Communication cannot compensate for missing authority, broken process, or misaligned incentives.
+Use a marked planning draft to clarify missing audience, required behavior, sender, channel, timing, approval, or feedback ownership. Do not describe a plan as ready until applicable prerequisites are confirmed; a confirmed unmet prerequisite blocks readiness. Communication cannot compensate for missing authority, broken process, or misaligned incentives. Readiness is a planning assessment and does not grant permission to send.
 
 ## Adjacent Methods
 
@@ -42,7 +42,7 @@ Do not use before the audience, required behavior, sender, channel, timing, and 
 | Segment audiences | Stakeholders, power map, impact analysis, relationship facts. | Group audiences by role, concern, impact, and required action. | Audience segments. |
 | Build message matrix | Audience segments, evidence, likely objections. | Write message, proof, tone, sender, channel, and timing for each segment. | Audience-message matrix. |
 | Set cadence and feedback | Channels, decision timeline, meeting rhythm. | Define update cadence, feedback collection, and escalation route. | Cadence and feedback plan. |
-| Check readiness | Draft plan, risks, missing approvals. | Identify message gaps, sensitive audiences, and first communication action. | Ready-to-send communication plan. |
+| Check readiness | Draft plan, risks, applicable approvals and feedback ownership. | Report draft / blocked / ready: draft while information or confirmation is missing, blocked when a known prerequisite is unmet, ready only when applicable prerequisites are confirmed. List gaps and next actions. | Communication plan and readiness status. |
 
 ## Output Template
 
@@ -64,6 +64,8 @@ Known concerns:
 |  |  |  |  |  |
 
 ### 4. Readiness Check
+Status: draft / blocked / ready
+Applicable prerequisites, confirmation evidence, and gaps:
 | Risk | Prevention | Trigger | Escalation |
 |---|---|---|---|
 |  |  |  |  |
@@ -83,4 +85,5 @@ Known concerns:
 - Include at least one disconfirming check, sensitivity, alternative explanation, or failure condition appropriate to the method.
 - Convert the result into a named action or decision with an owner or stakeholder, timing, and observable signal.
 - State missing inputs and the smallest validation action instead of inventing precision.
+- Missing approval or feedback ownership permits a labeled draft, not a ready claim; retain the readiness status, evidence and next clarification action. This artifact does not grant permission to send.
 - Keep wording professional and plain enough that a smart non-specialist can use the output directly.
